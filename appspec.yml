@@ -1,0 +1,15 @@
+version: 0.0 
+os: linux 
+files: 
+  - source: / 
+    destination: /var/www/healthxweb/ 
+permissions: 
+  - object: /var/www/healthxweb/ 
+    owner: ec2-user 
+    group: www
+hooks:
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: root
+  
