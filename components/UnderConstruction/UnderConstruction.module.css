@@ -1,0 +1,18 @@
+.UnderConstruction{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(var(--primary), var(--secondary), var(--secondary), var(--green));
+    color: var(--white);
+    display: flex;
+    align-items:center;
+    justify-items: center;
+}
+.UnderConstruction > .Wrapper{
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+.UnderConstruction > .Wrapper > h2{
+    font-weight: 300;
+    font-size: 70px;
+}
