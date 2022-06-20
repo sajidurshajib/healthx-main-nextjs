@@ -1,5 +1,4 @@
 .Telemedicine{
-    background: var(--secondary);
     width: 100%;
     height: 100%;
     display: flex;
@@ -7,16 +6,17 @@
     justify-content: flex-start;
 }
 .Wrapper{
-    color: var(--white);
-    padding: 0 0 0 150px;
+    color: var(--primary);
+    position: relative;
+    left: 0;
     animation: left-right 1000ms;
 }
 @keyframes left-right {
     0% {
-        padding: 0 0 0 120px;
+        left: -30px;
     }
     100%{
-        padding: 0 0 0 150px;
+        left: 0;
     }
 }
 .Wrapper > h2{
@@ -24,3 +24,26 @@
     font-size: 50px;
     margin: 0 0 20px 0;
 }
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
