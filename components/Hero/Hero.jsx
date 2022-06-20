@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import classes from './Hero.module.css'
 import Options from './Options/Options'
-import { Telemedicine, MedicineOrder } from './Slides'
+import MedicineOrder from './Slides/MedicineOrder/MedicineOrder'
+import Telemedicine from './Slides/Telemedicine/Telemedicine'
 
 const Hero = () => {
     const [id, setId] = useState(1)
