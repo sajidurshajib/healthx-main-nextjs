@@ -1,0 +1,19 @@
+.Select{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.SelectBlue{
+    color: var(--white);
+    background: var(--primary);
+}
+.SelectWrapper > h4{
+    margin: 5px 0;
+    font-size: 14px;
+}
+.SelectWrapper > p{
+    margin: 0;
+    font-size: 10px;
+}

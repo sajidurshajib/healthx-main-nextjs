@@ -3,36 +3,42 @@
     width: 100%;
     background: var(--dark-blue);
     color: var(--white);
-    font-size: 14px;
 }
 .footerWrapper {
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 .footerContent {
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 30px;
 }
 
 .footerColumn {
     vertical-align: top;
-    display: inline-block;
-    width: 15%;
 }
 
 .footerColumn > .Heading {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 1px;
 }
+
+.footerColumn > .Heading::after {
+    background: var(--white);
+    content: '';
+    height: 5px;
+    width: 50%;
+}
+
 .footerColumn > .Item {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .footerColumn > .Item a {
     display: block;
-    line-height: 25px;
-    font-weight: 500;
+    line-height: 30px;
 }
 
 .Item a:hover {
@@ -46,8 +52,8 @@
 }
 
 .footerColumnLast > .headerSocial {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .footerColumnLast > .Media {
@@ -77,6 +83,6 @@
 
 .footerCopyright > span {
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
 }

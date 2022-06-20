@@ -1,4 +1,4 @@
-import { faFacebook, faYoutube, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import logo from '../../assets/img/hx-whitex.png'
@@ -9,12 +9,12 @@ const Footer = () => {
 
     let forPatients = [
         'My Health Portal',
-        'Search for doctors',
-        'Search for clinics',
-        'Search for hospitals',
-        'Book Pathology Test',
-        'Book Full Bosy Checkups',
-        'Read Health articles',
+        'Search doctors',
+        'Search clinics',
+        'Search hospitals',
+        'Pathology Test',
+        'Full Bosy Checkups',
+        'Health articles',
     ]
     let forDoctors = ['Smart doctor']
 
@@ -35,7 +35,7 @@ const Footer = () => {
                             <div className={classes.Heading}>Healthx</div>
                             <div className={classes.Item}>
                                 {hx.map((menu, index) => {
-                                    return <a href="#">{menu}</a>
+                                    return <a href="#">&#10137; {menu}</a>
                                 })}
                             </div>
                         </div>
@@ -44,23 +44,23 @@ const Footer = () => {
                             <div className={classes.Heading}>For patients</div>
                             <div className={classes.Item}>
                                 {forPatients.map((service, index) => {
-                                    return <a href="#">{service}</a>
+                                    return <a href="#">&#10137; {service}</a>
                                 })}
                             </div>
                         </div>
 
                         <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>For doctors</div>
+                            <div className={classes.Heading}>For Doctors</div>
                             <div className={classes.Item}>
                                 {forDoctors.map((service, index) => {
-                                    return <a href="#">{service}</a>
+                                    return <a href="#">&#10137; {service}</a>
                                 })}
                             </div>
 
                             <div className={classes.Heading}>For Clinics</div>
                             <div className={classes.Item}>
                                 {forClinics.map((service, index) => {
-                                    return <a href="#">{service}</a>
+                                    return <a href="#">&#10137; {service}</a>
                                 })}
                             </div>
                         </div>
@@ -69,7 +69,7 @@ const Footer = () => {
                             <div className={classes.Heading}>For Hospitals</div>
                             <div className={classes.Item}>
                                 {forHospitals.map((service, index) => {
-                                    return <a href="#">{service}</a>
+                                    return <a href="#">&#10137; {service}</a>
                                 })}
                             </div>
                         </div>
@@ -78,7 +78,7 @@ const Footer = () => {
                             <div className={classes.Heading}>More</div>
                             <div className={classes.Item}>
                                 {more.map((service, index) => {
-                                    return <a href="#">{service}</a>
+                                    return <a href="#">&#10137; {service}</a>
                                 })}
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const Footer = () => {
                     </div>
                     <div className={classes.footerCopyright}>
                         <div className={classes.Logo}>
-                            <Image src={logo} height="40px" width="100px" alt="logo" />
+                            <Image src={logo} height="50px" width="160px" alt="logo" />
                         </div>
                         <span>Copyright &#169; 2022, Healthx. All rights reserved.</span>
                     </div>
