@@ -3,12 +3,13 @@ import classes from './MainNav.module.css'
 const MainNav = () => {
     return (
         <div className={classes.MainNav}>
-            <div className={classes.Wrapper}>
+            <div className={`${classes.Wrapper} ${'container'}`}>
                 <div className={classes.left}>
                     <div className={classes.SiteLogo}>
                         <h2>HEALTHx</h2>
                     </div>
                 </div>
+
                 <div className={classes.center}>
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>About us</div>
@@ -34,6 +35,7 @@ const MainNav = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className={classes.right}>
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuSignin}>Signin</div>

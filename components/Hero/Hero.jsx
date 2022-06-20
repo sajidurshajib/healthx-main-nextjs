@@ -12,7 +12,7 @@ const Hero = () => {
                 {id === 1 ? <Telemedicine /> : null}
                 {id === 2 ? <MedicineOrder /> : null}
             </div>
-            <Options setId={setId} />
+            <Options id={id} setId={setId} />
         </div>
     )
 }
