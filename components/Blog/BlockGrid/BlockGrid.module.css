@@ -1,0 +1,114 @@
+.wrapper {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin: 2em auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.containerFlex {
+    background-color: var(--white);
+    border-radius: 10px;
+    min-height: 500px;
+    box-shadow: 0px 4px 6px var(--light);
+}
+
+.containerFlex:hover {
+    box-shadow: 0px 10px 20px var(--light);
+    cursor: pointer;
+}
+
+.containerFlex > div img {
+    display: block;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 2px 2px;
+}
+
+.containerFlex .date {
+    padding: 10px 18px;
+    background-color: var(--primary);
+    position: absolute;
+    color: var(--white);
+    border-radius: 2px;
+    margin-top: -4em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.date > span {
+    display: block;
+    text-align: center;
+}
+
+.containerFlex > div h6 {
+    color: var(--primary);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.containerFlex > div p {
+    color: var(--dark);
+    font-size: 14px;
+    margin-top: -1em;
+    margin-bottom: 4em;
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+.wrapper .sliderLeft {
+    position: absolute;
+    padding: 10px;
+    margin-top: 16%;
+    font-size: 2em;
+    color: var(--grey);
+    left: 6%;
+}
+
+.wrapper .sliderRight {
+    position: absolute;
+    padding: 10px;
+    margin-top: 16%;
+    font-size: 2em;
+    color: var(--grey);
+    right: 6%;
+}
+
+.wrapper .sliderRight:hover,
+.wrapper .sliderLeft:hover {
+    cursor: pointer;
+    color: var(--secondary);
+    background-color: var(--white);
+    box-shadow: 0px 4px 6px var(--light);
+    border-radius: 10px;
+}
+
+.wrapper .dots {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .dots > span {
+    padding: 4px;
+    background-color: var(--light-grey);
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.wrapper .dots > span:nth-child(1) {
+    background-color: var(--grey);
+}
