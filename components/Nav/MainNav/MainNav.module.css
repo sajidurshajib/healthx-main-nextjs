@@ -1,15 +1,14 @@
 .MainNav{
-    width: 100vw;
-    padding: 0 5vw;
     margin: 0;
-    background-image: linear-gradient(to right, var(--dark-blue), var(--primary), var(--primary));
+    background: var(--white);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
 }
 .MainNav > .Wrapper{
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
 }
 .Wrapper > .left .SiteLogo{
-    color: var(--white);
+    color: var(--primary);
     display: flex;
     align-items: center;    
 }
@@ -21,14 +20,14 @@
     float: left;
     padding: 25px 20px;
     font-weight: 500;
-    color: var(--white);
+    color: var(--primary);
     cursor: pointer;
     display: flex;
     justify-content: center;
 }
 
 .Wrapper > .center > .MenuWrap:hover{
-    color: var(--light);
+    color: var(--secondary);
 }
 .MenuHead{
     font-weight: 600;
@@ -46,18 +45,6 @@
     visibility: hidden;
     transition: 200ms;
 }
-.MenuLink::before{
-    content:'';
-    position: absolute;
-    border-top: 5px solid var(--white);
-    border-right: 5px solid var(--white);
-    border-bottom: 5px solid var(--white);
-    border-left: 5px solid var(--white);
-    top: -5px;
-    transform: rotate(45deg);
-    left: 50%;
-    margin-left: -5px;
-}
 
 .MenuLink:hover{
     opacity: 1;
@@ -66,7 +53,9 @@
 }
 .MenuLink > a{
     display: block;
-    color: var(--primary);
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
     min-width: 80px;
     padding: 4px 20px;
 }
@@ -84,7 +73,7 @@
     float: right;
     padding: 15px 20px;
     font-weight: 500;
-    color: var(--white);
+    color: var(--primary);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -92,7 +81,7 @@
 .MenuSignin{
     font-weight: 600;
     font-size: 14px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--primary);
     padding: 10px 25px;
     border-radius: 50px ;
 }
@@ -100,7 +89,7 @@
     position: absolute;
     background: var(--white);
     border: 1px solid var(--light);
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.1) ;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
     padding:10px 0;
     border-radius: 4px;
     transform: translateY(40px);
@@ -108,18 +97,7 @@
     visibility: hidden;
     transition: 200ms;
 }
-.SigninLink::before{
-    content:'';
-    position: absolute;
-    border-top: 5px solid var(--white);
-    border-right: 5px solid var(--white);
-    border-bottom: 5px solid var(--white);
-    border-left: 5px solid var(--white);
-    top: -5px;
-    transform: rotate(45deg);
-    left: 50%;
-    margin-left: -5px;
-}
+
 
 .SigninLink:hover{
     opacity: 1;
@@ -128,7 +106,9 @@
 }
 .SigninLink > a{
     display: block;
-    color: var(--primary);
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
     min-width: 80px;
     padding: 4px 20px;
 }
