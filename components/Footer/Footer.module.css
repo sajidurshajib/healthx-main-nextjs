@@ -1,0 +1,82 @@
+.Footer {
+    padding: 50px;
+    width: 100%;
+    background: var(--dark-blue);
+    color: var(--white);
+    font-size: 14px;
+}
+.footerWrapper {
+    margin: auto;
+    width: 80%;
+}
+
+.footerContent {
+    margin-bottom: 30px;
+}
+
+.footerColumn {
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+}
+
+.footerColumn > .Heading {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.footerColumn > .Item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footerColumn > .Item a {
+    display: block;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.Item a:hover {
+    cursor: pointer;
+}
+
+.footerColumnLast {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+}
+
+.footerColumnLast > .headerSocial {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footerColumnLast > .Media {
+    display: flex;
+    margin-top: 10px;
+}
+.Media > .Icon {
+    margin-right: 50px;
+}
+
+.Media > a:hover {
+    transition: 500ms;
+    transform: rotateZ(360deg);
+}
+
+/* copyright */
+
+.footerWrapper > .footerCopyright {
+    border-top: 1px solid var(--grey);
+    display: block;
+    text-align: center;
+}
+
+.footerCopyright > .Logo {
+    margin-top: 20px;
+}
+
+.footerCopyright > span {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 500;
+}

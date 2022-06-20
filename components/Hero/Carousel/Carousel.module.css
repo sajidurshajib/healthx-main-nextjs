@@ -1,0 +1,78 @@
+.carousel {
+    width: 100%;
+    height: 700px;
+}
+
+.carouselInner {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.carouselInner .bgImg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.carouselInner .center {
+    position: absolute;
+    height: 100%;
+    place-items: center;
+    text-align: justify;
+    text-align-last: center;
+    left: 10em;
+    top: 2em;
+}
+
+.carousel h1 {
+    font-size: 4em;
+}
+
+.carousel p {
+    font-size: 2rem;
+    margin-top: -2em;
+}
+
+.carousel h1,
+.carousel p {
+    padding: 20px;
+    border-radius: 9px;
+    color: var(--primary);
+}
+
+.carouselInner .left > label {
+    position: absolute;
+    left: 14px;
+    margin-top: -2em;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 4em;
+    opacity: 0.7;
+}
+
+.carouselInner .right > label {
+    position: absolute;
+    right: 14px;
+    margin-top: -2em;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 4em;
+    opacity: 0.7;
+}
+
+.carouselInner .right > label:hover,
+.carouselInner .left > label:hover {
+    color: var(--secondary);
+}
