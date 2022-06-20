@@ -1,10 +1,20 @@
-import React from 'react'
-import Carousel from './Carousel/Carousel'
+import { useState } from 'react'
+import classes from './Hero.module.css'
+import Options from './Options/Options'
+import { Telemedicine, MedicineOrder } from './Slides'
 
-export default function Hero() {
+const Hero = () => {
+    const [id, setId] = useState(1)
+
     return (
-        <div>
-            <Carousel />
+        <div className={classes.Hero}>
+            <div className={classes.SlideWrapper}>
+                {id === 1 ? <Telemedicine /> : null}
+                {id === 2 ? <MedicineOrder /> : null}
+            </div>
+            <Options setId={setId} />
         </div>
     )
 }
+
+export default Hero

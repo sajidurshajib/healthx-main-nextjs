@@ -1,0 +1,31 @@
+.Options{
+    background-image: linear-gradient(to left, var(--primary), var(--secondary));
+}
+.OptionsWrapper{
+    margin: 0 15vw;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 2fr));
+    color: var(--white);
+}
+.OptionsWrapper > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-height: 120px;
+}
+.OptionsWrapper > div:nth-child(1){
+    background-color: var(--blue2);
+}
+.OptionsWrapper > div:nth-child(2){
+    background-color: var(--blue3);
+}
+.OptionsWrapper > div:nth-child(3){
+    background-color: var(--blue4);
+}
+.OptionsWrapper > div:nth-child(4){
+    background-color: var(--blue2);
+}
+.OptionsWrapper > div:nth-child(5){
+    background-color: var(--blue3);
+}
