@@ -13,7 +13,7 @@ const Footer = () => {
         'Search clinics',
         'Search hospitals',
         'Pathology Test',
-        'Full Bosy Checkups',
+        'Full Body Checkup',
         'Health articles',
     ]
     let forDoctors = ['Smart doctor']
@@ -35,7 +35,11 @@ const Footer = () => {
                             <div className={classes.Heading}>Healthx</div>
                             <div className={classes.Item}>
                                 {hx.map((menu, index) => {
-                                    return <a href="#">&#10137; {menu}</a>
+                                    return (
+                                        <a href="#" key={index}>
+                                            &#10137; {menu}
+                                        </a>
+                                    )
                                 })}
                             </div>
                         </div>
@@ -44,7 +48,11 @@ const Footer = () => {
                             <div className={classes.Heading}>For patients</div>
                             <div className={classes.Item}>
                                 {forPatients.map((service, index) => {
-                                    return <a href="#">&#10137; {service}</a>
+                                    return (
+                                        <a href="#" key={index}>
+                                            &#10137; {service}
+                                        </a>
+                                    )
                                 })}
                             </div>
                         </div>
@@ -53,14 +61,22 @@ const Footer = () => {
                             <div className={classes.Heading}>For Doctors</div>
                             <div className={classes.Item}>
                                 {forDoctors.map((service, index) => {
-                                    return <a href="#">&#10137; {service}</a>
+                                    return (
+                                        <a href="#" key={index}>
+                                            &#10137; {service}
+                                        </a>
+                                    )
                                 })}
                             </div>
 
                             <div className={classes.Heading}>For Clinics</div>
                             <div className={classes.Item}>
                                 {forClinics.map((service, index) => {
-                                    return <a href="#">&#10137; {service}</a>
+                                    return (
+                                        <a href="#" key={index}>
+                                            &#10137; {service}
+                                        </a>
+                                    )
                                 })}
                             </div>
                         </div>
@@ -69,7 +85,11 @@ const Footer = () => {
                             <div className={classes.Heading}>For Hospitals</div>
                             <div className={classes.Item}>
                                 {forHospitals.map((service, index) => {
-                                    return <a href="#">&#10137; {service}</a>
+                                    return (
+                                        <a href="#" key={index}>
+                                            &#10137; {service}
+                                        </a>
+                                    )
                                 })}
                             </div>
                         </div>
@@ -78,7 +98,11 @@ const Footer = () => {
                             <div className={classes.Heading}>More</div>
                             <div className={classes.Item}>
                                 {more.map((service, index) => {
-                                    return <a href="#">&#10137; {service}</a>
+                                    return (
+                                        <a href="#" key={index}>
+                                            &#10137; {service}
+                                        </a>
+                                    )
                                 })}
                             </div>
                         </div>
