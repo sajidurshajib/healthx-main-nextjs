@@ -13,7 +13,7 @@ const Footer = () => {
         'Search clinics',
         'Search hospitals',
         'Pathology Test',
-        'Full Bosy Checkups',
+        'Full Body Checkup',
         'Health articles',
     ]
     let forDoctors = ['Smart doctor']
