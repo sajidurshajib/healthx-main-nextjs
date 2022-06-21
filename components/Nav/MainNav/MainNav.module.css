@@ -2,17 +2,7 @@
     margin: 0;
     background: var(--white);
     box-shadow: 0 2px 4px var(--light);
-    transition: 500ms;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-}
-
-.MainNav2 {
-    margin: 0;
-    background: var(--secondary);
-    box-shadow: 0 2px 4px var(--light);
-    transition: 500ms;
+    transition: 300ms;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -23,7 +13,7 @@
     grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
 }
 
-.MainNav2 > .Wrapper {
+.MainNavReverse > .Wrapper {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
 }

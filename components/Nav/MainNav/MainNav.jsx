@@ -1,24 +1,9 @@
-import { useState, useEffect } from 'react'
 import classes from './MainNav.module.css'
 
 const MainNav = () => {
-    const [nav, setNav] = useState('MainNav')
-
-    const scrollEvent = () => {
-        if (window.scrollY < 73) {
-            return setNav('MainNav')
-        } else if (window.scrollY > 70) {
-            return setNav('MainNav2')
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', scrollEvent)
-        return () => window.removeEventListener('scroll', scrollEvent)
-    }, [])
 
     return (
-        <div className={nav === 'MainNav' ? classes.MainNav : classes.MainNav2}>
+        <div className={classes.MainNav}>
             <div className={`${classes.Wrapper} ${'container'}`}>
                 <div className={classes.left}>
                     <div className={classes.SiteLogo}>

@@ -1,15 +1,17 @@
 import classes from './Select.module.css'
+import { useState, useEffect } from 'react'
+
 
 const Select = (props) => {
 
-    let selectedStyle = {}
-
+    let blue = false
     if(props.number === props.id){
-        selectedStyle = {color: 'var(--white)', background: 'var(--primary)'}
-    }
+        blue = true
+    }        
+
 
     return (
-        <div className={classes.Select} style={selectedStyle} onClick={()=>props.setId(props.number)} >
+        <div className={blue === true ? classes.SelectBlue: classes.Select} onClick={()=>props.setId(props.number)} >
             <div className={classes.SelectWrapper}>
                 {props.children}
             </div>

@@ -8,6 +8,20 @@
 .SelectBlue{
     color: var(--white);
     background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.SelectBlue .SelectWrapper > svg{
+    color: var(--primary);
+    background: var(--light-blue);    
+}
+.SelectWrapper > svg {
+    font-size: 18px;
+    padding: 15px;
+    background: var(--light);
+    border-radius: 50px;
 }
 .SelectWrapper > h4{
     margin: 5px 0;
