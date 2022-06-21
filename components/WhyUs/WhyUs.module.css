@@ -29,3 +29,14 @@
     color: var(--dark);
     margin-top: 5px;
 }
+
+@media (max-width: 768px) {
+    .whyContainer {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 2em;
+    }
+}

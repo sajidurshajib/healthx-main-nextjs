@@ -89,3 +89,11 @@
     font-size: 12px;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .footerContent {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 30px;
+    }
+}
