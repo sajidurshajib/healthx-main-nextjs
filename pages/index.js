@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import { MainNav, Blog, Footer, Hero, ServiceBox, SliderPartner, UnderConstruction } from '../components'
+import { MainNav, Blog, Footer, Hero, ServiceBox, SliderPartner, UnderConstruction, Solution } from '../components'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -21,6 +21,7 @@ export default function Home() {
             <Hero />
             <ServiceBox />
             <Blog />
+            <Solution />
             <WhyUs />
             <SliderPartner />
             <Footer />
