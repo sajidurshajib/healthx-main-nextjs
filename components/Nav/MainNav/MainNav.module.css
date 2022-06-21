@@ -1,22 +1,43 @@
-.MainNav{
+.MainNav {
     margin: 0;
     background: var(--white);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px var(--light);
+    transition: 500ms;
+    position: sticky;
+    z-index: 100;
+    top: 0;
 }
-.MainNav > .Wrapper{
+
+.MainNav2 {
+    margin: 0;
+    background: var(--secondary);
+    box-shadow: 0 2px 4px var(--light);
+    transition: 500ms;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.MainNav > .Wrapper {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
 }
-.Wrapper > .left .SiteLogo{
+
+.MainNav2 > .Wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+}
+
+.Wrapper > .left .SiteLogo {
     color: var(--primary);
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
-.Wrapper > .center{
+.Wrapper > .center {
     display: flex;
     justify-content: center;
 }
-.Wrapper > .center > .MenuWrap{
+.Wrapper > .center > .MenuWrap {
     float: left;
     padding: 25px 20px;
     font-weight: 500;
@@ -26,19 +47,19 @@
     justify-content: center;
 }
 
-.Wrapper > .center > .MenuWrap:hover{
+.Wrapper > .center > .MenuWrap:hover {
     color: var(--secondary);
 }
-.MenuHead{
+.MenuHead {
     font-weight: 600;
     font-size: 16px;
 }
-.MenuLink{
+.MenuLink {
     position: absolute;
     background: var(--white);
     border: 1px solid var(--light);
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.1) ;
-    padding:10px 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
     border-radius: 4px;
     transform: translateY(20px);
     opacity: 0;
@@ -46,12 +67,12 @@
     transition: 200ms;
 }
 
-.MenuLink:hover{
+.MenuLink:hover {
     opacity: 1;
     visibility: visible;
     transform: translateY(35px);
 }
-.MenuLink > a{
+.MenuLink > a {
     display: block;
     color: var(--dark-blue);
     font-size: 14px;
@@ -59,17 +80,17 @@
     min-width: 80px;
     padding: 4px 20px;
 }
-.MenuLink > a:hover{
+.MenuLink > a:hover {
     color: var(--secondary);
 }
-.MenuWrap:hover > .MenuLink{
+.MenuWrap:hover > .MenuLink {
     opacity: 1;
     visibility: visible;
     transform: translateY(35px);
 }
 
 /* Siginin side */
-.Wrapper > .right > .MenuWrap{
+.Wrapper > .right > .MenuWrap {
     float: right;
     padding: 15px 20px;
     font-weight: 500;
@@ -78,19 +99,19 @@
     display: flex;
     justify-content: center;
 }
-.MenuSignin{
+.MenuSignin {
     font-weight: 600;
     font-size: 14px;
     border: 2px solid var(--primary);
     padding: 10px 25px;
-    border-radius: 50px ;
+    border-radius: 50px;
 }
-.SigninLink{
+.SigninLink {
     position: absolute;
     background: var(--white);
     border: 1px solid var(--light);
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.1);
-    padding:10px 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
     border-radius: 4px;
     transform: translateY(40px);
     opacity: 0;
@@ -98,13 +119,12 @@
     transition: 200ms;
 }
 
-
-.SigninLink:hover{
+.SigninLink:hover {
     opacity: 1;
     visibility: visible;
     transform: translateY(55px);
 }
-.SigninLink > a{
+.SigninLink > a {
     display: block;
     color: var(--dark-blue);
     font-size: 14px;
@@ -112,10 +132,10 @@
     min-width: 80px;
     padding: 4px 20px;
 }
-.SigninLink > a:hover{
+.SigninLink > a:hover {
     color: var(--secondary);
 }
-.MenuWrap:hover > .SigninLink{
+.MenuWrap:hover > .SigninLink {
     opacity: 1;
     visibility: visible;
     transform: translateY(55px);
