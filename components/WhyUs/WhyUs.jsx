@@ -20,7 +20,7 @@ const WhyUs = () => {
                     <Image src={hospital} height={50} width={50}></Image>
                     <br />
                     <CountUp start={0} end={30} duration={5} useEasing={true} className={classes.Counter} />
-                    <p>+ Hospitals</p>
+                    <p>Hospitals</p>
                 </div>
 
                 <div>
