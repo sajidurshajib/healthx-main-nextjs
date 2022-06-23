@@ -18,7 +18,7 @@ const Footer = () => {
     ]
     let forDoctors = ['Smart doctor']
 
-    let forClinics = ['Ray by Healthx', 'Healthx Reach', 'Ray Tab', 'Practo Pro']
+    let forClinics = ['Ray by Healthx', 'Healthx Reach', 'Ray Tab', 'Healthx Pro']
 
     let forHospitals = ['Insta By Healthx', 'Qikwell by Healthx', 'Healthx Profile', 'Healthx Reach', 'Healthx Drive']
 

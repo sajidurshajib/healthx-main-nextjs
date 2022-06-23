@@ -17,6 +17,7 @@
 
 .footerColumn {
     vertical-align: top;
+    margin-left: 20px;
 }
 
 .footerColumn > .Heading {
@@ -39,6 +40,8 @@
 .footerColumn > .Item a {
     display: block;
     line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 14px;
 }
 
 .Item a:hover {
