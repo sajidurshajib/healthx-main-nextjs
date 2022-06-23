@@ -1,0 +1,132 @@
+.MainNav {
+    margin: 0;
+    background: var(--white);
+    box-shadow: 0 2px 4px var(--light);
+    transition: 300ms;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.MainNav > .Wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+}
+
+.MainNavReverse > .Wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+}
+
+.Wrapper > .left .SiteLogo {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+.Wrapper > .center {
+    display: flex;
+    justify-content: center;
+}
+.Wrapper > .center > .MenuWrap {
+    float: left;
+    padding: 25px 20px;
+    font-weight: 500;
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.Wrapper > .center > .MenuWrap:hover {
+    color: var(--secondary);
+}
+.MenuHead {
+    font-weight: 600;
+    font-size: 16px;
+}
+.MenuLink {
+    position: absolute;
+    background: var(--white);
+    border: 1px solid var(--light);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 4px;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms;
+}
+
+.MenuLink:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(35px);
+}
+.MenuLink > a {
+    display: block;
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 80px;
+    padding: 4px 20px;
+}
+.MenuLink > a:hover {
+    color: var(--secondary);
+}
+.MenuWrap:hover > .MenuLink {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(35px);
+}
+
+/* Siginin side */
+.Wrapper > .right > .MenuWrap {
+    float: right;
+    padding: 15px 20px;
+    font-weight: 500;
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.MenuSignin {
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid var(--primary);
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+.SigninLink {
+    position: absolute;
+    background: var(--white);
+    border: 1px solid var(--light);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 4px;
+    transform: translateY(40px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms;
+}
+
+.SigninLink:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(55px);
+}
+.SigninLink > a {
+    display: block;
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 80px;
+    padding: 4px 20px;
+}
+.SigninLink > a:hover {
+    color: var(--secondary);
+}
+.MenuWrap:hover > .SigninLink {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(55px);
+}

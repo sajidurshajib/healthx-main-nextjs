@@ -1,0 +1,44 @@
+.strategicPartnershipBack {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 350px;
+}
+
+.strategicPartnershipBack > .Right {
+    background: var(--light-blue);
+}
+
+.strategicPartnershipBack > .Left > .Title {
+    position: relative;
+    text-align: center;
+    right: 50%;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.strategicPartnershipBack > .Left > .Title > .Span1 {
+    color: var(--white);
+}
+
+.strategicPartnershipBack > .Left > .Title > .Span2 {
+    color: var(--light-blue);
+}
+
+.strategicPartnershipBack > .Left > .Content {
+    position: relative;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    right: 50%;
+    /* top: 10%; */
+    padding: 30px;
+}
+
+.strategicPartnershipBack > .Left > .Content > .Row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.strategicPartnershipBack > .Left > .Content > .Row > div img {
+    opacity: 0.5;
+}
