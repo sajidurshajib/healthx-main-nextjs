@@ -1,6 +1,7 @@
 .strategicPartnershipBack {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    height: 350px;
 }
 
 .strategicPartnershipBack > .Right {
@@ -28,7 +29,7 @@
     border: 1px solid var(--light);
     border-radius: 10px;
     right: 50%;
-    top: 10%;
+    /* top: 10%; */
     padding: 30px;
 }
 
