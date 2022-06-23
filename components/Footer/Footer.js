@@ -52,7 +52,7 @@ const Footer = () => {
                                 <div className={classes.Shadow}>
                                     <p className={classes.Info}>
                                         <FontAwesomeIcon icon={faPhone} />
-                                        <span>+8801790904032</span>
+                                        <span>+88 01322658481</span>
                                     </p>
                                 </div>
                             </>

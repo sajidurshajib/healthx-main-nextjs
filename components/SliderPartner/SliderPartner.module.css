@@ -1,6 +1,6 @@
 .wrapper {
     width: 80%;
-    margin: 2em auto 4em auto;
+    margin: 4em auto;
 }
 
 .wrapper .title {
@@ -23,7 +23,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 15));
     }
 }
 
@@ -58,8 +58,8 @@
 
 .slider .slideTrack {
     display: flex;
-    animation: scroll 40s linear infinite;
-    width: calc(250px * 14);
+    animation: scroll 100s linear infinite;
+    width: calc(250px * 30);
 }
 
 .slider .slide {
