@@ -1,43 +1,108 @@
-import { faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faYoutube, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import logo from '../../assets/img/hx-whitex.png'
+import logo from '../../assets/img/hx-white.png'
 import classes from './Footer.module.css'
 
 const Footer = () => {
-    let hx = ['About', 'Blog', 'Contact Us', 'News & Media', 'Our Partners']
+    let hx = [
+        { menu: 'About', link: '#' },
+        { menu: 'Blog', link: '#' },
+        { menu: 'News & Media', link: '#' },
+        { menu: 'Our Partners', link: '#' },
+    ]
+
+    let ourFeatures = [
+        { menu: 'My Health Portal', link: '#' },
+        { menu: 'Smart Doctor', link: '#' },
+        { menu: 'E-Prescription', link: '#' },
+        { menu: 'E-Pharmacy', link: '#' },
+    ]
 
     let forPatients = [
-        'My Health Portal',
-        'Search doctors',
-        'Search clinics',
-        'Search hospitals',
-        'Pathology Test',
-        'Full Body Checkup',
-        'Health articles',
+        { menu: 'My Health Portal', link: '#' },
+        { menu: 'Medicine Delivary', link: '#' },
+        { menu: 'Nursing Service', link: '#' },
+        { menu: 'Find Doctors', link: '#' },
     ]
-    let forDoctors = ['Smart doctor']
 
-    let forClinics = ['Ray by Healthx', 'Healthx Reach', 'Ray Tab', 'Healthx Pro']
+    let forDoctors = [
+        { menu: 'Smart Doctor', link: '#' },
+        { menu: 'E-Prescription', link: '#' },
+        { menu: 'Patients Records', link: '#' },
+        { menu: 'Data Analytics', link: '#' },
+    ]
 
-    let forHospitals = ['Insta By Healthx', 'Qikwell by Healthx', 'Healthx Profile', 'Healthx Reach', 'Healthx Drive']
-
-    let forCorporates = ['Wellness Plans']
-
-    let more = ['Help', 'Developers', 'Privacy Policy', 'Terms & Condition', 'Healthcare Directory', 'Healthx Wiki']
+    let forPharmacies = [
+        { menu: 'Dashboard', link: '#' },
+        { menu: 'Stock Management', link: '#' },
+        { menu: 'Easily customizable', link: '#' },
+        { menu: 'Buying and Selling reports', link: '#' },
+    ]
 
     return (
         <div>
             <footer className={classes.Footer}>
                 <div className={classes.footerWrapper}>
+                    <div className={classes.footerContact}>
+                        <div className={classes.Phone}>
+                            <>
+                                <p>Give us A call</p>
+                                <div className={classes.Shadow}>
+                                    <p className={classes.Info}>
+                                        <FontAwesomeIcon icon={faPhone} />
+                                        <span>+8801790904032</span>
+                                    </p>
+                                </div>
+                            </>
+                        </div>
+                        <div className={classes.Email}>
+                            <p>Email Us</p>
+                            <div className={classes.Shadow}>
+                                <p className={classes.Info}>
+                                    <FontAwesomeIcon icon={faEnvelope} />
+                                    <span>contact@healthx.com.bd</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Follow Us</p>
+                            <div className={classes.Media}>
+                                <a href="#" className={classes.Icon}>
+                                    <FontAwesomeIcon icon={faFacebook} />
+                                </a>
+                                <a href="#" className={classes.Icon}>
+                                    <FontAwesomeIcon icon={faYoutube} />
+                                </a>
+                                <a href="#" className={classes.Icon}>
+                                    <FontAwesomeIcon icon={faLinkedin} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className={classes.footerContent}>
                         <div className={classes.footerColumn}>
                             <div className={classes.Heading}>Healthx</div>
                             <div className={classes.Item}>
                                 {hx.map((menu, index) => {
                                     return (
-                                        <a href="#" key={index}>
-                                            &#10137; {menu}
+                                        <a href={menu.link} key={index}>
+                                            &#10137; {menu.menu}
+                                        </a>
+                                    )
+                                })}
+                            </div>
+                        </div>
+
+                        <div className={classes.footerColumn}>
+                            <div className={classes.Heading}>Our Service</div>
+                            <div className={classes.Item}>
+                                {ourFeatures.map((service, index) => {
+                                    return (
+                                        <a href={service.link} key={index}>
+                                            &#10137; {service.menu}
                                         </a>
                                     )
                                 })}
@@ -49,8 +114,8 @@ const Footer = () => {
                             <div className={classes.Item}>
                                 {forPatients.map((service, index) => {
                                     return (
-                                        <a href="#" key={index}>
-                                            &#10137; {service}
+                                        <a href={service.link} key={index}>
+                                            &#10137; {service.menu}
                                         </a>
                                     )
                                 })}
@@ -62,19 +127,8 @@ const Footer = () => {
                             <div className={classes.Item}>
                                 {forDoctors.map((service, index) => {
                                     return (
-                                        <a href="#" key={index}>
-                                            &#10137; {service}
-                                        </a>
-                                    )
-                                })}
-                            </div>
-
-                            <div className={classes.Heading}>For Clinics</div>
-                            <div className={classes.Item}>
-                                {forClinics.map((service, index) => {
-                                    return (
-                                        <a href="#" key={index}>
-                                            &#10137; {service}
+                                        <a href={service.link} key={index}>
+                                            &#10137; {service.menu}
                                         </a>
                                     )
                                 })}
@@ -82,49 +136,21 @@ const Footer = () => {
                         </div>
 
                         <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>For Hospitals</div>
+                            <div className={classes.Heading}>For Pharmacies</div>
                             <div className={classes.Item}>
-                                {forHospitals.map((service, index) => {
+                                {forPharmacies.map((service, index) => {
                                     return (
-                                        <a href="#" key={index}>
-                                            &#10137; {service}
+                                        <a href={service.link} key={index}>
+                                            &#10137; {service.menu}
                                         </a>
                                     )
                                 })}
-                            </div>
-                        </div>
-
-                        <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>More</div>
-                            <div className={classes.Item}>
-                                {more.map((service, index) => {
-                                    return (
-                                        <a href="#" key={index}>
-                                            &#10137; {service}
-                                        </a>
-                                    )
-                                })}
-                            </div>
-                        </div>
-
-                        <div className={classes.footerColumnLast}>
-                            <div className={classes.headerSocial}>Follow Us</div>
-                            <div className={classes.Media}>
-                                <a href="#" className={classes.Icon}>
-                                    <FontAwesomeIcon icon={faFacebook} size="2x" />
-                                </a>
-                                <a href="#" className={classes.Icon}>
-                                    <FontAwesomeIcon icon={faYoutube} size="2x" />
-                                </a>
-                                <a href="#" className={classes.Icon}>
-                                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                                </a>
                             </div>
                         </div>
                     </div>
                     <div className={classes.footerCopyright}>
                         <div className={classes.Logo}>
-                            <Image src={logo} height="50px" width="160px" alt="logo" />
+                            <Image src={logo} height="100px" width="180px" alt="logo" />
                         </div>
                         <span>Copyright &#169; 2022, Healthx. All rights reserved.</span>
                     </div>

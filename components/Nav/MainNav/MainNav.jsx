@@ -1,7 +1,6 @@
 import classes from './MainNav.module.css'
 
 const MainNav = () => {
-
     return (
         <div className={classes.MainNav}>
             <div className={`${classes.Wrapper} ${'container'}`}>
