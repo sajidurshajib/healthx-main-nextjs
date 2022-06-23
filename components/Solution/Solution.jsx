@@ -23,6 +23,7 @@ export default function Solution() {
 
     return (
         <div className={classes.wrapper}>
+            <div className={classes.title}>Our Solutions</div>
             <div className={classes.innerWrap}>
                 <div className={classes.container}>
                     <ul>
@@ -36,6 +37,9 @@ export default function Solution() {
                             />
                             <label htmlFor="listItem1" className={classes.labelMain}>
                                 My Health
+                                <span className={selected === 'listItem1' ? classes.span2 : classes.span}>
+                                    &#10149;
+                                </span>
                             </label>
                             <ul>
                                 <div className={classes.innerContainer}>
@@ -47,7 +51,7 @@ export default function Solution() {
                                                 24-hour access to personal health information from anywhere with an
                                                 internet connection. The online solution helps you to keep track of your
                                                 health care provider visits, test results, billing, prescriptions, and
-                                                so on. You can also e-mail your provider questions through the portal.
+                                                so on. You can also e-mail your questions through the portal.
                                             </p>
                                             <Link href="https://user.healthxbd.com/" target="__blank">
                                                 <a>Register</a>
@@ -95,6 +99,9 @@ export default function Solution() {
 
                             <label htmlFor="listItem2" className={classes.labelMain}>
                                 Smart Doctor
+                                <span className={selected === 'listItem2' ? classes.span2 : classes.span}>
+                                    &#10149;
+                                </span>
                             </label>
                             <ul>
                                 <div className={classes.innerContainer}>
@@ -153,6 +160,9 @@ export default function Solution() {
                             />
                             <label htmlFor="listItem3" className={classes.labelMain}>
                                 Smart Pharmacy
+                                <span className={selected === 'listItem3' ? classes.span2 : classes.span}>
+                                    &#10149;
+                                </span>
                             </label>
                             <ul>
                                 <div className={classes.innerContainer}>

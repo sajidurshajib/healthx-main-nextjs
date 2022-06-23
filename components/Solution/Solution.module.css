@@ -2,9 +2,16 @@
     width: 100%;
     padding: 30px;
     margin: 0 auto;
-    /* background-color: var(--light); */
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.wrapper .title {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 10px;
 }
 
 .wrapper .innerWrap {
@@ -104,6 +111,18 @@
     opacity: 0.8;
 }
 
+.container .labelMain > .span {
+    float: right;
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.container .labelMain > .span2 {
+    float: right;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
 .container input[type='checkbox'] {
     position: absolute;
     left: -9999px;
@@ -112,6 +131,7 @@
 .container input[type='checkbox'] ~ ul {
     height: 0;
     transform: scaleY(0);
+    transition: transform 0.5s ease-in;
 }
 
 .container input[type='checkbox']:checked ~ ul {
