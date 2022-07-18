@@ -22,7 +22,13 @@
     color: var(--primary);
     display: flex;
     align-items: center;
+    padding: 20px;
 }
+
+.Wrapper > .left .SiteLogo img {
+    object-fit: cover;
+}
+
 .Wrapper > .center {
     display: flex;
     justify-content: center;

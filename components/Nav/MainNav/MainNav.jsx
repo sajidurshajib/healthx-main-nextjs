@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import hx from '../../../assets/img/hx-blue-fit.png'
 import classes from './MainNav.module.css'
 
 const MainNav = () => {
@@ -5,9 +7,9 @@ const MainNav = () => {
         <div className={classes.MainNav}>
             <div className={`${classes.Wrapper} ${'container'}`}>
                 <div className={classes.left}>
-                    <div className={classes.SiteLogo}>
-                        <h2>HEALTHx</h2>
-                    </div>
+                    <a className={classes.SiteLogo} href="/">
+                        <Image src={hx} height={30} width={130} alt="" />
+                    </a>
                 </div>
 
                 <div className={classes.center}>
