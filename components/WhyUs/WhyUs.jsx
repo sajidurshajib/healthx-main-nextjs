@@ -18,7 +18,10 @@ const WhyUs = () => {
                             <Image src={w1} height={54} width={54} />
                         </span>
                         <br />
-                        <CountUp start={10} end={100} duration={5} useEasing={true} className={classes.Counter} />
+                        <div className={classes.Counter}>
+                            <CountUp start={10} end={100} duration={5} useEasing={true} className={classes.Counter} />
+                            <span>+</span>
+                        </div>
                         <p>Doctors</p>
                     </div>
 
@@ -27,7 +30,10 @@ const WhyUs = () => {
                             <Image src={w2} height={54} width={54} />
                         </span>
                         <br />
-                        <CountUp start={0} end={30} duration={5} useEasing={true} className={classes.Counter} />
+                        <div className={classes.Counter}>
+                            <CountUp start={0} end={30} duration={5} useEasing={true} className={classes.Counter} />
+                            <span>+</span>
+                        </div>
                         <p>Hospitals & Labs</p>
                     </div>
 
@@ -36,7 +42,10 @@ const WhyUs = () => {
                             <Image src={w3} height={54} width={54} />
                         </span>
                         <br />
-                        <CountUp start={0} end={30} duration={5} useEasing={true} className={classes.Counter} />
+                        <div className={classes.Counter}>
+                            <CountUp start={0} end={30} duration={5} useEasing={true} className={classes.Counter} />
+                            <span>+</span>
+                        </div>
                         <p>Pharmacies</p>
                     </div>
 
@@ -45,7 +54,16 @@ const WhyUs = () => {
                             <Image src={w4} height={54} width={54} />
                         </span>
                         <br />
-                        <CountUp start={500} end={2000} duration={5} useEasing={true} className={classes.Counter} />
+                        <div className={classes.Counter}>
+                            <CountUp
+                                start={1000}
+                                end={2200}
+                                duration={5}
+                                useEasing={true}
+                                className={classes.Counter}
+                            />
+                            <span>+</span>
+                        </div>
                         <p>Patients</p>
                     </div>
                 </div>
