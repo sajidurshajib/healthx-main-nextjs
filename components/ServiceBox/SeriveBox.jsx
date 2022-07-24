@@ -1,37 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import { useState, useEffect } from 'react'
 import service from '../../assets/service/service.png'
 import classes from './ServiceBox.module.css'
 
 export default function SeriveBox() {
-    // const api = 'http://127.0.0.1:8000/api/v1'
-    // const [doctors, setDoctors] = useState([])
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await fetch(
-    //                 `${api}/doctors/search/?district=dha&speciality=ent&name=ab&skip=0&limit=10`,
-    //                 {
-    //                     method: 'GET',
-    //                     headers: {
-    //                         Accept: 'application/json',
-    //                         'Content-type': 'application/json',
-    //                     },
-    //                 }
-    //             )
-    //             const data = response.json()
-    //             console.log('doctors: ', data)
-    //             setDoctors(data)
-    //         } catch {
-    //             setDoctors([])
-    //         }
-    //         return fetchData()
-    //     }
-    // }, [api])
-    // console.log('doc')
-
     return (
         <div className={classes.wrapper}>
             <div className={classes.title}>Our Health Plans</div>
