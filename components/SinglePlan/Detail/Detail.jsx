@@ -1,21 +1,36 @@
+import Image from 'next/image'
 import React from 'react'
+import Family from '../../../assets/plan/family.png'
 import classes from './Detail.module.css'
 
 export default function Detail() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.pricingTable}>
-                <h2 className={classes.title}>Family Health Package (FHP)</h2>
-                <h3 className={classes.subtitle}>
-                    Family health package is designed to ensure the healthcare need of individuals and their family
-                    members (4 Person). Primary Health Care need is now a common need in our daily life. Healthcare
-                    pocket expense is increasing day by day. To meet the need of family healthcare service at affordable
-                    price we are offering.
-                </h3>
+                <div className={classes.headerFlex}>
+                    <div className={classes.header}>
+                        <div>
+                            <h2 className={classes.title}>Family Health Package (FHP)</h2>
+                            <p className={classes.subtitle}>
+                                Family health package is designed to ensure the healthcare need of individuals and their
+                                family members (4 Person). Primary Health Care need is now a common need in our daily
+                                life. Healthcare pocket expense is increasing day by day. To meet the need of family
+                                healthcare service at affordable price we are offering.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={classes.imgContainer}>
+                        <Image src={Family} width={420} height={380} />
+                    </div>
+                </div>
 
                 <div className={classes.info}>
                     <span>Basic Package</span>
                 </div>
+                <p className={classes.infoText}>
+                    Family Health Package-Basic is developed to ensure the primary healthcare needs at home in
+                    affordable price. Package includes:
+                </p>
                 <ul className={classes.gridTable}>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>3 Months Package</h1>
@@ -153,6 +168,10 @@ export default function Detail() {
                 <div className={classes.info}>
                     <span>Premium Package</span>
                 </div>
+                <p className={classes.infoText}>
+                    Family Health Package-Premium is developed to ensure the primary healthcare needs at home in
+                    affordable price. Package includes:
+                </p>
                 <ul className={classes.gridTable}>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>3 Months Package</h1>
