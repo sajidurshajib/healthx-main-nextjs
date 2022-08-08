@@ -68,6 +68,7 @@
     visibility: visible;
     transform: translateY(35px);
 }
+
 .MenuLink > a {
     display: block;
     color: var(--dark-blue);
