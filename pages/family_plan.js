@@ -1,11 +1,11 @@
 import React from 'react'
-import { MainNav, SinglePlan } from '../components'
+import { FamilyPlan, MainNav } from '../components'
 
 export default function plan() {
     return (
         <div>
             <MainNav />
-            <SinglePlan />
+            <FamilyPlan />
         </div>
     )
 }
