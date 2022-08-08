@@ -13,9 +13,9 @@
 
 .service {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6em;
+    padding: 2em 14em;
 }
 
 .service .box {
@@ -45,10 +45,15 @@
     height: 6em;
     display: block;
     margin-top: -6em;
+    border-radius: 50%;
+}
+
+.icon .img {
+    border-radius: 70px;
 }
 
 .service .box .title {
-    margin-top: 1.6em;
+    margin-top: 2.6em;
     font-size: 1.6em;
     text-align: center;
     font-weight: 500;
@@ -88,7 +93,7 @@
 .service .box:hover {
     transition: 200ms;
     cursor: pointer;
-    box-shadow: 10px 20px 30px var(--light);
+    box-shadow: 4px 8px 14px var(--light);
 }
 
 .service .box button:hover {
