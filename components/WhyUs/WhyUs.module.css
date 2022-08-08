@@ -52,6 +52,10 @@
     margin-top: 1em;
 }
 
+/* .whyContainer > div > .Counter span {
+    font-size: 0.1em;
+} */
+
 .whyContainer > div > p {
     font-size: 1.2em;
     color: var(--dark);
