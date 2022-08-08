@@ -5,12 +5,25 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .Wrapper {
+    margin-top: 5em;
     color: var(--primary);
     position: relative;
     left: 0;
     animation: left-right 1000ms;
 }
+
+.imgWrapper {
+    margin-left: 10em;
+    animation: left-right 1000ms;
+}
+
 @keyframes left-right {
     0% {
         left: -30px;

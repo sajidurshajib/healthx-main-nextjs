@@ -1,10 +1,9 @@
 .searchDoctor {
     background: none;
-    left: 25%;
-    right: 25%;
+    left: 35%;
     top: 12%;
     position: absolute;
-    width: 50%;
+    width: 30%;
 }
 
 .wrapperRight {
