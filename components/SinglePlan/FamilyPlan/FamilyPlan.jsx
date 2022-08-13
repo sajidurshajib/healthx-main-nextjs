@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Family from '../../../assets/plan/family.png'
 import classes from './FamilyPlan.module.css'
@@ -38,7 +39,7 @@ export default function FamilyPlan() {
                     family members with a dedicated family doctor support online 24x7! With a simple monthly
                     subscription, any members of the family can talk to his/her dedicated family doctor online - 24x7.
                 </p>
-                <ul className={classes.gridTable}>
+                <ul className={classes.gridFour}>
                     {/******************************** Basic *************************************/}
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>1 Month Plan</h1>
@@ -48,34 +49,13 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>3 Months Plan</h1>
@@ -85,34 +65,13 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>6 Months Plan</h1>
@@ -122,34 +81,13 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>12 Months Plan</h1>
@@ -159,34 +97,13 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                 </ul>
                 <div className={classes.details}>
@@ -214,7 +131,7 @@ export default function FamilyPlan() {
                     affordable price. With a monthly subscription, any members of the family can enjoy all the essential
                     healthcare services.
                 </p>
-                <ul className={classes.gridTable}>
+                <ul className={classes.gridFour}>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>1 Month Plan</h1>
                         <p className={classes.tablePricing}>
@@ -223,50 +140,15 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>3 Months Plan</h1>
@@ -276,50 +158,15 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>6 Months Plan</h1>
@@ -329,50 +176,15 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>12 Months Package</h1>
@@ -382,50 +194,15 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                 </ul>
                 <div className={classes.details}>
@@ -450,68 +227,7 @@ export default function FamilyPlan() {
                     FHP Premium is developed to ensure the primary healthcare need at home at affordable rate and cash
                     back on the hospital admission.
                 </p>
-                <ul className={classes.gridTable}>
-                    <li className={classes.table}>
-                        <h1 className={classes.tableHeader}>1 Month Plan</h1>
-                        <p className={classes.tablePricing}>
-                            <span>৳</span>
-                            <span>699</span>
-                            <span>/for 4 persons</span>
-                        </p>
-                        <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Hospital Cashback</li>
-                                    </th>
-                                    <td>
-                                        <li>৳ 20,000</li>
-                                    </td>
-                                </tr>
-                            </table>
-                        </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
-                    </li>
+                <ul className={classes.gridThree}>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>3 Months Plan</h1>
                         <p className={classes.tablePricing}>
@@ -520,58 +236,16 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Hospital Cashback</li>
-                                    </th>
-                                    <td>
-                                        <li>৳ 20,000</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
+                            <li>Hospital cashback up to BDT 20,000</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>6 Months Plan</h1>
@@ -581,58 +255,16 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Hospital Cashback</li>
-                                    </th>
-                                    <td>
-                                        <li>৳ 20,000</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
+                            <li>Hospital cashback up to BDT 20,000</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>12 Months Package</h1>
@@ -642,58 +274,16 @@ export default function FamilyPlan() {
                             <span>/for 4 persons</span>
                         </p>
                         <ul className={classes.tableOptions}>
-                            <table>
-                                <tr>
-                                    <th>
-                                        <li>Dr. Consultation</li>
-                                    </th>
-                                    <td>
-                                        <li>24x7</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Diagnostic Test</li>
-                                    </th>
-                                    <td>
-                                        <li>Up to 40%</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Medicine Order</li>
-                                    </th>
-                                    <td>
-                                        <li>10% Cash Back</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free storage</li>
-                                    </th>
-                                    <td>
-                                        <li>Unlimited</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Free Access</li>
-                                    </th>
-                                    <td>
-                                        <li>Premium</li>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <li>Hospital Cashback</li>
-                                    </th>
-                                    <td>
-                                        <li>৳ 20,000</li>
-                                    </td>
-                                </tr>
-                            </table>
+                            <li>24x7 unlimited online Doctor consultation with Family Doctor</li>
+                            <li>Up to 40% discount on Blood & Urine test at home</li>
+                            <li>10% Cash Back on Medicine order with no delivery charge</li>
+                            <li>Unlimited storage of prescriptions, test reports at My Health Portal</li>
+                            <li>Free access to all premium features of My Health Portal</li>
+                            <li>Hospital cashback up to BDT 20,000</li>
                         </ul>
-                        <button className={classes.tableStart}>Subscribe Now</button>
+                        <Link href="https://user.healthxbd.com/">
+                            <button className={classes.tableStart}>Subscribe Now</button>
+                        </Link>
                     </li>
                 </ul>
                 <div className={classes.details}>

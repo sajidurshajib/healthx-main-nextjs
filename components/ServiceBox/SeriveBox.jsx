@@ -23,10 +23,10 @@ export default function SeriveBox() {
                             </a>
                         </Link>
                         <span>
-                            My Health Plan is designed to ensure the basic healthcare need of every individual. Primary
-                            Health Care need is now a common need in our daily life. Healthcare expense is growing like
+                            My Health Plan is designed to ensure the basic healthcare need of every individual.
+                            {/* Primary Health Care need is now a common need in our daily life. Healthcare expense is growing like
                             anything day by day. To reduce the healthcare expenditure, we are offering the primary &
-                            essential healthcare services at affordable costs.
+                            essential healthcare services at affordable costs. */}
                         </span>
                         <p className={classes.show}>
                             24x7 Doctor Service | Medicine Delivery | Diagnostic Test | Health Insurance
@@ -52,9 +52,10 @@ export default function SeriveBox() {
                         </Link>
                         <span>
                             Family health plan (FHP) is designed to ensure the healthcare need of individuals and their
-                            family members (4 Person). Primary & essential healthcare need is now a common need in our
+                            family members (4 Person).
+                            {/* Primary & essential healthcare need is now a common need in our
                             daily life. Healthcare pocket expense is increasing day by day. To meet the need of family
-                            healthcare service at affordable price we are offering.
+                            healthcare service at affordable price we are offering. */}
                         </span>
                         <p className={classes.show}>
                             24x7 Doctor Service | Medicine Delivery | Diagnostic Test | Health Insurance
