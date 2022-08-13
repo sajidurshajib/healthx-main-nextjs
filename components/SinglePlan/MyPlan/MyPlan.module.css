@@ -74,10 +74,17 @@
     font-size: 14px;
 }
 
-.gridTable {
+.gridFour {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 10px 4em;
+    grid-gap: 10px;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 6em;
     grid-gap: 10px;
 }
 
@@ -159,39 +166,22 @@
 
 .tableOptions {
     list-style: none;
-    padding: 14px 0px;
+    padding: 0px;
+    padding-bottom: 14px;
     font-size: 0.9em;
     border-bottom: 2px solid var(--light);
+    margin-top: -14px;
 }
 
-.tableOptions > table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-.tableOptions > table {
-    margin-top: -2em;
-    padding: 20px 0px;
-    margin-bottom: 20px;
-}
-
-.tableOptions > table li {
-    padding: 8px 2px;
-}
-
-.tableOptions > table > tr > th > li {
+.tableOptions > li {
+    padding: 10px 0;
+    font-size: 14px;
     text-align: left;
     font-weight: 400;
     text-transform: capitalize;
 }
 
-.tableOptions > table > tr > td > li {
-    text-align: center;
-    font-weight: 500;
-}
-
-.tableOptions > table > tr > th > li:before {
+.tableOptions > li:before {
     content: '✓';
     display: inline-flex;
     margin-right: 15px;
