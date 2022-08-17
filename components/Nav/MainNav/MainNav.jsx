@@ -14,7 +14,7 @@ const MainNav = () => {
 
                 <div className={classes.center}>
                     <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>About us</div>
+                        <div className={classes.MenuHead}>About</div>
                         <div className={classes.MenuLink}>
                             <a href="#">Mission and Vision</a>
                             <a href="#">Founders</a>
@@ -22,11 +22,10 @@ const MainNav = () => {
                         </div>
                     </div>
                     <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>Service</div>
+                        <div className={classes.MenuHead}>Health Plan</div>
                         <div className={classes.MenuLink}>
-                            <a href="#">Test 1</a>
-                            <a href="#">Link 2 ipsum dolor</a>
-                            <a href="#">Link 3 lorem</a>
+                            <a href="/my_plan">My Health Plan</a>
+                            <a href="/family_plan">Family Health Plan</a>
                         </div>
                     </div>
                     <div className={classes.MenuWrap}>

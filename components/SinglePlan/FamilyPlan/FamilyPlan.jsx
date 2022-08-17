@@ -31,6 +31,7 @@ export default function FamilyPlan() {
                     </div>
                 </div>
 
+                {/******************************** Basic *************************************/}
                 <div className={classes.info}>
                     <span>Basic Plan</span>
                 </div>
@@ -40,7 +41,6 @@ export default function FamilyPlan() {
                     subscription, any members of the family can talk to his/her dedicated family doctor online - 24x7.
                 </p>
                 <ul className={classes.gridFour}>
-                    {/******************************** Basic *************************************/}
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>1 Month Plan</h1>
                         <p className={classes.tablePricing}>
@@ -107,19 +107,20 @@ export default function FamilyPlan() {
                     </li>
                 </ul>
                 <div className={classes.details}>
-                    <p>
-                        <p>Coverage</p> <li>For a family (Up to 4 Person)</li>
-                    </p>
-                    <p>
-                        <p>Offer Details</p> <span>Family Health Plan - Basic</span>
-                        <li>24x7 unlimited online Doctor consultation with a dedicated Family Doctor.</li>
-                        <li>Free storage facility of the personal health & medical record at My Health Portal.</li>
-                        <li>Free access to all features of My Health Portal.</li>
-                    </p>
-                    {/* <p>
-                        <p>Price</p>
-                        <li>৳149 - 1Month | ৳399 - 3Months | ৳499 - 6Months | ৳699 - 12Months</li>
-                    </p> */}
+                    <div>
+                        <span>Coverage</span>
+                        <ul>
+                            <li>For a family (Up to 4 Person)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Offer Details</h4> <span>Family Health Plan - Basic</span>
+                        <ul>
+                            <li>24x7 unlimited online Doctor consultation with a dedicated Family Doctor.</li>
+                            <li>Free storage facility of the personal health & medical record at My Health Portal.</li>
+                            <li>Free access to all features of My Health Portal.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/******************************** Standard *************************************/}
@@ -206,17 +207,22 @@ export default function FamilyPlan() {
                     </li>
                 </ul>
                 <div className={classes.details}>
-                    <p>
-                        <p>Coverage</p> <li>For a family (Up to 4 Person)</li>
-                    </p>
-                    <p>
-                        <p>Offer Details</p> <span>Family Health Plan - Standard</span>
-                        <li>24x7 unlimited online Doctor consultation with a dedicated Family Doctor.</li>
-                        <li>Up to 40% discounts on all pathological lab tests at home.</li>
-                        <li>10% cashback on every medicine order without delivery charge.</li>
-                        <li>Free storage facility of the personal health & medical record at My Health Portal.</li>
-                        <li>Free access to all features of My Health Portal.</li>
-                    </p>
+                    <div>
+                        <span>Coverage</span>
+                        <ul>
+                            <li>For a family (Up to 4 Person)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Offer Details</h4> <span>Family Health Plan - Standard</span>
+                        <ul>
+                            <li>24x7 unlimited online Doctor consultation with a dedicated Family Doctor.</li>
+                            <li>Up to 40% discounts on all pathological lab tests at home.</li>
+                            <li>10% cashback on every medicine order without delivery charge.</li>
+                            <li>Free storage facility of the personal health & medical record at My Health Portal.</li>
+                            <li>Free access to all features of My Health Portal.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/******************************** Premium *************************************/}
@@ -287,18 +293,23 @@ export default function FamilyPlan() {
                     </li>
                 </ul>
                 <div className={classes.details}>
-                    <p>
-                        <p>Coverage</p> <li>For a family (Up to 4 Person)</li>
-                    </p>
-                    <p>
-                        <p>Offer Details</p> <span>Family Health Plan - Premium</span>
-                        <li>24x7 unlimited online Doctor consultation with a dedicated Family Doctor.</li>
-                        <li>Up to 40% discounts on all pathological lab tests at home.</li>
-                        <li>10% cashback on every medicine order without delivery charge.</li>
-                        <li>Free storage facility of the personal health & medical record at My Health Portal.</li>
-                        <li>Free access to all features of My Health Portal.</li>
-                        <li>Hospital cashback up to BDT 100,000 on hospital admission / stay.</li>
-                    </p>
+                    <div>
+                        <span>Coverage</span>
+                        <ul>
+                            <li>For a family (Up to 4 Person)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Offer Details</h4> <span>Family Health Plan - Premium</span>
+                        <ul>
+                            <li>24x7 unlimited online Doctor consultation with a dedicated Family Doctor.</li>
+                            <li>Up to 40% discounts on all pathological lab tests at home.</li>
+                            <li>10% cashback on every medicine order without delivery charge.</li>
+                            <li>Free storage facility of the personal health & medical record at My Health Portal.</li>
+                            <li>Free access to all features of My Health Portal.</li>
+                            <li>Hospital cashback up to BDT 100,000 on hospital admission/stay.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
