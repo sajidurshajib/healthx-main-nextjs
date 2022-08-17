@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import Nurse from '../../assets/nursing/nurse.png'
+import S1 from '../../assets/nursing/s1.png'
+import S2 from '../../assets/nursing/s2.png'
+import S3 from '../../assets/nursing/s3.png'
+import S4 from '../../assets/nursing/s4.png'
+import S5 from '../../assets/nursing/s5.png'
 import classes from './Nursing.module.css'
 
 export default function Nursing() {
@@ -34,11 +39,36 @@ export default function Nursing() {
                 at your home
             </p>
             <div className={classes.service}>
-                <div>Post-Operative Patient Care</div>
-                <div>Elder care</div>
-                <div>New Mother Care</div>
-                <div>Baby care </div>
-                <div>Attendant care</div>
+                <div>
+                    <div>
+                        <Image src={S1} height={50} width={50} className={classes.img} alt="" />
+                    </div>
+                    Post-Operative Patient Care
+                </div>
+                <div>
+                    <div>
+                        <Image src={S2} height={50} width={50} className={classes.img} alt="" />
+                    </div>
+                    Elder care
+                </div>
+                <div>
+                    <div>
+                        <Image src={S3} height={50} width={50} className={classes.img} alt="" />
+                    </div>
+                    New Mother Care
+                </div>
+                <div>
+                    <div>
+                        <Image src={S4} height={50} width={50} className={classes.img} alt="" />
+                    </div>
+                    Baby care
+                </div>
+                <div>
+                    <div>
+                        <Image src={S5} height={50} width={50} className={classes.img} alt="" />
+                    </div>
+                    Attendant care
+                </div>
             </div>
         </div>
     )
