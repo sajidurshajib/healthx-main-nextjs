@@ -1,5 +1,4 @@
 .wrapper {
-    background-color: var(--light-low);
     padding: 40px 0px;
 }
 
@@ -47,7 +46,7 @@
     color: var(--dark);
     font-size: 16px;
     letter-spacing: 0.04em;
-    padding: 0px 100px;
+    padding: 0px 60px;
 }
 
 .pricingTable .info {
@@ -97,7 +96,8 @@
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid var(--light);
-    box-shadow: 2px 4px 6px var(--light);
+    box-shadow: 1px 2px 4px var(--light);
+    border-top: 4px solid var(--secondary);
 }
 
 .table:hover {
