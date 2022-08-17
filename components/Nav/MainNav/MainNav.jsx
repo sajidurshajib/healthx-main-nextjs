@@ -24,8 +24,8 @@ const MainNav = () => {
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>Health Plan</div>
                         <div className={classes.MenuLink}>
-                            <a href="/my_plan">My Health Plan</a>
-                            <a href="/family_plan">Family Health Plan</a>
+                            <a href="my-plan">My Health Plan</a>
+                            <a href="family-plan">Family Health Plan</a>
                         </div>
                     </div>
                     <div className={classes.MenuWrap}>
