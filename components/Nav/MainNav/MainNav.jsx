@@ -14,7 +14,7 @@ const MainNav = () => {
 
                 <div className={classes.center}>
                     <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>About us</div>
+                        <div className={classes.MenuHead}>About</div>
                         <div className={classes.MenuLink}>
                             <a href="#">Mission and Vision</a>
                             <a href="#">Founders</a>
@@ -22,11 +22,25 @@ const MainNav = () => {
                         </div>
                     </div>
                     <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>Service</div>
+                        <div className={classes.MenuHead}>Solutions</div>
                         <div className={classes.MenuLink}>
-                            <a href="#">Test 1</a>
-                            <a href="#">Link 2 ipsum dolor</a>
-                            <a href="#">Link 3 lorem</a>
+                            <a href="https://user.healthxbd.com">For Patient</a>
+                            <a href="https://doc.healthxbd.com">For Doctor</a>
+                            <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
+                        </div>
+                    </div>
+                    <div className={classes.MenuWrap}>
+                        <div className={classes.MenuHead}>Health Plan</div>
+                        <div className={classes.MenuLink}>
+                            <a href="my-plan">My Health Plan</a>
+                            <a href="family-plan">Family Health Plan</a>
+                        </div>
+                    </div>
+                    <div className={classes.MenuWrap}>
+                        <div className={classes.MenuHead}>Services</div>
+                        <div className={classes.MenuLink}>
+                            <a href="nursing-attendant">Nursing/Attendant</a>
+                            <a href="medicine-delivery">Medicine Delivery</a>
                         </div>
                     </div>
                     <div className={classes.MenuWrap}>
@@ -42,8 +56,8 @@ const MainNav = () => {
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuSignin}>Signin</div>
                         <div className={classes.SigninLink}>
-                            <a href="#">Smart Doctor</a>
-                            <a href="#">My Health Portal</a>
+                            <a href="https://doc.healthxbd.com">Smart Doctor</a>
+                            <a href="https://user.healthxbd.com">My Health Portal</a>
                         </div>
                     </div>
                 </div>

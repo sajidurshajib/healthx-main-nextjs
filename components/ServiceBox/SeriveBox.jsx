@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React from 'react'
 import FamilyPic from '../../assets/plan/fplan.png'
 import MyPic from '../../assets/plan/mplan.png'
-// import service from '../../assets/service/service.png'
 import classes from './ServiceBox.module.css'
 
 export default function SeriveBox() {
@@ -17,7 +16,7 @@ export default function SeriveBox() {
                         <div className={classes.icon}>
                             <Image src={MyPic} height={140} width={150} className={classes.img} alt="" />
                         </div>
-                        <Link href="plan">
+                        <Link href="my-plan">
                             <a>
                                 <p className={classes.title}>My Health Plan</p>
                             </a>
@@ -31,7 +30,7 @@ export default function SeriveBox() {
                         <p className={classes.show}>
                             24x7 Doctor Service | Medicine Delivery | Diagnostic Test | Health Insurance
                         </p>
-                        <Link href="my_plan">
+                        <Link href="my-plan">
                             <a>
                                 <button>View Details</button>
                             </a>
@@ -45,7 +44,7 @@ export default function SeriveBox() {
                         <div className={classes.icon}>
                             <Image src={FamilyPic} height={140} width={150} className={classes.img} alt="" />
                         </div>
-                        <Link href="plan">
+                        <Link href="family-plan">
                             <a>
                                 <p className={classes.title}>Family Health Plan</p>
                             </a>
@@ -60,7 +59,7 @@ export default function SeriveBox() {
                         <p className={classes.show}>
                             24x7 Doctor Service | Medicine Delivery | Diagnostic Test | Health Insurance
                         </p>
-                        <Link href="family_plan">
+                        <Link href="family-plan">
                             <a>
                                 <button>View Details</button>
                             </a>

@@ -1,5 +1,4 @@
 .wrapper {
-    background-color: var(--light-low);
     padding: 40px 0px;
 }
 
@@ -47,7 +46,7 @@
     color: var(--dark);
     font-size: 16px;
     letter-spacing: 0.04em;
-    padding: 0px 100px;
+    padding: 0px 60px;
 }
 
 .pricingTable .info {
@@ -97,7 +96,8 @@
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid var(--light);
-    box-shadow: 2px 4px 6px var(--light);
+    box-shadow: 1px 2px 4px var(--light);
+    border-top: 4px solid var(--secondary);
 }
 
 .table:hover {
@@ -223,33 +223,39 @@
     margin-top: 1em;
     margin-bottom: 0px;
     background-color: var(--white);
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 10px;
 }
 
-.details > p {
+.details > div {
     font-size: 1.1em;
     color: var(--dark);
 }
 
-.details > p:nth-child(1) {
-    padding-bottom: 10px;
+.details > div:nth-child(1) {
+    padding-bottom: 2px;
 }
 
-.details > p > p {
+.details > div > span {
     border-left: 4px solid var(--primary);
     padding-left: 10px;
     margin-top: 1em;
 }
 
-.details > p > span {
+.details > div > span {
     font-weight: 500;
-    padding-left: 4px;
+    padding-left: 10px;
     display: block;
-    margin-bottom: 1em;
 }
 
-.details > p > li {
+.details > div > h4 {
+    font-size: 1em;
+    color: var(--dark);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.details > div > ul > li {
     margin: 8px;
     margin-left: 20px;
     font-size: 16px;
