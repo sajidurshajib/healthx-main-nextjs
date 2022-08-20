@@ -1,0 +1,84 @@
+.wrapper {
+    margin-top: 6em;
+    padding: 10px 10em;
+    margin-bottom: 4em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 24px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    margin-bottom: 1.4em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em 4em;
+}
+
+.grid > div {
+    padding: 20px 2em 20px 1em;
+    border-radius: 10px;
+    transition: 250ms;
+    border: none;
+    text-align: justify;
+    border-top: 2px solid var(--dark);
+    display: flex;
+}
+
+.grid > div:hover {
+    background-color: var(--white);
+    box-shadow: 2px 4px 6px var(--light);
+    cursor: pointer;
+    transition: 250ms;
+    transform: translateY(-4px);
+}
+
+.grid > div > div:first-child {
+    padding-right: 20px;
+}
+
+.grid > div > div > svg {
+    font-size: 26px;
+    margin-top: 12px;
+    color: var(--primary);
+}
+
+.grid > div > div > h2 {
+    font-size: 22px;
+    color: var(--primary);
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.grid > div > div > span {
+    display: block;
+    font-size: 14px;
+    color: var(--dark);
+    padding: 4px 0;
+}
+
+.grid > div > div > ul {
+    margin-top: 6px;
+    padding: 0;
+    margin-left: 14px;
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.grid > div > div > ul > li {
+    padding: 4px 0;
+}
+
+.grid > div > div > ul > span {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -6,7 +6,10 @@ import S2 from '../../assets/nursing/s2.png'
 import S3 from '../../assets/nursing/s3.png'
 import S4 from '../../assets/nursing/s4.png'
 import S5 from '../../assets/nursing/s5.png'
+import Faq from './Faq/Faq'
+import Features from './Features/Features'
 import classes from './Nursing.module.css'
+import WhyUs from './WhyUs/WhyUs'
 
 export default function Nursing() {
     return (
@@ -70,6 +73,9 @@ export default function Nursing() {
                     Attendant care
                 </div>
             </div>
+            <Features />
+            <WhyUs />
+            <Faq />
         </div>
     )
 }
