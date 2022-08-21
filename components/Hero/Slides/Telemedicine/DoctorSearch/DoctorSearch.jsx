@@ -11,8 +11,6 @@ const DoctorSearch = () => {
 
     const api = process.env.NEXT_PUBLIC_API_URL
 
-    console.log(api)
-
     const searchHandler = (search) => {
         if (search.length > 0) {
             setSearchHide(true)
@@ -36,7 +34,6 @@ const DoctorSearch = () => {
             let data = await response.json()
             if (response.ok) {
                 setDoctors(data)
-                console.log(data)
             } else {
                 console.log('data not fetching')
             }
