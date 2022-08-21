@@ -23,7 +23,7 @@ export default function Info({ doctor }) {
                         <div>
                             <p>Follow-Up Fee</p>
                             <p>
-                                ৳80<span>(inc. VAT)</span> <span>(within 10 days)</span>
+                                ৳<span>(inc. VAT)</span> <span>(within 10 days)</span>
                             </p>
                         </div>
 

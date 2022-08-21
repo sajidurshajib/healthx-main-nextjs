@@ -10,9 +10,9 @@ const ProfessionalInfo = () => {
                         <ul>
                             <li>
                                 <div>
-                                    <h3>Dhaka Medical College</h3>
-                                    <p>Lecturer</p>
-                                    <p>2015-2019</p>
+                                    <h3> Medical College</h3>
+                                    {/* <p>Lecturer</p>
+                                    <p>2015-2019</p> */}
                                 </div>
                             </li>
                         </ul>

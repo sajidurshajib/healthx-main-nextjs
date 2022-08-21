@@ -18,9 +18,11 @@ export default function SingleDoctor({ id }) {
 
     const [doctor, setDoctor] = useState([])
 
+    const api = process.env.NEXT_PUBLIC_API_URL
+
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(`http://127.0.0.1:8000/api/v1/doctors/detail/${id}`, {
+            let response = await fetch(`${api}/doctors/detail/${id}`, {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
@@ -48,11 +50,11 @@ export default function SingleDoctor({ id }) {
                 <div className={classes.info}>
                     <div>
                         <p>BMDC Number</p>
-                        <span>A-{doctor?.doctor?.bmdc}</span>
+                        <span>{doctor?.doctor?.bmdc}</span>
                     </div>
                     <div>
                         <p>Total Experience</p>
-                        <span>{doctor?.doctor?.exp_year !== null ? doctor?.doctor?.exp_year : 0}+ Years</span>
+                        <span>{doctor?.doctor?.exp_year !== null ? doctor?.doctor?.exp_year : 1}+ Years</span>
                     </div>
                     <div>
                         <p>Total Consultations</p>

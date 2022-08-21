@@ -50,12 +50,13 @@
 .optAllDoc {
     position: absolute;
     background-color: var(--white);
-    width: 91.6%;
+    width: 100%;
     border-radius: 4px;
     padding: 2px 4px;
     overflow-y: auto;
     border: 1px solid var(--light);
     margin-top: 2px;
+    z-index: 10;
 }
 
 .optAllDoc .optSelect {

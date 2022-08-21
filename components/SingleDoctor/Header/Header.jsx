@@ -12,11 +12,13 @@ export default function Header({ doctor }) {
                     <div className={classes.profilePic}>
                         <Image className={classes.img} src={Img} alt="" height={150} width={150} />
                     </div>
-                    <h2>Dr. {doctor?.user?.name}</h2>
+                    <h2>{doctor?.user?.name}</h2>
                     {doctor?.qualifications?.map((qf, i) => (
                         <p key={i}>{qf.qualification}</p>
                     ))}
-                    <p>General Physician</p>
+                    {doctor?.specialities?.map((sp, i) => (
+                        <p key={i}>{sp.speciality}</p>
+                    ))}
                 </div>
             </div>
             <div className={classes.flex}>

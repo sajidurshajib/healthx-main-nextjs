@@ -9,6 +9,10 @@ const DoctorSearch = () => {
     const [search, setSearch] = useState('')
     const [searchHide, setSearchHide] = useState(false)
 
+    const api = process.env.NEXT_PUBLIC_API_URL
+
+    console.log(api)
+
     const searchHandler = (search) => {
         if (search.length > 0) {
             setSearchHide(true)
@@ -22,19 +26,17 @@ const DoctorSearch = () => {
 
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(
-                `http://127.0.0.1:8000/api/v1/doctors/search/?search=${search}&skip=0&limit=10`,
-                {
-                    headers: {
-                        Accept: 'application/json',
-                        'Content-Type': 'application/json',
-                    },
-                    method: 'GET',
-                }
-            )
+            let response = await fetch(`${api}/doctors/search/?search=${search}&skip=0&limit=10`, {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'GET',
+            })
             let data = await response.json()
             if (response.ok) {
                 setDoctors(data)
+                console.log(data)
             } else {
                 console.log('data not fetching')
             }
