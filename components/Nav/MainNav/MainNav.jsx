@@ -13,14 +13,14 @@ const MainNav = () => {
                 </div>
 
                 <div className={classes.center}>
-                    <div className={classes.MenuWrap}>
+                    {/* <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>About</div>
                         <div className={classes.MenuLink}>
                             <a href="#">Mission and Vision</a>
                             <a href="#">Founders</a>
                             <a href="#">Team</a>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>Solutions</div>
                         <div className={classes.MenuLink}>
