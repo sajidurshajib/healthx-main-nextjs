@@ -1,0 +1,24 @@
+.container {
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+/* .testRequirements {
+    margin-top: 60px;
+} */
+
+.testRequirements > span {
+    border-left: 3px solid blue;
+    padding-left: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.testRequirements > div {
+    margin-left: 10px;
+}
+
+@media (max-width: 420px) {
+}

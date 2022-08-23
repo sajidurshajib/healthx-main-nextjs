@@ -14,3 +14,5 @@ export { default as SingleDoctor } from './SingleDoctor/SingleDoctor'
 export { default as MyPlan } from './SinglePlan/MyPlan/MyPlan'
 export { default as FamilyPlan } from './SinglePlan/FamilyPlan/FamilyPlan'
 export { default as Medicine } from './Medicine/Medicine'
+
+export { default as Package } from './Package/Package'
