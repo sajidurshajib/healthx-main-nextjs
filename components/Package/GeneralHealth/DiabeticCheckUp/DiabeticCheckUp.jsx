@@ -4,7 +4,7 @@ import DiaImage from '../../../../assets/diabetic/diabetic.png'
 import Kidneys from '../../../../assets/diabetic/kidneys.png'
 import Liver from '../../../../assets/diabetic/liver.png'
 import Pancreas from '../../../../assets/diabetic/pancreas.png'
-import classes from './CardiacScreening.module.css'
+import classes from './DiabeticCheckUp.module.css'
 import Faq from './Faq/Faq'
 import ForWhom from './ForWhom/ForWhom'
 import HowToAvail from './HowToAvailService/HowToAvail'
@@ -14,7 +14,7 @@ import TestRequirement from './TestRequirements/TestRequirement'
 import WhyImportant from './WhyImportant/WhyImportant'
 import WhyUs from './WhyUs/WhyUs'
 
-export default function CardiacScreening() {
+export default function DiabeticCheckUp() {
     return (
         <div className={classes.container}>
             <div className={classes.wrapper}>
@@ -47,7 +47,7 @@ export default function CardiacScreening() {
                 </div>
 
                 <div>
-                    <Image src={DiaImage} width={620} height={650} />
+                    <Image src={DiaImage} width={660} height={452} />
                 </div>
             </div>
             <div>

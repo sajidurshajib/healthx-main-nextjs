@@ -11,7 +11,7 @@ export default function Medicine() {
         <div className={classes.wrapper}>
             <div className={classes.gridBox}>
                 <div>
-                    <h1>Medicine </h1>
+                    <h1>Medicine Delivery</h1>
                     <p>
                         We deliver authentic and quality medicine and health & hygiene products at your doorstep keeping
                         accordance with standard safety protocol. Now you don’t have to move outside to purchase
@@ -30,7 +30,15 @@ export default function Medicine() {
                     </div>
                 </div>
                 <div>
-                    <Image src={Delivery} height={480} width={520} className={classes.img} alt="" />
+                    <Image
+                        className={classes.bannerImg}
+                        src={Delivery}
+                        layout="responsive"
+                        sizes="(min-width: 75em) 33vw,
+                        (min-width: 48em) 50vw,
+                        100vw"
+                        alt=""
+                    />
                 </div>
             </div>
             <h2>Types of delivery service</h2>

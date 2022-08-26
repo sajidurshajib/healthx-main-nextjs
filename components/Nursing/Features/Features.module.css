@@ -85,8 +85,20 @@
 
 /* For mobile  */
 @media (max-width: 420px) {
+    .wrapper {
+        margin-top: 6em;
+        padding: 10px 40px;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
     .grid {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
+    }
+    .grid > div > div > h2 {
+        font-size: 20px;
     }
 }
