@@ -1,0 +1,34 @@
+.availTheServices {
+    margin-top: 6rem;
+}
+
+.availTheServices h3 {
+    font-size: 24px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+.availTheServices > div {
+    margin-top: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.availTheServices > div > ul > li > p {
+    line-height: 0.8;
+    font-size: 16px;
+}
+
+@media (max-width: 420px) {
+    .availTheServices {
+        margin-top: 3rem;
+    }
+    .availTheServices h3 {
+        font-size: 0.8em;
+    }
+    .availTheServices > div > ul > li > p {
+        line-height: 1.2;
+        font-size: 10px;
+    }
+}

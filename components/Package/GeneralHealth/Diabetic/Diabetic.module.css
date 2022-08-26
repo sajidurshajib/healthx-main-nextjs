@@ -12,6 +12,7 @@
     text-align: center;
     padding: 0 4em;
 }
+
 .gridbox > div h1 {
     color: var(--primary);
     font-weight: 500;
@@ -85,9 +86,20 @@
 
 /* First section Mobile section */
 @media (max-width: 420px) {
-    .gridbox {
+    /* .gridbox {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
+    }
+
+    .restComponent {
+        width: 100%;
+        border: 1px solid orchid;
+        padding-left: 10%;
+        padding-right: 10%;
+    } */
+    .container {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 

@@ -82,3 +82,11 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+/* For mobile  */
+@media (max-width: 420px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}

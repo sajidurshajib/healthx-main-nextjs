@@ -1,0 +1,130 @@
+.container {
+    padding: 20px;
+
+    text-align: justify;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper > div:nth-child(1) {
+    width: 65%;
+    margin-top: 2.5em;
+    text-align: center;
+    padding: 0 4em;
+}
+.wrapper > div:nth-child(2) {
+    width: 35%;
+    margin-top: 2.5em;
+    text-align: center;
+    padding: 0 4em;
+}
+
+.wrapper > div h1 {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.wrapper > div p {
+    color: var(--dark);
+    font-size: 16px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.wrapper > div h2 {
+    color: var(--primary);
+    font-size: 22px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.wrapper div > span > p {
+    font-size: 16px;
+    margin-top: 0px;
+    font-weight: 400px;
+}
+
+.wrapper > div > div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper > div > div > p {
+    padding-left: 6px;
+    padding-right: 80px;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+.wrapper > div > div:nth-child(even) {
+    text-align: center;
+}
+
+.wrapper > div button {
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px 40px;
+}
+
+.wrapper > div button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 240ms;
+}
+
+.container > div:nth-child(2) {
+    margin-top: 35px;
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .wrapper > div > h1 {
+        font-size: 0.8rem;
+    }
+    .wrapper > div h2 {
+        font-size: 0.8rem;
+    }
+    .wrapper > div > p {
+        font-size: 10px;
+    }
+    .wrapper > div button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    .wrapper div > span > p {
+        font-size: 10px;
+    }
+    .wrapper > div:nth-child(1) {
+        width: 100%;
+        margin: -10px;
+    }
+    .wrapper > div:nth-child(1) > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper > div > div > p {
+        font-size: 10px;
+    }
+
+    .wrapper > div:nth-child(1) > div > p {
+        margin-left: 40%;
+    }
+    .wrapper > div:nth-child(2) {
+        width: 100%;
+        margin-top: 1em;
+        text-align: center;
+        padding: 0.2em;
+    }
+}

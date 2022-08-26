@@ -11,7 +11,7 @@ export default function Medicine() {
         <div className={classes.wrapper}>
             <div className={classes.gridBox}>
                 <div>
-                    <h1>Medicine Delivery</h1>
+                    <h1>Medicine </h1>
                     <p>
                         We deliver authentic and quality medicine and health & hygiene products at your doorstep keeping
                         accordance with standard safety protocol. Now you don’t have to move outside to purchase
