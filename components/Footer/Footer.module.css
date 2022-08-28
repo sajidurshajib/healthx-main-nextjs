@@ -24,6 +24,7 @@
     top: -150px;
     padding: 15px;
     cursor: pointer;
+    /* margin-bottom: 105px; */
 }
 .footerWrapper > .footerContact div {
     text-align: center;
@@ -126,5 +127,21 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 30px;
+    }
+}
+
+/* For phone view  */
+@media (max-width: 420px) {
+    .Footer {
+        margin-top: 220px;
+    }
+    .footerWrapper > .footerContact div {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .footerWrapper > .footerContact {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+        top: -240px;
     }
 }

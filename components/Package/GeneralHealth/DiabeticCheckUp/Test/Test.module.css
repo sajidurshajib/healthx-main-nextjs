@@ -1,0 +1,154 @@
+.Test {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.Test > h3 {
+    font-size: 24px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.gridFour {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0em;
+    grid-gap: 10px;
+}
+
+.table {
+    background-color: var(--white);
+    display: inline-block;
+    padding: 0px 20px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--light);
+    box-shadow: 1px 2px 4px var(--light);
+    border-top: 4px solid var(--secondary);
+}
+
+.table:hover {
+    transform: translateY(-1em);
+    transition: 300ms;
+    box-shadow: 10px 20px 30px var(--light);
+}
+
+.table:not(:last-of-type) {
+    margin-right: 3%;
+}
+
+.table:nth-of-type(2) {
+    position: relative;
+}
+
+.table:nth-of-type(2):before {
+    /* content: 'Most Popular'; */
+    position: absolute;
+    color: var(--white);
+    display: block;
+    background-color: var(--secondary);
+    text-align: center;
+    right: 15px;
+    top: -25px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 0.6em;
+    padding-top: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    transition: all 0.5s ease;
+}
+
+.tableHeader {
+    font-size: 1.4em;
+    padding: 40px 0px;
+    border-bottom: 2px solid var(--light);
+    letter-spacing: 0.03em;
+    color: var(--dark);
+}
+
+.tableOptions {
+    list-style: none;
+    padding: 0px;
+    padding-bottom: 14px;
+    font-size: 0.9em;
+    border-bottom: 2px solid var(--light);
+    margin-top: -14px;
+}
+
+.tableOptions > li {
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.tableOptions > li:before {
+    content: '✓';
+    display: inline-flex;
+    margin-right: 15px;
+    color: var(--white);
+    background-color: var(--secondary);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 1em;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableStart {
+    color: var(--white);
+    border: 0;
+    background-color: var(--secondary);
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 16px;
+    letter-spacing: 0.07em;
+    transition: all 0.4s ease;
+}
+
+.tableStart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 40px 29px -19px rgba(108, 182, 213, 0.9);
+}
+
+.tableStart:active {
+    box-shadow: inset 0 0 10px 1px #68abc7, 0px 40px 29px -19px rgba(104, 171, 210, 0.95);
+    transform: scale(0.95) translateY(-9px);
+}
+
+@media (max-width: 420px) {
+    .Test {
+        margin-top: 3rem;
+    }
+    .Test > h3 {
+        font-size: 0.8rem;
+    }
+    .gridThree {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+    .tableHeader {
+        font-size: 0.8rem;
+    }
+    .tableOptions li {
+        font-size: 10px;
+    }
+}

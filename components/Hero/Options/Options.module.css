@@ -29,6 +29,16 @@
         width: 750px;
     }
 }
+
+@media (max-width: 420px) {
+    .OptionsWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .OptionsWrapper > div {
+        width: 100%;
+    }
+}
 @media (min-width: 992px) {
     .container {
         width: 970px;

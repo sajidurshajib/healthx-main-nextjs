@@ -33,7 +33,15 @@ export default function Nursing() {
                     <button>Book Now!</button>
                 </div>
                 <div>
-                    <Image src={Nurse} height={410} width={600} className={classes.img} alt="" />
+                    <Image
+                        src={Nurse}
+                        layout="responsive"
+                        sizes="(min-width: 75em) 33vw,
+                        (min-width: 48em) 50vw,
+                        100vw"
+                        alt=""
+                        className={classes.img}
+                    />
                 </div>
             </div>
             <h2>Why Nursing & Attendant Service</h2>

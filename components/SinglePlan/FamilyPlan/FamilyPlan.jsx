@@ -40,6 +40,7 @@ export default function FamilyPlan() {
                     family members with a dedicated family doctor support online 24x7! With a simple monthly
                     subscription, any members of the family can talk to his/her dedicated family doctor online - 24x7.
                 </p>
+
                 <ul className={classes.gridFour}>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>1 Month Plan</h1>

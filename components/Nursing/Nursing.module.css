@@ -5,16 +5,16 @@
 
 .gridBox {
     display: grid;
-    grid-template-columns: 2fr 1.3fr;
-    margin-top: 1em;
+    grid-template-columns: 2fr 1.2fr;
 }
 
 .gridBox > div:nth-child(1) {
-    margin-top: 2em;
     text-align: center;
-    padding: 0 4em;
+    padding: 30px;
 }
-
+.gridBox > div:nth-child(2) {
+    padding: 40px 20px 20px 70px;
+}
 .gridBox > div > h1 {
     color: var(--primary);
     font-weight: 500;
@@ -98,4 +98,49 @@
 
 .service > div > div {
     margin-bottom: 10px;
+}
+
+/* Mobile responsive  */
+@media (max-width: 420px) {
+    .wrapper {
+        width: 130%;
+        margin: 0 auto;
+    }
+    .gridBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gridBox > div:nth-child(1) {
+        text-align: center;
+        padding: 30px;
+        order: 1;
+    }
+    .gridBox > div:nth-child(2) {
+        padding: 40px 20px 20px 70px;
+        order: -1;
+    }
+
+    .gridBox > div > h1 {
+        font-size: 1.2rem;
+    }
+
+    .gridBox > div > p {
+        font-size: 14px;
+    }
+
+    .gridBox > div > span {
+        font-size: 14px;
+    }
+
+    .service {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .wrapper > h2 {
+        font-size: 1.2rem;
+    }
+
+    .wrapper > p {
+        font-size: 14px;
+    }
 }

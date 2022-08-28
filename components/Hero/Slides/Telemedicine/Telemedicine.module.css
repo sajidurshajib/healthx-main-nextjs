@@ -59,3 +59,29 @@
         width: 1170px;
     }
 }
+
+@media (max-width: 420px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid > div:nth-child(1) {
+        order: 1;
+    }
+    .grid > div:nth-child(2) {
+        order: -1;
+        margin: 0 auto;
+        padding: 60px 50px;
+    }
+    .Wrapper {
+        margin-top: 0;
+    }
+    .Wrapper > h2 {
+        font-weight: 400;
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    .Wrapper > p {
+        text-align: center;
+    }
+}
