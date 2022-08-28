@@ -124,16 +124,17 @@
         margin-top: 1em;
     }
     .gridBox > div > h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .gridBox > div > p {
         font-size: 12px;
     }
     .wrapper h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.1rem;
+        margin-top: 3.7rem;
     }
 
     .gridBox > div > div {

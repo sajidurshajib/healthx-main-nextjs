@@ -137,3 +137,13 @@
     visibility: visible;
     transform: translateY(55px);
 }
+
+@media (max-width: 420px) {
+    .MainNav > .Wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Wrapper > .center {
+        display: none;
+    }
+}

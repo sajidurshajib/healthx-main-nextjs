@@ -69,3 +69,16 @@
     background-color: var(--light);
     color: var(--secondary);
 }
+
+@media (max-width: 420px) {
+    .searchDoctor {
+        background: none;
+        left: 0;
+        top: 0;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -382,8 +382,8 @@
     .tablePricing {
         float: none;
         width: 100%;
-        font-size: 3em;
-        margin-bottom: 10px;
+        font-size: 1.8em;
+        /* margin-bottom: 10px; */
     }
 }
 @media screen and (max-width: 1068px) {
@@ -482,5 +482,85 @@
     .tableStart:active {
         transform: scale(0.95) translateY(0);
         box-shadow: none;
+    }
+
+    /* for mobile view */
+
+    @media (max-width: 420px) {
+        .pricingTable .subtitle {
+            text-align: left;
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+        .pricingTable .header {
+            margin-top: 2em;
+        }
+        .pricingTable .info {
+            margin-top: 2em;
+        }
+        .pricingTable .headerFlex {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 2px;
+        }
+
+        .headerFlex > div:nth-child(1) {
+            order: 1;
+        }
+        .headerFlex > div:nth-child(2) {
+            order: -1;
+        }
+        .pricingTable .title {
+            font-size: 1.4em;
+        }
+        /* For header List items */
+        .list > li {
+            padding: 0 20px;
+        }
+
+        /* {***** Basic Section********} */
+
+        .pricingTable .infoText {
+            padding: 0 14px;
+        }
+        .pricingTable .info > span {
+            font-size: 0.9em;
+        }
+        .tableHeader {
+            font-size: 1.2em;
+        }
+        .tablePricing {
+        }
+        /* 
+        ** Four Grids ** */
+        .gridFour {
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .gridThree {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 10px 20px;
+        }
+        .list {
+            display: block;
+        }
+
+        .details {
+            margin: 10px 25px;
+        }
+
+        .details > div > span {
+            font-size: 1.2rem;
+        }
+
+        .details > div > ul > li {
+            font-size: 14px;
+        }
+
+        /* button */
+        .tableStart {
+            font-size: 12px;
+            width: auto;
+        }
     }
 }

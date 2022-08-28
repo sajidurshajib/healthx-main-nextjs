@@ -4,7 +4,7 @@ import { MainNav, MyPlan } from '../components'
 export default function my_plan() {
     return (
         <div>
-            <MainNav />
+            {/* <MainNav /> */}
             <MyPlan />
         </div>
     )

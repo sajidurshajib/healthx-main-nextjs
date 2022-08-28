@@ -81,4 +81,16 @@
         grid-gap: 30px;
         padding: 2em;
     }
+
+    .wrapper .title {
+        margin-bottom: 2rem;
+        font-size: 1.4em;
+    }
+
+    .whyContainer > div > .Counter {
+        font-size: 0.8em;
+    }
+    .whyContainer > div > p {
+        font-size: 0.8em;
+    }
 }

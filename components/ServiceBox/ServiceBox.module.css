@@ -115,3 +115,34 @@
 .box .wrap:after {
     background-color: var(--secondary);
 }
+
+@media (max-width: 420px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        margin-top: 4rem;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 40px;
+        grid-gap: 2em;
+    }
+    .wrapper .title {
+        font-size: 1.4em;
+    }
+    .service .box .title {
+        font-size: 1.2em;
+    }
+    .service .box span {
+        font-size: 12px;
+    }
+    .service .box .show {
+        font-size: 12px;
+    }
+
+    .service .box button {
+        font-size: 0.6em;
+        padding: 6px 12px;
+    }
+}

@@ -26,7 +26,6 @@ export default function Home() {
             <Head>
                 <title>HEALTHx</title>
             </Head>
-
             <MainNav />
             <Hero />
             <ServiceBox />

@@ -120,3 +120,34 @@
 .wrapper .dots > span:nth-child(1) {
     background-color: var(--grey);
 }
+
+/* for mobile view */
+@media (max-width: 420px) {
+    .wrapper {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wrapper .title {
+        font-size: 1.4em;
+    }
+
+    .sliderLeft {
+        display: none;
+    }
+    .sliderRight {
+        display: none;
+    }
+    .containerFlex > div h6 {
+        font-size: 1.2em;
+    }
+    .containerFlex > div p {
+        font-size: 12px;
+    }
+    .containerFlex {
+        min-height: 350px;
+    }
+}

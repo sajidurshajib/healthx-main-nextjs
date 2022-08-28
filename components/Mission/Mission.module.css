@@ -93,3 +93,32 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* For Mobile view  */
+@media (max-width: 420px) {
+    .mainGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mainGrid .content > span {
+        font-size: 1.8em;
+    }
+    .mainGrid .content > span > span {
+        margin-left: 2.2em;
+    }
+    .mainGrid .content {
+        padding: 0;
+    }
+    .mainGrid .content > a {
+        padding: 5px;
+    }
+    .mainGrid .content > a {
+        display: inline;
+    }
+    .mainGrid .content {
+        text-align: center;
+        margin-top: 0;
+    }
+    .mainGrid .content > span {
+        font-size: 1.4em;
+    }
+}
