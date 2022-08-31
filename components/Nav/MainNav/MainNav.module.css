@@ -8,6 +8,16 @@
     top: 0;
 }
 
+/* ****** /newly addes /********** */
+.toggleBar {
+    display: none;
+}
+.extra {
+    display: none;
+}
+
+/* ****** /newly addes /********** */
+
 .MainNav > .Wrapper {
     display: grid;
     grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
@@ -139,11 +149,90 @@
 }
 
 @media (max-width: 420px) {
+    .toggleBar {
+        display: initial;
+
+        /* position: absolute; */
+        margin-top: 10px;
+        padding-top: 14px;
+        color: blue;
+    }
     .MainNav > .Wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .Wrapper > .center {
         display: none;
+    }
+    .Wrapper > .right {
+        display: none;
+    }
+    .icon {
+        height: 25px;
+        width: 25px;
+        margin-left: 25px;
+    }
+
+    .extra {
+        display: initial;
+        position: fixed;
+        display: flex;
+
+        flex-direction: column;
+        margin-top: 0px;
+
+        grid-gap: 15px;
+        background: white;
+        width: 100%;
+        padding: 25px;
+    }
+    .extra > div:nth-child(1) {
+        width: 30%;
+        margin-left: -10px;
+    }
+    .MenuSignin {
+        padding: 10px 13px;
+    }
+
+    .MenuLink {
+        margin-left: 100px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .toggleBar:hover > .sidebar {
+        display: block;
+        margin-left: -15px;
+        position: absolute;
+        background-color: var(--primary);
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 30px;
+    }
+    .option > p {
+        color: var(--white);
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .value {
+        display: none;
+        background-color: var(--light);
+        padding-bottom: 1px;
+        padding-top: 1px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+    .value > p {
+        color: var(--primary);
+        font-size: 15px;
+        padding-left: 50px;
+        padding-top: 4px;
+    }
+
+    .option:hover > .value {
+        display: block;
+        margin-left: -30px;
     }
 }
