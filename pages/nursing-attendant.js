@@ -5,7 +5,7 @@ import Nursing from '../components/Nursing/Nursing'
 export default function nursing_attendant() {
     return (
         <div>
-            {/* <MainNav /> */}
+            <MainNav />
             <Nursing />
         </div>
     )

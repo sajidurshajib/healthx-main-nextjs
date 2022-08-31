@@ -4,7 +4,7 @@ import { MainNav, Medicine } from '../components'
 export default function medicine_delivery() {
     return (
         <div>
-            {/* <MainNav /> */}
+            <MainNav />
             <Medicine />
         </div>
     )
