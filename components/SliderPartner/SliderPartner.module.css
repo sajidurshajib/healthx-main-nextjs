@@ -80,5 +80,10 @@
 @media (max-width: 420px) {
     .wrapper .title {
         font-size: 1.4em;
+        margin: 3em auto;
+        margin-bottom: 1rem;
+    }
+    .slider {
+        height: 90px;
     }
 }
