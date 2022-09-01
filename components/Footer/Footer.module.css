@@ -144,4 +144,20 @@
         padding: 10px;
         top: -240px;
     }
+
+    .footerColumn > .Heading {
+        font-size: 16px;
+    }
+    .footerColumn > .Item a {
+        font-size: 13px;
+    }
+
+    .footerCopyright {
+        margin-top: 40px;
+    }
+
+    /* .hlogo > Image {
+        height: 60px;
+        width: 80px;
+    } */
 }

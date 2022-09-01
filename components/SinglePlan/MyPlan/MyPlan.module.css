@@ -571,4 +571,18 @@
     .tableOptions {
         margin-top: 5px;
     }
+    .tableOptions li {
+        text-align: left;
+    }
+    /* ..../............ */
+    .table:nth-of-type(2):before {
+        font-size: 0.5em;
+    }
+    .table:nth-of-type(2):before {
+        left: 8px;
+        width: 55px;
+        height: 50px;
+        top: -6px;
+        padding-top: 13px;
+    }
 }

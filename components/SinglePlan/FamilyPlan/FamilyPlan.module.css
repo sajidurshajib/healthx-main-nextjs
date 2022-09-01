@@ -530,9 +530,9 @@
         font-size: 1.2em;
     }
     .tablePricing {
+        font-size: 2em;
     }
-    /* 
-        ** Four Grids ** */
+    /* ** Four Grids ** */
     .gridFour {
         padding: 0;
         grid-template-columns: repeat(1, 1fr);
@@ -562,5 +562,23 @@
     .tableStart {
         font-size: 12px;
         width: auto;
+    }
+    .tablePricing span:last-of-type {
+        font-size: 0.45em;
+    }
+    .tableOptions li {
+        text-align: left;
+    }
+
+    /* ..../............ */
+    .table:nth-of-type(2):before {
+        font-size: 0.5em;
+    }
+    .table:nth-of-type(2):before {
+        left: 8px;
+        width: 55px;
+        height: 50px;
+        top: -6px;
+        padding-top: 13px;
     }
 }

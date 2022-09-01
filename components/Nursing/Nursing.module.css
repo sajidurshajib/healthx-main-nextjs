@@ -9,12 +9,15 @@
 }
 
 .gridBox > div:nth-child(1) {
+    margin-top: 2em;
     text-align: center;
-    padding: 30px;
+    padding: 0 4em;
 }
+
 .gridBox > div:nth-child(2) {
     padding: 40px 20px 20px 70px;
 }
+
 .gridBox > div > h1 {
     color: var(--primary);
     font-weight: 500;
@@ -103,11 +106,15 @@
 /* Mobile responsive  */
 @media (max-width: 420px) {
     .wrapper {
-        width: 130%;
+        /* width: 130%; */
         margin: 0 auto;
     }
     .gridBox {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service {
+        padding: 2px 6em;
     }
 
     .gridBox > div:nth-child(1) {
