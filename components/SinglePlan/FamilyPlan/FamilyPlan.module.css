@@ -382,8 +382,8 @@
     .tablePricing {
         float: none;
         width: 100%;
-        font-size: 1.8em;
-        /* margin-bottom: 10px; */
+        font-size: 3em;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 1068px) {
@@ -469,7 +469,7 @@
     .tableStart {
         font-size: 1em;
         width: 50%;
-        margin: 10px auto;
+        margin: 4px auto;
     }
 }
 @media screen and (max-width: 767px) {
@@ -485,8 +485,7 @@
     }
 }
 
-/* for mobile view */
-
+/* For mobile view  */
 @media (max-width: 420px) {
     .pricingTable .subtitle {
         text-align: left;
@@ -497,7 +496,10 @@
         margin-top: 2em;
     }
     .pricingTable .info {
-        margin-top: 2em;
+        margin-top: 1.7em;
+    }
+    .pricingTable .infoText {
+        text-align: justify;
     }
     .pricingTable .headerFlex {
         grid-template-columns: repeat(1, 1fr);
@@ -522,14 +524,17 @@
 
     .pricingTable .infoText {
         padding: 0 14px;
+        line-height: 1.5;
     }
     .pricingTable .info > span {
         font-size: 0.9em;
     }
     .tableHeader {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .tablePricing {
+        font-size: 2em;
+        margin-top: 7px;
     }
     /* 
         ** Four Grids ** */
@@ -556,11 +561,48 @@
 
     .details > div > ul > li {
         font-size: 14px;
+        margin-left: -24px;
+        padding: 4px 0;
     }
 
     /* button */
     .tableStart {
         font-size: 12px;
         width: auto;
+    }
+
+    .tablePricing span:last-of-type {
+        font-size: 0.45em;
+    }
+
+    .tableOptions {
+        margin-top: 15px;
+    }
+    .tableOptions li {
+        text-align: left;
+        padding: 12px 0;
+    }
+    /* ..../............ */
+    .table:nth-of-type(2):before {
+        font-size: 0.5em;
+    }
+    .table:nth-of-type(2):before {
+        left: 8px;
+        width: 55px;
+        height: 50px;
+        top: -16px;
+        padding-top: 13px;
+    }
+    .table > h1 {
+        margin-bottom: 20px;
+    }
+
+    .table > p {
+        margin-bottom: 20px;
+    }
+
+    /* for shifting left coverage and offer details */
+    .details > div {
+        margin-left: -15px;
     }
 }
