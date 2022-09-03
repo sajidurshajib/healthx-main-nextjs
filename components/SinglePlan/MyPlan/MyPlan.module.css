@@ -561,7 +561,7 @@
 
     .details > div > ul > li {
         font-size: 14px;
-        margin-left: -20px;
+        margin-left: -24px;
         padding: 3px 0;
     }
 
@@ -582,6 +582,7 @@
         text-align: left;
         padding: 12px 0;
     }
+
     /* ..../............ */
     .table:nth-of-type(2):before {
         font-size: 0.5em;
@@ -593,6 +594,14 @@
         top: -16px;
         padding-top: 13px;
     }
+    .table > h1 {
+        margin-bottom: 20px;
+    }
+
+    .table > p {
+        margin-bottom: 20px;
+    }
+
     /* for shifting left coverage and offer details */
     .details > div {
         margin-left: -15px;

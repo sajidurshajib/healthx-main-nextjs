@@ -561,8 +561,8 @@
 
     .details > div > ul > li {
         font-size: 14px;
-        margin-left: -20px;
-        padding: 3px 0;
+        margin-left: -24px;
+        padding: 4px 0;
     }
 
     /* button */
@@ -593,6 +593,14 @@
         top: -16px;
         padding-top: 13px;
     }
+    .table > h1 {
+        margin-bottom: 20px;
+    }
+
+    .table > p {
+        margin-bottom: 20px;
+    }
+
     /* for shifting left coverage and offer details */
     .details > div {
         margin-left: -15px;
