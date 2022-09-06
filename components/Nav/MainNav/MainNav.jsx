@@ -14,14 +14,12 @@ const MainNav = () => {
                     <FontAwesomeIcon className={classes.icon} icon={faBars} />
                     <div className={classes.sidebar}>
                         <div className={classes.option}>
-                            <p>SignIn</p>
+                            <p>Sign in</p>
                             <div className={classes.value}>
                                 <p>
-                                    {' '}
                                     <a href="https://doc.healthxbd.com">Smart Doctor</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="https://user.healthxbd.com">My Health Portal</a>
                                 </p>
                             </div>
@@ -30,14 +28,12 @@ const MainNav = () => {
                             <p>About</p>
                             <div className={classes.value}>
                                 <p>
-                                    {' '}
                                     <a href="#">Mission and Vision</a>
                                 </p>
                                 <p>
-                                    <a href="#">Founders</a>{' '}
+                                    <a href="#">Founders</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="#">Team</a>
                                 </p>
                             </div>
@@ -47,15 +43,12 @@ const MainNav = () => {
                             <p>Solutions</p>
                             <div className={classes.value}>
                                 <p>
-                                    {' '}
                                     <a href="https://user.healthxbd.com">For Patient</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="https://doc.healthxbd.com">For Doctor</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
                                 </p>
                             </div>
@@ -64,11 +57,9 @@ const MainNav = () => {
                             <p>HealthPlans</p>
                             <div className={classes.value}>
                                 <p>
-                                    {' '}
                                     <a href="my-plan">My Health Plan</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="family-plan">Family Health Plan</a>
                                 </p>
                             </div>
@@ -77,11 +68,9 @@ const MainNav = () => {
                             <p>Services</p>
                             <div className={classes.value}>
                                 <p>
-                                    {' '}
                                     <a href="nursing-attendant">Nursing/Attendant</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="medicine-delivery">Medicine Delivery</a>
                                 </p>
                             </div>
@@ -90,11 +79,9 @@ const MainNav = () => {
                             <p>Media</p>
                             <div className={classes.value}>
                                 <p>
-                                    {' '}
                                     <a href="#">News and Media</a>
                                 </p>
                                 <p>
-                                    {' '}
                                     <a href="#">Healthx Blog</a>
                                 </p>
                             </div>
@@ -149,7 +136,7 @@ const MainNav = () => {
 
                 <div className={classes.right}>
                     <div className={classes.MenuWrap}>
-                        <div className={classes.MenuSignin}>Signin</div>
+                        <div className={classes.MenuSignin}>Sign in</div>
                         <div className={classes.SigninLink}>
                             <a href="https://doc.healthxbd.com">Smart Doctor</a>
                             <a href="https://user.healthxbd.com">My Health Portal</a>
