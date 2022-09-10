@@ -3,7 +3,7 @@
     margin-top: 10px;
     display: grid;
     grid-template-columns: 1.7fr 2fr;
-    background-color: var(--light);
+    background-color: var(--dark-light);
 }
 
 .wrapper > div:nth-child(1) {
@@ -27,7 +27,7 @@
 }
 
 .card > div {
-    border: 1px solid var(--light);
+    /* border: 1px solid var(--light); */
     padding: 25px 20px 4px;
     border-radius: 10px;
     border-top: 4px solid var(--primary);

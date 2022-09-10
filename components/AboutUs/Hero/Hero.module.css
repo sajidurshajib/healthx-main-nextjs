@@ -4,7 +4,8 @@
 .gridBox {
     display: grid;
     grid-template-columns: 2fr 1.7fr;
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
+    background-image: linear-gradient(to right, var(--dark-blue), var(--dark-blue), var(--blue1), var(--blue1));
     padding-bottom: 30px;
 }
 
@@ -58,7 +59,7 @@
 
 .option > div {
     border: 2px solid var(--light);
-    padding: 45px 35px 25px;
+    padding: 30px 28px 25px;
     border-radius: 10px;
     border-bottom: 4px solid var(--primary);
     transition: 200ms;
