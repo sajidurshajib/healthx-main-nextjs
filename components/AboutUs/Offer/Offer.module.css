@@ -1,0 +1,101 @@
+.wrapper {
+    padding: 10px 55px 40px 25px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1.7fr 2fr;
+    background-color: var(--light);
+}
+
+.wrapper > div:nth-child(1) {
+    padding: 0 20px;
+
+    margin-top: 140px;
+}
+
+.wrapper > div > h2 {
+    text-align: center;
+    color: var(--primary);
+}
+.wrapper > div > p {
+    text-align: center;
+    color: var(--dark);
+}
+.card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+}
+
+.card > div {
+    border: 1px solid var(--light);
+    padding: 25px 20px 4px;
+    border-radius: 10px;
+    border-top: 4px solid var(--primary);
+    transition: 200ms;
+}
+
+.card > div:nth-child(3) {
+    padding: 25px 20px 16px;
+}
+
+.card > div:hover {
+    transform: translateY(-6px);
+    transition: 200ms;
+    box-shadow: 2px 4px 6px var(--light);
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+}
+.wrap > div:nth-child(1) {
+    margin-top: 35px;
+}
+
+.sector {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 450;
+    color: var(--primary);
+}
+.txt {
+    text-align: center;
+    font-size: 14px;
+    color: var(--dark);
+    padding: 0 50px;
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrapper > div > p {
+        font-size: 14px;
+    }
+
+    .wrapper > div > h2 {
+        margin-bottom: -10px;
+        font-size: 20px;
+    }
+
+    .wrapper > div:nth-child(1) {
+        padding: 0;
+    }
+    .card > div {
+        padding: 6px 12px 14px;
+    }
+
+    .txt {
+        font-size: 12px;
+    }
+
+    .txt2 {
+        font-size: 20px;
+    }
+}

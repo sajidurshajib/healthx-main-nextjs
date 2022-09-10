@@ -1,0 +1,127 @@
+.wrapper {
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 2fr 1.7fr;
+    background-color: var(--dark-blue);
+    padding-bottom: 30px;
+}
+
+.gridBox > div:nth-child(1) {
+    margin-top: 7em;
+    text-align: center;
+    padding-left: 6.5em;
+
+    /* order: 1; */
+}
+.gridBox > div:nth-child(2) {
+    margin-top: 2.5em;
+    text-align: center;
+    padding-left: 7em;
+}
+
+/* .gridBox > div:nth-child(2) {
+    order: -1;
+} */
+.bannerImg {
+    height: 20px;
+    width: auto;
+}
+
+.gridBox > div > h1 {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.gridBox > div > h2 {
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.gridBox > div > p {
+    color: var(--white);
+    font-size: 15px;
+    text-align: justify;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 80px;
+    margin: 10px 25px;
+    grid-gap: 20px;
+}
+
+.option > div {
+    border: 2px solid var(--light);
+    padding: 45px 35px 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--primary);
+    transition: 200ms;
+}
+
+.option > div > div {
+    text-align: center;
+    border: 2px solid gray;
+    width: 15%;
+    margin: 0 auto;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+
+.option > div > p {
+    font-size: 13px;
+    color: var(--dark);
+    margin-top: 10px;
+    text-align: center;
+}
+.option > div:hover {
+    transform: translateY(-6px);
+    transition: 200ms;
+    box-shadow: 2px 4px 6px var(--light);
+}
+
+/* for mobile view */
+@media (max-width: 420px) {
+    .wrapper {
+        padding: 2px;
+    }
+
+    .gridBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gridBox > div:nth-child(1) {
+        order: 1;
+        padding: 1em 1.3em;
+        margin-top: -1em;
+    }
+    .gridBox > div:nth-child(2) {
+        order: -1;
+        padding: 1em 0.2em;
+    }
+
+    .gridBox > div > p {
+        font-size: 14px;
+    }
+
+    .option {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin: 0;
+        padding: 0px 18px;
+    }
+
+    .gridBox > div > h1 {
+        font-size: 20px;
+    }
+
+    .gridBox > div > h2 {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+}

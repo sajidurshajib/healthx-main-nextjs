@@ -13,7 +13,7 @@ export { default as StrategicPartner } from './StrategicPartner/StrategicPartner
 export { default as SingleDoctor } from './SingleDoctor/SingleDoctor'
 export { default as MyPlan } from './SinglePlan/MyPlan/MyPlan'
 export { default as FamilyPlan } from './SinglePlan/FamilyPlan/FamilyPlan'
+export { default as MyPlanB } from './SinglePlan/MyPlanB/MyPlanB'
 export { default as Medicine } from './Medicine/Medicine'
 export { default as Package } from './Package/Package'
-
-
+export { default as AboutUs } from './AboutUs/AboutUs'
