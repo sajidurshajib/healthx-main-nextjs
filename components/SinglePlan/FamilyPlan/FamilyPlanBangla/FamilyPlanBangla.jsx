@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import VioletIcon from '../../../../assets/plan/CurvedArrow.png'
+import DownArrow from '../../../../assets/plan/blueDownArrow.png'
 import ButtonClick from '../../../../assets/plan/buttonClick.png'
 import PinkIcon from '../../../../assets/plan/downArrow.png'
 // import Clock from '../../../../assets/plan/Clock.png'
@@ -9,10 +10,10 @@ import AllMembers from '../../../../assets/plan/fianl3.png'
 import Phone from '../../../../assets/plan/final1.png'
 import Clock from '../../../../assets/plan/final2.png'
 import Doctor from '../../../../assets/plan/final4.png'
-// import Family from '../../../assets/plan/myplan.png'
-import Family from '../../../../assets/plan/finalDoctor.png'
 import ConnectingDoctor from '../../../../assets/plan/healthCalling.png'
 import Manager from '../../../../assets/plan/manager.png'
+// import Family from '../../../assets/plan/myplan.png'
+import Family from '../../../../assets/plan/onlineMeeting.png'
 // import Phone from '../../../../assets/plan/ringingPhone.png'
 import classes from './FamilyPlanBangla.module.css'
 
@@ -60,7 +61,7 @@ export default function FamilyPlanBangla() {
                         </div>
                     </div>
                     <div className={classes.imgContainer}>
-                        <Image src={Family} width={540} height={390} />
+                        <Image src={Family} width={550} height={300} />
                     </div>
                 </div>
                 {/******************************** Middle Part *************************************/}
@@ -174,8 +175,14 @@ export default function FamilyPlanBangla() {
                         </div>
                         <p> “প্ল্যানটি কিনুন” বাটনে ক্লিক করে রেজিস্ট্রেশন করুন, অথবা স্ক্রিনে দেয়া নাম্বারে কল করুন</p>
                     </div>
+
                     <div>
-                        <Image src={VioletIcon} width={150} height={95} />
+                        <div>
+                            <Image src={VioletIcon} width={150} height={95} />
+                        </div>
+                        <div>
+                            <Image src={DownArrow} width={60} height={65} />
+                        </div>
                     </div>
                     <div>
                         <div>
@@ -183,9 +190,16 @@ export default function FamilyPlanBangla() {
                         </div>
                         <p> আমাদের নিবেদিত হেলথ ম্যানেজার আপনার হেলথ প্ল্যানটি একটিভেট করে দিবেন</p>
                     </div>
+
                     <div>
-                        <Image src={PinkIcon} width={150} height={135} />
+                        <div>
+                            <Image src={PinkIcon} width={150} height={135} />
+                        </div>
+                        <div>
+                            <Image src={DownArrow} width={60} height={65} />
+                        </div>
                     </div>
+
                     <div>
                         <div>
                             <Image src={ConnectingDoctor} width={60} height={60} />
