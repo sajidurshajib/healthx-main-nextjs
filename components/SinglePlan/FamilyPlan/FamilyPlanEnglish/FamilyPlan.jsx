@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Family from '../../../assets/plan/family.png'
+import Family from '../../../../assets/plan/family.png'
 import classes from './FamilyPlan.module.css'
-import FamilyPlanBangla from './FamilyPlanBangla/FamilyPlanBangla'
+
+// import FamilyPlanBangla from './FamilyPlanBangla/FamilyPlanBangla'
 
 export default function FamilyPlan() {
     return (

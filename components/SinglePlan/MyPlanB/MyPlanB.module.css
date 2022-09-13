@@ -12,6 +12,7 @@
     grid-gap: 10px;
     margin-left: 4em;
     padding-right: 1em;
+    padding-bottom: 50px;
 }
 
 .pricingTable .header {
@@ -115,7 +116,7 @@
 }
 
 .table:nth-of-type(2):before {
-    content: 'Most Popular';
+    content: '২৯৯/-';
     position: absolute;
     color: var(--white);
     display: block;

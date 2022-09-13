@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap');
+
 .wrapper {
     padding: 40px 0px;
+    font-family: 'Noto Sans Bengali', sans-serif;
 }
 
 .pricingTable {
@@ -513,7 +516,7 @@
     .headerFlex > div:nth-child(1) {
         order: 1;
     }
-    
+
     .headerFlex > div:nth-child(2) {
         order: -1;
     }
@@ -604,7 +607,7 @@
         top: -16px;
         padding-top: 13px;
     }
-     
+
     .table > h1 {
         margin-bottom: 20px;
     }
