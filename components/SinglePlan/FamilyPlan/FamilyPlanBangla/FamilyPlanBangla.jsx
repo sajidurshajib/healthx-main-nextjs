@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import VioletIcon from '../../../../assets/plan/CurvedArrow.png'
+import FooterImg4 from '../../../../assets/plan/Nursing.png'
+import LastImg from '../../../../assets/plan/NursingAndAttendence.png'
 import DownArrow from '../../../../assets/plan/blueDownArrow.png'
 import ButtonClick from '../../../../assets/plan/buttonClick.png'
 import PinkIcon from '../../../../assets/plan/downArrow.png'
@@ -11,9 +13,14 @@ import Phone from '../../../../assets/plan/final1.png'
 import Clock from '../../../../assets/plan/final2.png'
 import Doctor from '../../../../assets/plan/final4.png'
 import ConnectingDoctor from '../../../../assets/plan/healthCalling.png'
+import DotLeftArrow from '../../../../assets/plan/leftbuleArrow.png'
 import Manager from '../../../../assets/plan/manager.png'
+import FooterImg2 from '../../../../assets/plan/medicineDelivery.png'
+import FooterImg1 from '../../../../assets/plan/onlineDoctor.png'
 // import Family from '../../../assets/plan/myplan.png'
 import Family from '../../../../assets/plan/onlineMeeting.png'
+import FooterImg5 from '../../../../assets/plan/pharmacisht2.png'
+import FooterImg3 from '../../../../assets/plan/sampleCollection2.png'
 // import Phone from '../../../../assets/plan/ringingPhone.png'
 import classes from './FamilyPlanBangla.module.css'
 
@@ -178,7 +185,7 @@ export default function FamilyPlanBangla() {
 
                     <div>
                         <div>
-                            <Image src={VioletIcon} width={150} height={95} />
+                            <Image src={DotLeftArrow} width={75} height={95} />
                         </div>
                         <div>
                             <Image src={DownArrow} width={60} height={65} />
@@ -186,14 +193,14 @@ export default function FamilyPlanBangla() {
                     </div>
                     <div>
                         <div>
-                            <Image src={Manager} width={60} height={60} />
+                            <Image src={Manager} width={60} height={50} />
                         </div>
                         <p> আমাদের নিবেদিত হেলথ ম্যানেজার আপনার হেলথ প্ল্যানটি একটিভেট করে দিবেন</p>
                     </div>
 
                     <div>
                         <div>
-                            <Image src={PinkIcon} width={150} height={135} />
+                            <Image src={DotLeftArrow} width={75} height={95} />
                         </div>
                         <div>
                             <Image src={DownArrow} width={60} height={65} />
@@ -212,6 +219,39 @@ export default function FamilyPlanBangla() {
                     <h1> যে কোন জিজ্ঞাসায় কল করুন</h1>
                     <p> +8801322658481</p>
                     <p> +8801571016461</p>
+                </div>
+            </div>
+
+            <div className={classes.footerLast}>
+                <div>
+                    <h2>
+                        প্রয়োজনীয় <span> সকল স্বাস্থ্যসেবা </span>
+                    </h2>
+                    <h2>
+                        এখন <span> এক জায়গাতেই </span>{' '}
+                    </h2>{' '}
+                </div>
+                <div>
+                    <div>
+                        <Image src={FooterImg1} width={70} height={60} />
+                        <p> ২৪/৭ অনলাইন ডাক্তার</p>
+                    </div>
+                    <div>
+                        <Image src={FooterImg2} width={70} height={65} />
+                        <p>মেডিসিন ডেলিভারি</p>
+                    </div>
+                    <div>
+                        <Image src={FooterImg3} width={70} height={65} />
+                        <p> প্যাথলজি স্যাম্পল কালেকশন</p>
+                    </div>
+                    <div>
+                        <Image src={LastImg} width={70} height={65} />
+                        <p> নার্সিং ও অ্যাটেন্ডেন্ট সেবা</p>
+                    </div>
+                    <div>
+                        <Image src={FooterImg5} width={70} height={65} />
+                        <p> ফিজিওথেরাপি সেবা</p>
+                    </div>
                 </div>
             </div>
         </div>
