@@ -35,7 +35,7 @@ export default function Hero() {
                     100vw"
                         alt=""
                     /> */}
-                    <Image className={classes.bannerImg} src={Doctor} height={350} width={540} alt="" />
+                    <Image className={classes.bannerImg} src={Doctor} height={400} width={540} alt="" />
                 </div>
             </div>
 

@@ -111,3 +111,22 @@
         text-align: justify;
     }
 } */
+
+@media (max-width: 420px) {
+    .wrapper {
+        /* padding: 60px 50px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        padding: 0;
+    }
+    .wrapper > div:nth-child(1) > div:nth-child(2) {
+        margin-left: 0px;
+    }
+    .wrapper > div:nth-child(1) > div:nth-child(2) > div {
+        margin-left: 0px;
+    }
+    .wrapper > div:nth-child(1) > div:nth-child(1) {
+        border-radius: 0;
+    }
+}

@@ -134,17 +134,18 @@
 }
 
 .footer > div:nth-child(3) {
-    width: 25%;
+    width: 85%;
     margin: 0 auto;
     padding: 10px 15px;
     margin-top: -25px;
     border: 1px solid var(--light);
     box-shadow: 0 10px 10px 10px var(--light);
+    border-radius: 10px;
 }
 
 .footer > div:nth-child(3) > h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     color: var(--primary);
 
     /* background-size: 100%;
@@ -198,13 +199,19 @@
 .footerLast > div:nth-child(1) > h2 > span {
     font-size: 2.3rem;
 }
+.footerLast > div:nth-child(1) > h3 {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -5px;
+}
 .footerLast > div:nth-child(2) {
-    width: 41%;
+    width: 28%;
     margin: 0 auto;
     display: grid;
     grid-gap: 8px;
     margin-top: -15px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -388,7 +395,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px 6em;
-    grid-gap: 10px;
+    grid-gap: 2px;
 }
 
 .table {
@@ -400,8 +407,11 @@
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid var(--light);
-    box-shadow: 1px 2px 4px var(--light);
+    /* box-shadow: 1px 4px 12px var(--blue4); */
+
     border-top: 4px solid var(--secondary);
+    /* box-shadow: 1px 2px 4px var(--blue3); */
+    box-shadow: 2px 5px 1px gainsboro;
 }
 
 .table:hover {
@@ -411,22 +421,22 @@
 }
 
 .table:not(:last-of-type) {
-    margin-right: 3%;
+    margin-right: 4.5%;
 }
 
 .table:nth-of-type(1) {
     position: relative;
-    background-color: #feeaea;
+    background-color: #ffe4c4;
 }
 
 .table:nth-of-type(1):before {
-    content: '১৯৯/-';
+    content: '২৯৯/-';
     position: absolute;
     color: var(--white);
     display: block;
     background-color: #ff8c00;
     text-align: center;
-    right: 15px;
+    right: 11.5px;
     top: -25px;
     height: 85px;
     width: 85px;
@@ -442,17 +452,17 @@
 
 .table:nth-of-type(2) {
     position: relative;
-    background-color: #d0efff;
+    background-color: #d8bfd8;
 }
 
 .table:nth-of-type(2):before {
-    content: '২৯৯/-';
+    content: '৩৯৯/-';
     position: absolute;
     color: var(--white);
     display: block;
     background-color: #ff8c00;
     text-align: center;
-    right: 15px;
+    right: 11.5px;
     top: -25px;
     height: 85px;
     width: 85px;
@@ -468,17 +478,17 @@
 
 .table:nth-of-type(3) {
     position: relative;
-    background-color: #feeaea;
+    background-color: #e6e6fa;
 }
 
 .table:nth-of-type(3):before {
-    content: '৩৯৯/-';
+    content: '৪৯৯/-';
     position: absolute;
     color: var(--white);
     display: block;
     background-color: #ff8c00;
     text-align: center;
-    right: 15px;
+    right: 8px;
     top: -25px;
     height: 85px;
     width: 85px;
@@ -494,7 +504,7 @@
 .table:nth-of-type(4) {
     position: relative;
     /* background-color: #faf0e6; */
-    background-color: #d0efff;
+    background-color: #add8e6;
 }
 
 .table:nth-of-type(4):before {
@@ -504,7 +514,7 @@
     display: block;
     background-color: #ff8c00;
     text-align: center;
-    right: 15px;
+    right: 10px;
     top: -25px;
     height: 85px;
     width: 85px;
@@ -520,7 +530,8 @@
 
 .tableHeader {
     font-size: 1.4em;
-    padding: 14px 0px;
+    /* padding: 14px 0px; */
+    padding: 14px 0px 8px;
     border-bottom: 2px solid var(--light);
     letter-spacing: 0.03em;
 }
@@ -550,7 +561,7 @@
 .tableOptions {
     list-style: none;
     padding: 0px;
-    padding-bottom: 18px;
+    padding-bottom: 16px;
     /* padding-bottom: -5px; */
     font-size: 0.9em;
     border-bottom: 2px solid var(--light);
@@ -590,6 +601,8 @@
     padding: 10px 16px;
     letter-spacing: 0.07em;
     transition: all 0.4s ease;
+    font-size: 14.5px;
+    font-weight: 500;
 }
 
 .tableStart:hover {
@@ -923,6 +936,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         overflow: scroll;
+        padding: 0 6px;
     }
 
     .middle {
@@ -955,6 +969,8 @@
     .gridFour {
         padding: 0;
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3px;
+        margin-top: 5px;
     }
 
     .gridThree {
@@ -1039,13 +1055,14 @@
         font-size: 25px;
         padding: 40px;
         padding-bottom: 0;
+        padding-top: 15px;
 
         /* margin-bottom: -px; */
     }
     .footer > div:nth-child(2) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 15px 25px;
+        padding: 2px 25px;
     }
     .footer > div > div:nth-child(odd) {
         border: 1px solid var(--light);
@@ -1083,11 +1100,61 @@
     }
     .footer > div > div:nth-child(3) {
         /* background-image: linear-gradient(to right, darkviolet, darkviolet, darkorchid, darkorchid); */
-        margin-bottom: 15px;
-        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-top: -10px;
     }
     .footer > div > div:nth-child(5) {
         /* background-image: linear-gradient(to right, darkviolet, darkviolet, darkorchid, darkorchid); */
         margin-top: 0px;
+    }
+    /* 
+    footer last section */
+
+    .footerLast {
+        padding-top: 15px;
+    }
+
+    .footerLast > div:nth-child(1) > h2 {
+        font-size: 1.2rem;
+    }
+
+    .footerLast > div:nth-child(1) > h2 > span {
+        font-size: 1.8rem;
+    }
+    .footerLast > div:nth-child(2) {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 8px;
+        margin-top: -15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* 
+    for the backgroudnd */
+
+    .pricingTable .headerFlex {
+        background-image: linear-gradient(
+            to right,
+            var(--dark-blue),
+            var(--dark-blue),
+            var(--dark-blue),
+            var(--blue1),
+            var(--blue1)
+        );
+    }
+
+    .table:nth-of-type(4):before {
+        right: 4px;
+    }
+    .table:nth-of-type(3):before {
+        right: 5px;
+    }
+    .table:nth-of-type(2):before {
+        right: 6px;
+    }
+    .table:nth-of-type(1):before {
+        right: 5px;
     }
 }

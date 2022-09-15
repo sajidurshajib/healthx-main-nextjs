@@ -10,7 +10,7 @@ export default function DataPrivacy() {
     return (
         <div className={classes.wrapper}>
             <div>
-                <h2>Data Privacty and Security is our top privacy</h2>
+                <h2>Data Privacy and Security is our top privacy</h2>
                 <p>
                     Data privacy and security always served as one of the founding philosopies of Practo, and we go to
                     the great length of safe guard the confidentiality and integrity of our users{' '}

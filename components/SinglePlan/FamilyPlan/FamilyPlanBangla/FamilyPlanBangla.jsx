@@ -188,7 +188,7 @@ export default function FamilyPlanBangla() {
                             <Image src={DotLeftArrow} width={75} height={95} />
                         </div>
                         <div>
-                            <Image src={DownArrow} width={60} height={65} />
+                            <Image src={DownArrow} width={40} height={55} />
                         </div>
                     </div>
                     <div>
@@ -203,7 +203,7 @@ export default function FamilyPlanBangla() {
                             <Image src={DotLeftArrow} width={75} height={95} />
                         </div>
                         <div>
-                            <Image src={DownArrow} width={60} height={65} />
+                            <Image src={DownArrow} width={40} height={55} />
                         </div>
                     </div>
 
@@ -216,7 +216,7 @@ export default function FamilyPlanBangla() {
                 </div>
 
                 <div>
-                    <h1> যে কোন জিজ্ঞাসায় কল করুন</h1>
+                    <h1> আমার ডাক্তার ফ্যামিলি হেলথ-প্ল্যান সম্পর্কে জানতে কল করুন</h1>
                     <p> +8801322658481</p>
                     <p> +8801571016461</p>
                 </div>
@@ -230,12 +230,13 @@ export default function FamilyPlanBangla() {
                     <h2>
                         এখন <span> এক জায়গাতেই </span>{' '}
                     </h2>{' '}
+                    <h3> আমাদের অন্যান্য সেবাসমূহ </h3>
                 </div>
                 <div>
-                    <div>
+                    {/* <div>
                         <Image src={FooterImg1} width={70} height={60} />
                         <p> ২৪/৭ অনলাইন ডাক্তার</p>
-                    </div>
+                    </div> */}
                     <div>
                         <Image src={FooterImg2} width={70} height={65} />
                         <p>মেডিসিন ডেলিভারি</p>

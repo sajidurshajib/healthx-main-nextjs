@@ -14,7 +14,7 @@ export default function AboutUs() {
             <Mission />
             <Offer />
             <Approach />
-            <DataPrivacy /> *
+            {/* <DataPrivacy /> * */}
         </div>
     )
 }

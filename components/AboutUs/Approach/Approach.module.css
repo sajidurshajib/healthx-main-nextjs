@@ -29,6 +29,10 @@
     border-right: 2px solid var(--light);
 }
 
+.logo > div:nth-child(1) {
+    padding-top: 34px;
+}
+
 .logo > div > div > p {
     font-size: 13px;
     text-align: justify;
@@ -40,9 +44,9 @@
     margin-top: 8px;
     color: var(--white);
 }
-.second > h2 {
+/* .second > h2 {
     margin-top: 10px;
-}
+} */
 
 @media (max-width: 420px) {
     .logo {
