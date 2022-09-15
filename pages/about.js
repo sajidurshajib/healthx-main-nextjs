@@ -1,7 +1,9 @@
+import { MainNav, AboutUs } from '../components'
+
 const About = () => {
     return (
         <div>
-            <h2>About</h2>
+            <AboutUs />
         </div>
     )
 }

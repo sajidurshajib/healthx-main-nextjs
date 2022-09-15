@@ -1,0 +1,132 @@
+.wrapper {
+    margin-top: 40px;
+    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 15px;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(1) {
+    color: var(--primary);
+    border-left: 4px solid blue;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(1) h2 {
+    margin-left: 15px;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(2) {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: justify;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(2) > p {
+    color: white;
+    font-weight: 400px;
+}
+.wrapper > div:nth-child(1) > div:nth-child(2) > div {
+    margin-top: 25px;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(2) > div > h2 {
+    color: white;
+}
+
+.wrapper > div:nth-child(1) > div:nth-child(2) > div > ul > li {
+    color: white;
+}
+
+/* Second div of wrapper  */
+
+.wrapper > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+/* second div  */
+
+/* .wrapper > div:nth-child(2) > div:nth-child(2) > ul > li:before {
+    content: '✓';
+    display: inline-flex;
+    margin-right: 6px;
+    color: var(--white);
+    background-color: var(--secondary);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 1em;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .wrapper > div:nth-child(2) > div:nth-child(2) > h2 {
+} */
+
+/* @media (max-width: 420px) {
+    .wrapper {
+        margin-top: 12px;
+        padding: 10px;
+    }
+
+    .wrapper > div {
+        width: 100%;
+    }
+
+    .wrapper > div:nth-child(1) {
+        padding: 0 12px;
+    }
+    .wrapper > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrapper > div:nth-child(2) > div:nth-child(2) {
+        text-align: center;
+        padding: 0 2px;
+    }
+
+    .wrapper > div:nth-child(2) > div:nth-child(1) > ul > li {
+        padding-left: 0px;
+        padding: 14px;
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .wrapper > div:nth-child(2) > div:nth-child(1) > h2 {
+        padding-right: 0;
+    }
+
+    .wrapper > div:nth-child(2) > div:nth-child(1) {
+    }
+    .wrapper > div p {
+        font-size: 14px;
+        text-align: justify;
+    }
+} */
+
+@media (max-width: 420px) {
+    .wrapper {
+        /* padding: 60px 50px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        padding: 0;
+    }
+    .wrapper > div:nth-child(1) > div:nth-child(2) {
+        margin-left: 0px;
+    }
+    .wrapper > div:nth-child(1) > div:nth-child(2) > div {
+        margin-left: 0px;
+    }
+    .wrapper > div:nth-child(1) > div:nth-child(1) {
+        border-radius: 0;
+    }
+}
