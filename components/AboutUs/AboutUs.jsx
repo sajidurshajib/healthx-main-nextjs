@@ -15,6 +15,7 @@ export default function AboutUs() {
             <Offer />
             <Approach />
             {/* <DataPrivacy /> * */}
+            <Team />
         </div>
     )
 }

@@ -8,9 +8,9 @@ export default function Team() {
     return (
         <div>
             <ManagementTeam />
-            <AdvisoryPanel />
+            {/* <AdvisoryPanel />
             <MedicalTeam />
-            <TechTeam />
+            <TechTeam /> */}
         </div>
     )
 }
