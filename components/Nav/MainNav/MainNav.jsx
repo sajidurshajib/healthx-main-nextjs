@@ -1,12 +1,23 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import hx from '../../../assets/img/hx-blue-fit.png'
+import pic from '../../../assets/user/placeholder.jpg'
+import { Auth, UserInfo } from '../../../context/allContext'
 import classes from './MainNav.module.css'
 
 const MainNav = () => {
     const [show, setShow] = useState(false)
+    const { stateAuth, dispatchAuth } = useContext(Auth)
+    const { dispatchUser } = useContext(UserInfo)
+
+    const logout = (e) => {
+        e.preventDefault()
+        dispatchUser({ type: 'remove' })
+        dispatchAuth({ type: 'remove' })
+    }
+
     return (
         <div className={classes.MainNav}>
             <div className={`${classes.Wrapper} ${'container'}`}>
@@ -134,15 +145,25 @@ const MainNav = () => {
                     </div>
                 </div>
 
-                <div className={classes.right}>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuSignin}>Sign in</div>
-                        <div className={classes.SigninLink}>
-                            <a href="https://doc.healthxbd.com">Smart Doctor</a>
-                            <a href="https://user.healthxbd.com">My Health Portal</a>
+                {stateAuth?.auth == true ? (
+                    <div className={classes.right}>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuSignin} onClick={(e) => logout(e)}>
+                                Logout
+                            </div>
                         </div>
                     </div>
-                </div>
+                ) : (
+                    <div className={classes.right}>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuSignin}>Sign in</div>
+                            <div className={classes.SigninLink}>
+                                <a href="https://doc.healthxbd.com">Smart Doctor</a>
+                                <a href="https://user.healthxbd.com">My Health Portal</a>
+                            </div>
+                        </div>
+                    </div>
+                )}
             </div>
 
             {/* Extra Section */}

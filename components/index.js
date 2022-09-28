@@ -1,3 +1,5 @@
+export { default as Login } from './Login/Login'
+
 export { default as MainNav } from './Nav/MainNav/MainNav'
 
 export { default as Hero } from './Hero/Hero.jsx'

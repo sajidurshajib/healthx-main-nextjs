@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { useContext } from 'react'
 import VioletIcon from '../../../../assets/plan/CurvedArrow.png'
 import FooterImg4 from '../../../../assets/plan/Nursing.png'
 import LastImg from '../../../../assets/plan/NursingAndAttendence.png'
@@ -21,10 +22,13 @@ import FooterImg1 from '../../../../assets/plan/onlineDoctor.png'
 import Family from '../../../../assets/plan/onlineMeeting.png'
 import FooterImg5 from '../../../../assets/plan/pharmacisht2.png'
 import FooterImg3 from '../../../../assets/plan/sampleCollection2.png'
+import { Auth } from '../../../../context/allContext'
 // import Phone from '../../../../assets/plan/ringingPhone.png'
 import classes from './FamilyPlanBangla.module.css'
 
-export default function FamilyPlanBangla() {
+export default function FamilyPlanBangla({ setPopup }) {
+    const { stateAuth } = useContext(Auth)
+
     return (
         <div className={classes.wrapper}>
             <div className={classes.pricingTable}>
@@ -121,9 +125,14 @@ export default function FamilyPlanBangla() {
                             <li>মাই হেলথ পোর্টালে ফ্রি রেজিস্ট্রেশন </li>
                             <li>প্রেস্ক্রিপশন ও টেস্ট রিপোর্টের ডিজিটাল কপি সংরক্ষণের সুবিধা</li>
                         </ul>
-                        <Link href="https://user.healthxbd.com/">
-                            <button className={classes.tableStart}> প্ল্যানটি কিনুন</button>
-                        </Link>
+                        {/* <Link href="https://user.healthxbd.com/"> */}
+                        <button
+                            className={classes.tableStart}
+                            onClick={stateAuth?.auth !== true ? () => setPopup(true) : setPopup(false)}>
+                            {' '}
+                            প্ল্যানটি কিনুন
+                        </button>
+                        {/* </Link> */}
                     </li>
                     <li className={classes.table}>
                         <h1 className={classes.tableHeader}>৩ মাসের প্ল্যান </h1>
