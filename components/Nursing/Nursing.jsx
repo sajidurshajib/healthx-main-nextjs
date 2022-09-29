@@ -16,12 +16,16 @@ export default function Nursing() {
         <div className={classes.wrapper}>
             <div className={classes.gridBox}>
                 <div>
-                    <h1>Nurse/Health Attendant At Home/Hospital</h1>
+                    <h1>HOME NURSING </h1>
                     <p>
-                        The Nursing/Health Attendant at home or hospitals service provides holistic and caring support
-                        at home or hospitals for patients or aged persons.
+                        The Home Nursing service provides clinical support at home for patients, physically challenged
+                        or aged persons. Our home nursing services offer you holistic and caring support during illness,
+                        injury, childbirth and long-term disabilities at the comfort of your home.
                     </p>
-                    <span>
+                    <h1 className={classes.order}> How to order?</h1>
+                    <p> Call us at +8801322658481, +8801571016461</p>
+                    <p>Or, BOOK YOU ORDER HERE</p>
+                    {/* <span>
                         Trained Nurses & Attendants take care of the daily activities of a person in need. They help
                         with personal grooming, movement, feeding, light housekeeping, and are also trained to monitor
                         general health by regularly measuring essential vitals like heart rate, blood pressure, etc.
@@ -29,7 +33,7 @@ export default function Nursing() {
                         the best home nursing care out there and available at your doorstep in any basic nursing care
                         need and many more. Maintaining proper safety and security, our service will change the
                         perception of home nursing service to you, that we can guarantee for sure.
-                    </span>
+                    </span> */}
                     <button>Book Now!</button>
                 </div>
                 <div>
@@ -44,10 +48,10 @@ export default function Nursing() {
                     />
                 </div>
             </div>
-            <h2>Why Nursing & Attendant Service</h2>
+            <h2>WHY HOME NURSING SERVICE</h2>
             <p>
-                Home Nursing & Attendant is required for a wide range of healthcare services that can be easily provided
-                at your home
+                Home Nursing is required for a wide range of healthcare services that can be easily provided at your
+                home
             </p>
             <div className={classes.service}>
                 <div>
@@ -78,7 +82,7 @@ export default function Nursing() {
                     <div>
                         <Image src={S5} height={50} width={50} className={classes.img} alt="" />
                     </div>
-                    Attendant care
+                    Care for patients in recovery from acute infection/injury
                 </div>
             </div>
             <Features />

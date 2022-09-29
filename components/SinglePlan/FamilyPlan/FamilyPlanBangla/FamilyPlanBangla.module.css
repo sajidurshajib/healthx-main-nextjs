@@ -429,8 +429,8 @@
     text-align: center;
     right: 11.5px;
     top: -25px;
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 1.4em;
@@ -453,10 +453,10 @@
     display: block;
     background-color: #ff8c00;
     text-align: center;
-    right: 11.5px;
+    right: 12.5px;
     top: -25px;
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 1.4em;
@@ -481,8 +481,8 @@
     text-align: center;
     right: 8px;
     top: -25px;
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 1.4em;
@@ -507,8 +507,8 @@
     text-align: center;
     right: 10px;
     top: -25px;
-    height: 85px;
-    width: 85px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 1.4em;
@@ -879,7 +879,7 @@
     .pricingTable .subtitle {
         text-align: left;
         font-size: 14px;
-        padding: 0px 10px;
+        padding: 0px 12px;
     }
 
     .pricingTable .header {
@@ -923,14 +923,14 @@
         /* width: 100%;
         display: block; */
         margin-top: -3px;
-        padding: 0;
+        padding: 0 10px;
         grid-template-columns: repeat(4, 1fr);
         gap: 2px;
         margin-bottom: -25px;
     }
 
     .list > div {
-        padding: 8px 1px 0px;
+        padding: 10px 1px 0px;
     }
 
     .middle {
@@ -961,7 +961,7 @@
     /* 
         ** Four Grids ** */
     .gridFour {
-        padding: 0;
+        padding: 0 4px;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 3px;
         margin-top: 5px;
@@ -1111,7 +1111,7 @@
         font-size: 1.8rem;
     }
     .footerLast > div:nth-child(2) {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         display: grid;
         grid-gap: 8px;

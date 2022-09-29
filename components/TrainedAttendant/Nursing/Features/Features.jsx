@@ -2,13 +2,13 @@ import '@fortawesome/free-solid-svg-icons'
 import { faHandHoldingHeart, faHandHoldingMedical, faHandshake, faStethoscope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import P1 from '../../../assets/medicine/v2.png'
+import P1 from '../../../../assets/medicine/v2.png'
 import classes from './Features.module.css'
 
 export default function Features() {
     return (
         <div className={classes.wrapper}>
-            <div className={classes.logo}>TYPES OF NURSING SERVICES</div>
+            <div className={classes.logo}>TYPES OF ATTENDANT SERVICES</div>
             <div className={classes.grid}>
                 <div>
                     <div>
