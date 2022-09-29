@@ -95,7 +95,7 @@
 
 .advisor > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .advisor > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div {
@@ -155,7 +155,7 @@
 }
 .advisor > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .advisor > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div {

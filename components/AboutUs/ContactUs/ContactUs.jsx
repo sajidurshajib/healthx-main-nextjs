@@ -17,12 +17,10 @@ export default function ContactUs() {
             <div>
                 <div>
                     <div>
-                        {' '}
                         <Image src={W} alt="Picture" width={60} height={60} />
                     </div>
                     <div>
-                        <p>+8801322658481</p>
-                        <p> +8801571016461</p>
+                        <p>+88 01322658481</p>
                     </div>
                 </div>
                 <div>
@@ -38,7 +36,7 @@ export default function ContactUs() {
                         <Image src={E} alt="Picture" width={60} height={60} />
                     </div>
                     <div>
-                        <p>examplebd@email.com</p>
+                        <p>contact@healthx.com.bd</p>
                     </div>
                 </div>
                 <div>

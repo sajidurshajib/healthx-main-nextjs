@@ -1,6 +1,7 @@
 .wrapper {
     width: 80%;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
 .wrapper > div:nth-child(1) {
@@ -28,6 +29,7 @@
     .wrapper {
         width: 100%;
         padding: 30px;
+        margin-top: -10px;
     }
 
     .wrapper > div:nth-child(2) {

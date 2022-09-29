@@ -1,4 +1,9 @@
+.section {
+    padding: 10px 10em;
+}
+
 @media (max-width: 420px) {
-    .wrapper {
+    .section {
+        padding: 10px;
     }
 }
