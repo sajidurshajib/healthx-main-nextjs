@@ -17,7 +17,7 @@ export default function Hero() {
         <div className={classes.wrapper}>
             <div className={classes.gridBox}>
                 <div>
-                    <h1>QUALITY HEALTHCARE AT YOUR DOORSTEP</h1>
+                    <h1>One-stop Digital Healthcare Solution to All Your Health Needs!</h1>
                     <h2> Who are we?</h2>
                     <p>
                         HEALTHx is your one-stop digital solution to primary and essential healthcare services. You can

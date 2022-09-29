@@ -30,7 +30,10 @@
 }
 
 .logo > div:nth-child(1) {
-    padding-top: 34px;
+    margin-top: 30px;
+}
+.logo > div:nth-child(1) > div {
+    margin-top: 30px;
 }
 
 .logo > div > div > p {
@@ -61,10 +64,33 @@
     }
 
     .logo > div > div {
-        margin-top: -12px;
+        margin-top: -30px;
     }
 
     .wrapper > div > h2 {
         font-size: px;
+    }
+
+    .logo > div:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    /* .logo > div:nth-child(1) > div {
+        margin-top: 0px;
+    } */
+
+    .logo > div:nth-child(1) > div {
+        margin-top: 10px;
+    }
+
+    .logo > div {
+        padding: 0px 26px;
+    }
+
+    .logo > div:nth-child(2) {
+        margin-top: -8px;
+    }
+    .logo > div:nth-child(3) {
+        margin-top: -8px;
     }
 }

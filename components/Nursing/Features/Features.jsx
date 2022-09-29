@@ -8,7 +8,7 @@ import classes from './Features.module.css'
 export default function Features() {
     return (
         <div className={classes.wrapper}>
-            <div className={classes.logo}>Types Of Nursing & Attendant Services</div>
+            <div className={classes.logo}>TYPES OF NURSING SERVICES</div>
             <div className={classes.grid}>
                 <div>
                     <div>
@@ -167,7 +167,7 @@ export default function Features() {
                     </div>
                 </div>
 
-                <div>
+                {/* <div>
                     <div>
                         <FontAwesomeIcon icon={faHandshake} />
                     </div>
@@ -195,7 +195,7 @@ export default function Features() {
                             </span>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

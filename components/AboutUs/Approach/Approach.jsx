@@ -15,7 +15,6 @@ export default function Approach() {
             {/* for logo section */}
             <div className={classes.logo}>
                 <div>
-                    {' '}
                     <Image src={Connection} height={50} width={50} className={classes.img} alt="" />
                     <div>
                         <h2> Connect</h2>
@@ -29,7 +28,7 @@ export default function Approach() {
                 <div>
                     {' '}
                     <Image src={HandShake} height={95} width={85} className={classes.img} alt="" />
-                    <div className={classes.second}>
+                    <div>
                         <h2> Trust</h2>
                         <p>
                             Practo works on trust. We are aware of the responsibility placed on us by 30 crore+ patients
