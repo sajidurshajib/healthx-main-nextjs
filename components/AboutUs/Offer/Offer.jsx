@@ -9,7 +9,7 @@ export default function Offer() {
     return (
         <div className={classes.wrapper}>
             <div>
-                <h2> What We Offer</h2>
+                <h2> Our Smart Solutions </h2>
                 <p>
                     {' '}
                     HEALTHx is a platform where patients, doctors and pharmacies find smart solutions for their

@@ -28,6 +28,11 @@
     font-weight: 500;
 }
 
+.heeader {
+    margin-top: 35px;
+    font-size: 26px;
+}
+
 .gridBox > div > p {
     color: var(--dark);
     font-size: 16px;
@@ -57,6 +62,29 @@
     align-items: center;
 }
 
+.whyHealth > div {
+    margin-top: 2em;
+    display: flex;
+
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.whyHealth > div > div {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+.whyHealth > h1 {
+    font-size: 24px;
+    text-align: center;
+    color: var(--primary);
+}
+
 .gridBox > div > div > p {
     padding-right: 40px;
     padding-left: 6px;
@@ -71,6 +99,7 @@
     text-transform: capitalize;
     font-size: 22px;
     font-weight: 500;
+    margin-top: 2.5em;
 }
 
 .service {
@@ -100,6 +129,10 @@
     transform: translateY(-6px);
     transition: 300ms;
     box-shadow: 4px 8px 16px var(--light);
+}
+
+.order {
+    font-size: 24px;
 }
 
 /* for mobilb responsive */
@@ -158,9 +191,35 @@
         padding: 10px 70px;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
+        margin-bottom: 15px;
     }
     .service div {
         font-size: 12px;
         padding: 30px 40px;
+    }
+
+    /* new added  */
+    .whyHealth > div {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 20px;
+        justify-content: center;
+        padding: 0 90px;
+    }
+
+    .whyHealth > div > div {
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        margin-top: -10px;
+    }
+
+    .heeader {
+        margin-top: 10px;
     }
 }

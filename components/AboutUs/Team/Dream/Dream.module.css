@@ -1,0 +1,21 @@
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+.wrapper > h3 {
+    font-size: 22px;
+    color: var(--primary);
+}
+
+.wrapper > p {
+    font-size: 14px;
+    color: var(--dark);
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        margin-top: -45px;
+    }
+}

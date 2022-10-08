@@ -44,6 +44,16 @@
     letter-spacing: 0.04em;
 }
 
+.pricingTable .title2 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    letter-spacing: 0.04em;
+    font-weight: 550;
+}
+
 .pricingTable .subtitle {
     text-align: center;
     color: var(--dark);

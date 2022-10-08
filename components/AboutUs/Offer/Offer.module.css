@@ -73,14 +73,25 @@
 
     .card {
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
     }
 
     .wrap {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: -15px;
     }
     .wrap > div:nth-child(1) {
         text-align: center;
+    }
+
+    .wrap > div:nth-child(2) {
+        /* margin-top: -20px; */
+        margin-top: -18px;
+    }
+
+    .card > div:nth-child(3) {
+        padding: 8px 20px 8px;
     }
 
     .wrapper > div > p {
@@ -98,12 +109,13 @@
     }
 
     .card > div {
-        padding: 0px 12px 1px;
+        padding: 0px 12px 0px;
     }
 
     .txt {
         font-size: 12px;
         padding: 0;
+        margin-top: -10px;
     }
 
     .txt2 {

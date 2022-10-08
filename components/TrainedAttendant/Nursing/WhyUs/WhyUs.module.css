@@ -1,0 +1,105 @@
+.wrapper {
+    margin: 8em 0;
+}
+
+.grid {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexBox > p {
+    font-size: 22px;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.flexBox > p > span {
+    display: block;
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    color: var(--primary);
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em 8em;
+}
+
+.gridBox div {
+    border-top: 1px solid var(--dark);
+    transition: 200ms;
+}
+
+.gridBox div:hover {
+    transform: translateY(-2px);
+    transition: 200ms;
+}
+
+.gridBox div > div {
+    display: flex;
+    align-items: center;
+}
+
+.gridBox div > div > span > svg {
+    padding-right: 20px;
+    font-size: 26px;
+}
+
+.gridBox div:nth-child(1) > div > span > svg {
+    color: var(--primary);
+}
+.gridBox div:nth-child(2) > div > span > svg {
+    color: var(--secondary);
+}
+.gridBox div:nth-child(3) > div > span > svg {
+    color: var(--blue3);
+}
+.gridBox div:nth-child(4) > div > span > svg {
+    color: var(--blue4);
+}
+
+.gridBox div > div > p {
+    font-size: 18px;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+.gridBox div > span {
+    font-size: 14px;
+    color: var(--dark);
+    display: block;
+    margin-top: -2px;
+    text-align: justify;
+}
+
+@media (max-width: 420px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .wrapper {
+        /* margin: 1rem 0; */
+        margin-top: -0.8rem;
+    }
+
+    .flexBox > p {
+        text-align: center;
+    }
+
+    .gridBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flexBox > p > span {
+        font-size: 24px;
+    }
+}

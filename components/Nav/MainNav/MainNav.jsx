@@ -39,13 +39,7 @@ const MainNav = () => {
                             <p>About</p>
                             <div className={classes.value}>
                                 <p>
-                                    <a href="#">Mission and Vision</a>
-                                </p>
-                                <p>
-                                    <a href="#">Founders</a>
-                                </p>
-                                <p>
-                                    <a href="#">Team</a>
+                                    <a href="about-us">About Us</a>
                                 </p>
                             </div>
                         </div>
@@ -106,14 +100,12 @@ const MainNav = () => {
                 </div>
 
                 <div className={classes.center}>
-                    {/* <div className={classes.MenuWrap}>
+                    <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>About</div>
                         <div className={classes.MenuLink}>
-                            <a href="#">Mission and Vision</a>
-                            <a href="#">Founders</a>
-                            <a href="#">Team</a>
+                            <a href="about-us">About Us</a>
                         </div>
-                    </div> */}
+                    </div>
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>Solutions</div>
                         <div className={classes.MenuLink}>
