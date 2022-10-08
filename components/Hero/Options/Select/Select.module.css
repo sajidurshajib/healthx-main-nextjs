@@ -1,33 +1,37 @@
-.Select{
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-.SelectBlue{
+.Select {
+    /* background: var(--white); */
     color: var(--white);
-    background: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    border: 1px solid var(--primary);
 }
-.SelectBlue .SelectWrapper > svg{
+.SelectBlue {
+    color: var(--white);
+    background-image: linear-gradient(101.63deg, #149cab -21.52%, #122e89 52.33%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid var(--primary);
+}
+.SelectBlue .SelectWrapper > svg {
     color: var(--primary);
-    background: var(--light-blue);    
+    background: var(--light-blue);
 }
 .SelectWrapper > svg {
     font-size: 18px;
     padding: 15px;
     background: var(--light);
     border-radius: 50px;
+    color: var(--dark);
 }
-.SelectWrapper > h4{
+.SelectWrapper > h4 {
     margin: 5px 0;
     font-size: 14px;
 }
-.SelectWrapper > p{
+.SelectWrapper > p {
     margin: 0;
     font-size: 10px;
 }

@@ -1,7 +1,7 @@
 .MainNav {
     margin: 0;
     background: var(--white);
-    box-shadow: 0 2px 4px var(--light);
+    /* box-shadow: 0 2px 4px var(--light); */
     transition: 300ms;
     position: sticky;
     z-index: 100;

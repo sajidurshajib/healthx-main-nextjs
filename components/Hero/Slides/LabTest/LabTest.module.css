@@ -1,49 +1,68 @@
-.LabTest{
+.LabTest {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
-.Wrapper{
+
+.grid {
+    /* display: grid;
+  grid-template-columns: 2fr 1; */
+    margin-top: 130px;
+}
+
+.Wrapper {
+    margin-top: 5em;
     color: var(--primary);
     position: relative;
     left: 0;
     animation: left-right 1000ms;
 }
+
 @keyframes left-right {
     0% {
         left: -30px;
     }
-    100%{
+    100% {
         left: 0;
     }
 }
-.Wrapper > h2{
+
+.Wrapper > h2 {
     font-weight: 400;
     font-size: 50px;
     margin: 0 0 20px 0;
+    color: var(--white);
 }
 
+.Wrapper > p {
+    color: var(--white);
+    opacity: 0.8;
+}
 
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-  }
-  @media (min-width: 768px) {
+}
+
+.imgWrapper {
+    margin-left: 10em;
+    animation: left-right 1000ms;
+}
+
+@media (min-width: 768px) {
     .container {
-      width: 750px;
+        width: 750px;
     }
-  }
-  @media (min-width: 992px) {
+}
+@media (min-width: 992px) {
     .container {
-      width: 970px;
+        width: 970px;
     }
-  }
-  @media (min-width: 1200px) {
+}
+@media (min-width: 1200px) {
     .container {
-      width: 1170px;
+        width: 1170px;
     }
-  }
+}

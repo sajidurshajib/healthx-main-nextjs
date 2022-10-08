@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import classes from './Hero.module.css'
 import Options from './Options/Options'
-import { Telemedicine, MedicineOrder, LabTest, HealthPlan, CareGiving, HealthCheckup } from './Slides'
+import { Telemedicine, MedicineOrder, LabTest, HealthRecord } from './Slides'
 
 const Hero = () => {
     const [id, setId] = useState(1)
@@ -12,9 +12,7 @@ const Hero = () => {
                 {id === 1 ? <Telemedicine /> : null}
                 {id === 2 ? <MedicineOrder /> : null}
                 {id === 3 ? <LabTest /> : null}
-                {id === 4 ? <HealthPlan /> : null}
-                {id === 5 ? <CareGiving /> : null}
-                {id === 6 ? <HealthCheckup /> : null}
+                {id === 4 ? <HealthRecord /> : null}
             </div>
             <Options id={id} setId={setId} />
         </div>
