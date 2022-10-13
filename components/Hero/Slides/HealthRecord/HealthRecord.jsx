@@ -6,8 +6,8 @@ export default function HealthRecord() {
         <div className={`${classes.HealthRecord} ${classes.container}`}>
             <div className={classes.grid}>
                 <div className={classes.Wrapper}>
-                    <h2>Track Your Heath Record</h2>
-                    <p>Health Record</p>
+                    <h2>SAVE YOUR PRESCRIPTIONS & TRACK YOUR OWN HEALTH RECORD</h2>
+                    <p>20+ Health Indicators</p>
                 </div>
             </div>
         </div>

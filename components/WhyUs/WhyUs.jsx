@@ -10,7 +10,7 @@ import classes from './WhyUs.module.css'
 const WhyUs = () => {
     return (
         <div className={classes.wrapper}>
-            <div className={classes.title}>Why Us</div>
+            <div className={classes.title}>Why HEALTHx</div>
             <div className={classes.whyUs}>
                 <div className={classes.whyContainer}>
                     <div>
@@ -22,7 +22,7 @@ const WhyUs = () => {
                             <CountUp start={10} end={100} duration={5} useEasing={true} className={classes.Counter} />
                             <span>+</span>
                         </div>
-                        <p>Doctors</p>
+                        <p>Specialist Doctors</p>
                     </div>
 
                     <div>
@@ -67,9 +67,9 @@ const WhyUs = () => {
                         <p>Patients</p>
                     </div>
                 </div>
-                <div className={classes.footer}>
+                {/* <div className={classes.footer}>
                     <Image src={footer} height={300} alt="" />
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -1,34 +1,49 @@
-import Image from 'next/image'
+import { faCapsules } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React from 'react'
-import FamilyPic from '../../assets/plan/fplan.png'
-import MyPic from '../../assets/plan/mplan.png'
 import classes from './ServiceBox.module.css'
 
 export default function SeriveBox() {
     return (
         <div className={classes.wrapper}>
-            <div className={classes.title}>Our Health Plans</div>
+            <div className={classes.title}>
+                HEALTH PLANS <span>– Choose the best health package for your family</span>
+            </div>
             <div className={classes.service}>
                 <div className={classes.box}>
                     <div className={classes.wrap}>
                         <p className={classes.number}>01</p>
-                        <div className={classes.icon}>
-                            <Image src={MyPic} height={140} width={150} className={classes.img} alt="" />
+                        <div>
+                            {/* <div className={classes.icon}>
+                                <Image src={MyPic} height={80} width={90} className={classes.img} alt="" />
+                            </div> */}
+                            <Link href="my-plan">
+                                <a>
+                                    <p className={classes.title}>AMAR DOCTOR – PERSONAL</p>
+                                </a>
+                            </Link>
                         </div>
-                        <Link href="my-plan">
-                            <a>
-                                <p className={classes.title}>My Health Plan</p>
-                            </a>
-                        </Link>
                         <span>
-                            My Health Plan is designed to ensure the basic healthcare need of every individual.
-                            {/* Primary Health Care need is now a common need in our daily life. Healthcare expense is growing like
-                            anything day by day. To reduce the healthcare expenditure, we are offering the primary &
-                            essential healthcare services at affordable costs. */}
+                            Amar Doctor (Personal) is designed to ensure the basic healthcare need of every individual.
                         </span>
-                        <p className={classes.show}>
-                            24x7 Doctor Service | Medicine Delivery | Diagnostic Test | Health Insurance
+                        <div className={classes.show}>
+                            <p>
+                                Personal Doctor
+                                <br /> 24x7
+                            </p>
+                            <p>
+                                Medicine Delivery <br /> 8% Cashback
+                            </p>
+                            <p>
+                                Pathology Test at Home <br /> 40% Discount
+                            </p>
+                            <p>
+                                Hospital Cashback <br /> upto BDT 100,000
+                            </p>
+                        </div>
+                        <p className={classes.price}>
+                            Start from <span>99TK</span> only!
                         </p>
                         <Link href="my-plan">
                             <a>
@@ -41,23 +56,30 @@ export default function SeriveBox() {
                 <div className={classes.box}>
                     <div className={classes.wrap}>
                         <p className={classes.number}>02</p>
-                        <div className={classes.icon}>
-                            <Image src={FamilyPic} height={140} width={150} className={classes.img} alt="" />
-                        </div>
                         <Link href="family-plan">
                             <a>
-                                <p className={classes.title}>Family Health Plan</p>
+                                <p className={classes.title}>AMAR DOCTOR – FAMILY</p>
                             </a>
                         </Link>
                         <span>
-                            Family health plan (FHP) is designed to ensure the healthcare need of individuals and their
-                            family members (4 Person).
-                            {/* Primary & essential healthcare need is now a common need in our
-                            daily life. Healthcare pocket expense is increasing day by day. To meet the need of family
-                            healthcare service at affordable price we are offering. */}
+                            Amar Doctor (Family) is designed to ensure the basic healthcare need of every family.
                         </span>
-                        <p className={classes.show}>
-                            24x7 Doctor Service | Medicine Delivery | Diagnostic Test | Health Insurance
+                        <div className={classes.show}>
+                            <p>
+                                Personal Doctor <br /> 24x7
+                            </p>
+                            <p>
+                                Medicine Delivery <br /> 8% Cashback
+                            </p>
+                            <p>
+                                Pathology Test at Home <br /> 40% Discount
+                            </p>
+                            <p>
+                                Hospital Cashback <br /> upto BDT 100,000
+                            </p>
+                        </div>
+                        <p className={classes.price}>
+                            Start from <span>299TK</span> only!
                         </p>
                         <Link href="family-plan">
                             <a>

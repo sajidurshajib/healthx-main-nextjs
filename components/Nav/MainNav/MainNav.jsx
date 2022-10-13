@@ -95,7 +95,7 @@ const MainNav = () => {
                 </div>
                 <div className={classes.left}>
                     <a className={classes.SiteLogo} href="/">
-                        <Image src={hx} height={30} width={130} alt="" />
+                        <Image src={hx} height={32} width={130} alt="" />
                     </a>
                 </div>
 

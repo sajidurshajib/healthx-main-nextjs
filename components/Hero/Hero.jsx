@@ -14,7 +14,9 @@ const Hero = () => {
                 {id === 3 ? <LabTest /> : null}
                 {id === 4 ? <HealthRecord /> : null}
             </div>
-            <Options id={id} setId={setId} />
+            <div>
+                <Options id={id} setId={setId} />
+            </div>
         </div>
     )
 }

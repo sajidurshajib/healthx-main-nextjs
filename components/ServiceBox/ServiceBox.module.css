@@ -1,14 +1,19 @@
 .wrapper {
-    width: 90%;
-    margin: 2em auto;
+    width: 100%;
+    margin: 5em auto;
 }
 
 .wrapper .title {
-    text-align: center;
-    font-size: 2.2em;
+    font-size: 38px;
     font-weight: 500;
     color: var(--primary);
-    margin-bottom: -4px;
+    margin-bottom: 30px;
+    margin-left: 3.5em;
+}
+
+.wrapper .title > span {
+    font-size: 32px;
+    color: var(--secondary);
 }
 
 .service {
@@ -16,12 +21,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 6em;
     padding: 2em 14em;
+    background-image: url(../../assets/plan/blur-hospital.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .service .box {
     border: 1px solid var(--light);
     background-color: var(--white);
-    box-shadow: 2px 4px 6px var(--light);
+    transition: 300ms;
     border-radius: 10px;
 }
 
@@ -53,12 +61,16 @@
 }
 
 .service .box .title {
-    margin-top: 2.6em;
-    font-size: 1.6em;
+    margin-top: -60px;
+    font-size: 1.8em;
     text-align: center;
     font-weight: 500;
-    color: var(--secondary);
-    margin-bottom: 1em;
+    color: var(--primary);
+    align-self: center;
+}
+
+.service .box .title > a {
+    font-size: 2px;
 }
 
 .service .box span {
@@ -66,13 +78,35 @@
     text-align: center;
     color: var(--dark);
     margin-top: -10px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .service .box .show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     color: var(--primary);
+}
+
+.service .box .price {
+    text-align: center;
+    font-size: 22px;
+}
+.service .box .price > span {
+    display: inline;
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.service .box .show > p {
+    box-shadow: 4px 6px 8px var(--light-low);
+    border-radius: 10px;
+    padding: 20px 0;
+    font-weight: 500;
+    border: 1px solid var(--light-low);
 }
 
 .service .box button {
@@ -92,7 +126,9 @@
 .service .box:hover {
     transition: 200ms;
     cursor: pointer;
-    box-shadow: 4px 8px 14px var(--light);
+    /* box-shadow: 2px 4px 8px var(--light); */
+    transform: translateY(-4px);
+    transition: 300ms;
 }
 
 .service .box button:hover {

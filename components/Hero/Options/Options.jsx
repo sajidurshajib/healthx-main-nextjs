@@ -6,6 +6,7 @@ import {
     faHandHolding,
     faHeartPulse,
     faPhone,
+    faStethoscope,
     faTablet,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,8 +18,8 @@ const Options = ({ id, setId }) => {
         <div className={classes.Options}>
             <div className={`${classes.OptionsWrapper} ${classes.container}`}>
                 <Select number={1} id={id} setId={setId}>
-                    <FontAwesomeIcon icon={faPhone} height={18} width={18} />
-                    <h4>Tele Health</h4>
+                    <FontAwesomeIcon icon={faStethoscope} height={18} width={18} />
+                    <h4>Search Doctor</h4>
                     {/* <p>HEALTHx connects you with GP & specialize doctors 24x7</p> */}
                 </Select>
                 <Select number={2} id={id} setId={setId}>
@@ -46,7 +47,9 @@ const Options = ({ id, setId }) => {
                 </Select> */}
             </div>
             <div className={classes.tagLine}>
-                <h1>One-stop Digital Healthcare Solution to All Your Health Needs!</h1>
+                <h1>
+                    One-stop Digital Healthcare Solution <span>to All Your Health Needs!</span>
+                </h1>
             </div>
         </div>
     )

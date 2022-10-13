@@ -29,8 +29,8 @@
 
 .Wrapper > h2 {
     font-weight: 400;
-    font-size: 50px;
-    margin: 0 0 20px 0;
+    font-size: 48px;
+    margin: 0 20px 20px 0;
     color: var(--white);
 }
 

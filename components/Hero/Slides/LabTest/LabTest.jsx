@@ -7,8 +7,8 @@ const LabTest = () => {
         <div className={`${classes.LabTest} ${classes.container}`}>
             <div className={classes.grid}>
                 <div className={classes.Wrapper}>
-                    <h2>Lab Test</h2>
-                    <p>Lab Test</p>
+                    <h2>PATHOLOGY TEST AT HOME - GET UPTO 40% DISCOUNT</h2>
+                    <p>20+ Partner Labs</p>
                     <div>{/* <Image src={Med} width={320} height={300} alt="" /> */}</div>
                 </div>
             </div>

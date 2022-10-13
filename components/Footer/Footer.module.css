@@ -3,7 +3,8 @@
     width: 100%;
     background: var(--dark-blue);
     color: var(--white);
-    margin-top: 150px;
+    margin-top: 12em;
+    padding-bottom: 10px;
 }
 .footerWrapper {
     position: relative;
@@ -119,7 +120,7 @@
     font-size: 12px;
     font-weight: 500;
     opacity: 0.5;
-    top: -30px;
+    top: -50px;
 }
 
 @media (max-width: 768px) {

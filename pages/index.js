@@ -10,6 +10,8 @@ import {
     UnderConstruction,
     Solution,
     Mission,
+    Offer,
+    TeleHealth,
 } from '../components'
 import styles from '../styles/Home.module.css'
 
@@ -28,10 +30,12 @@ export default function Home() {
             </Head>
             <MainNav />
             <Hero />
+            <Offer />
+            <TeleHealth />
             <ServiceBox />
-            <Blog />
             <Solution />
-            <Mission />
+            <Blog />
+            {/* <Mission /> */}
             <WhyUs />
             <SliderPartner />
             <Footer />

@@ -150,7 +150,7 @@ const Footer = () => {
                     </div>
                     <div className={classes.footerCopyright}>
                         <div className={classes.hlogo}>
-                            <Image src={logo} height="130px" width="170px" alt="logo" />
+                            <Image src={logo} height="170px" width="170px" alt="logo" />
                         </div>
                         <span>Copyright &#169; 2022, Healthx. All rights reserved.</span>
                     </div>

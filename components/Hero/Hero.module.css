@@ -1,8 +1,32 @@
-.SlideWrapper > div {
-    height: 94vh;
+.Hero {
     width: 100%;
-    padding: 0 10em;
-    background-image: linear-gradient(101.63deg, #149cab -21.52%, #061475 52.33%, #3e119c 97.62%);
+    padding: 0;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(
+            0deg,
+            rgba(0, 50, 100, 0.8) 21%,
+            rgba(0, 50, 100, 0.8) 22%,
+            rgba(0, 78, 187, 0.3) 100%,
+            #0073bb 100%
+        ),
+        url(../../assets//health/t2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Hero > div:last-child {
+    width: 100%;
+    /* margin-left: 120px; */
+}
+
+.SlideWrapper > div {
+    height: 100vh;
+    width: 100%;
+    padding: 0 6em;
+    /* background-image: linear-gradient(101.63deg, #149cab -21.52%, #061475 52.33%, #3e119c 97.62%); */
+    /* background: linear-gradient(90deg, rgba(49, 130, 206, 1) 0%, rgba(56, 178, 172, 1) 100%); */
+    /* background: linear-gradient(90deg, rgba(49, 130, 206, 1) 0%, rgb(56, 154, 178) 100%); */
 }
 
 @media (max-width: 420px) {

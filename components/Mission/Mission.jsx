@@ -17,9 +17,9 @@ export default function Mission() {
                         <span>Healthy</span> You
                     </span>
                     <p>
-                        The mission of HEALTHx is to create a healthier community by providing the best health care for
+                        {/* The mission of HEALTHx is to create a healthier community by providing the best health care for
                         those experiencing poverty. Our vision is to build a smart healthcare system that every
-                        individual has the opportunity to achieve and sustain a healthy life.
+                        individual has the opportunity to achieve and sustain a healthy life. */}
                         {/* <br />
                         <br />
                         How We Serve:
@@ -27,9 +27,9 @@ export default function Mission() {
                         <li>We treat each person with respect and dignity.</li>
                         <li>We hear the issues of our patients, respect them, and do everything to help.</li> */}
                     </p>
-                    <Link href="#">
-                        <a>Learn More</a>
-                    </Link>
+                    {/* <Link href="#">
+                        <a>Learn More...</a>
+                    </Link> */}
                 </div>
                 <div className={classes.subGrid}>
                     <div className={classes.gridBox1}>

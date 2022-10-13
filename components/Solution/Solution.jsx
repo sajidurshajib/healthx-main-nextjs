@@ -14,7 +14,7 @@ import p4 from '../../assets/solution/p4.png'
 import classes from './Solution.module.css'
 
 export default function Solution() {
-    const [selected, setSelected] = useState('listItem1')
+    // const [selected, setSelected] = useState('listItem1')
 
     const handleChange = (e) => {
         console.log(e.target.value)
@@ -23,12 +23,14 @@ export default function Solution() {
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.title}>Our Solutions</div>
+            <div className={classes.title}>
+                Our Solutions <span>– for all your Healthcare need</span>
+            </div>
             <div className={classes.innerWrap}>
                 <div className={classes.container}>
                     <ul>
                         <li>
-                            <input
+                            {/* <input
                                 type="checkbox"
                                 id="listItem1"
                                 value="listItem1"
@@ -40,7 +42,7 @@ export default function Solution() {
                                 <span className={selected === 'listItem1' ? classes.span2 : classes.span}>
                                     &#10149;
                                 </span>
-                            </label>
+                            </label> */}
                             <ul>
                                 <div className={classes.innerContainer}>
                                     <div className={classes.collab}>
@@ -89,7 +91,7 @@ export default function Solution() {
                         </li>
 
                         <li>
-                            <input
+                            {/* <input
                                 type="checkbox"
                                 id="listItem2"
                                 value="listItem2"
@@ -102,23 +104,10 @@ export default function Solution() {
                                 <span className={selected === 'listItem2' ? classes.span2 : classes.span}>
                                     &#10149;
                                 </span>
-                            </label>
+                            </label> */}
                             <ul>
                                 <div className={classes.innerContainer}>
                                     <div className={classes.collab}>
-                                        <div className={classes.collabContent}>
-                                            <span>SMART DOCTOR SOLUTION</span>
-                                            <p>
-                                                Smart Doctor Solution is a digital doctor solution platform that
-                                                provides you with top-notch medical services in the comfort of your
-                                                preferred area, redefines relationships, and helps direct your attention
-                                                to what really matters to patients. It also provides to develop the
-                                                network with doctors across the world.
-                                            </p>
-                                            <Link href="https://doc.healthxbd.com/" target="__blank">
-                                                <a>Get Started</a>
-                                            </Link>
-                                        </div>
                                         <div className={classes.collabGrid}>
                                             <div>
                                                 <span>
@@ -145,13 +134,26 @@ export default function Solution() {
                                                 <p>Data Analytics</p>
                                             </div>
                                         </div>
+                                        <div className={classes.collabContent}>
+                                            <span>SMART DOCTOR SOLUTION</span>
+                                            <p>
+                                                Smart Doctor Solution is a digital doctor solution platform that
+                                                provides you with top-notch medical services in the comfort of your
+                                                preferred area, redefines relationships, and helps direct your attention
+                                                to what really matters to patients. It also provides to develop the
+                                                network with doctors across the world.
+                                            </p>
+                                            <Link href="https://doc.healthxbd.com/" target="__blank">
+                                                <a>Get Started</a>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </ul>
                         </li>
 
                         <li>
-                            <input
+                            {/* <input
                                 type="checkbox"
                                 id="listItem3"
                                 value="listItem3"
@@ -163,7 +165,7 @@ export default function Solution() {
                                 <span className={selected === 'listItem3' ? classes.span2 : classes.span}>
                                     &#10149;
                                 </span>
-                            </label>
+                            </label> */}
                             <ul>
                                 <div className={classes.innerContainer}>
                                     <div className={classes.collab}>

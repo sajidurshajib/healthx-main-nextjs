@@ -1,28 +1,38 @@
 .Options {
     padding: 80px 0;
     position: absolute;
-    top: 10px;
+    top: 20px;
     width: 100%;
 }
 
 .tagLine {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     margin-top: -10px;
 }
 
 .tagLine > h1 {
     font-weight: 500;
-    color: var(--primary);
+    color: var(--white);
     font-size: 30px;
+    padding-left: 30px;
+    opacity: 0.8;
+}
+
+.tagLine > h1 > span {
+    display: block;
+    padding-left: 8em;
 }
 
 .OptionsWrapper {
     color: var(--dark);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 10px;
+    position: absolute;
+    right: 0;
 }
 .OptionsWrapper > div {
     height: 100px;
