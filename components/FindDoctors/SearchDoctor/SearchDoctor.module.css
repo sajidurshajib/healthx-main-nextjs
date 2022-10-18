@@ -1,0 +1,43 @@
+.searchDoctor {
+    width: 70%;
+    margin: 1em auto;
+    background-color: var(--white);
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 1px 2px 4px var(--light);
+}
+
+.wrapperRight {
+    padding: 4px 0;
+    border: 1px solid var(--light);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchBar span {
+    padding: 0 8px 0 10px;
+    color: var(--grey2);
+    border-right: 2px solid var(--grey2);
+    opacity: 0.9;
+}
+.searchBar input {
+    border: none;
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.searchBar input:focus {
+    outline: none;
+}
+
+.space {
+    width: 2px;
+    margin: 8px;
+    background-color: var(--grey);
+}
