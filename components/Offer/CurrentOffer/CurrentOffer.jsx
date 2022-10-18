@@ -6,10 +6,13 @@ import classes from './CurrentOffer.module.css'
 export default function CurrentOffer() {
     return (
         <div className={classes.container}>
+            <div>
+                <span>&#60;</span>
+            </div>
             <div className={classes.offer}>
                 <div>
                     <p>
-                        ফ্যামিলি ডাক্তার প্যাকেজ সারামাস জুড়ে মাত্র <span>৳১৪৯</span>
+                        ফ্যামিলি ডাক্তার প্যাকেজ সারামাস জুড়ে মাত্র <span>৳২৯৯</span>
                     </p>
                     <p>
                         ফ্যামিলি ডাক্তার প্যাকেজ নিয়ে ডাক্তারের সাথে কথা বলুন যতবার দরকার <span>{'>'}</span>
@@ -19,6 +22,9 @@ export default function CurrentOffer() {
                     </p>
                 </div>
                 <Image src={Offer} width={300} height={320} alt="" />
+            </div>
+            <div>
+                <span>&#62;</span>
             </div>
         </div>
     )
