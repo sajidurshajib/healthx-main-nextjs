@@ -1,11 +1,12 @@
 .Options {
     padding: 80px 0;
     position: absolute;
-    top: 20px;
+    bottom: -90px;
     width: 100%;
+    z-index: 10;
 }
 
-.tagLine {
+/* .tagLine {
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,19 +25,23 @@
 .tagLine > h1 > span {
     display: block;
     padding-left: 8em;
-}
+} */
 
 .OptionsWrapper {
     color: var(--dark);
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    position: absolute;
+    justify-content: space-around;
+    /* position: absolute; */
     right: 0;
+    /* background-color: rgb(165, 217, 255); */
+    background: linear-gradient(90deg, #3299de 0%, #8ed2ff 100%);
+    padding: 30px 30px 40px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
 }
 .OptionsWrapper > div {
     height: 100px;
-    width: 200px;
+    width: 240px;
     /* border: 1px solid var(--light); */
     box-shadow: 0 2px 5px 0 rgba(3, 3, 3, 0.05);
     border-radius: 10px;
@@ -44,9 +49,28 @@
     cursor: pointer;
 }
 
+.OptionsWrapper > div > div > p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.OptionsWrapper > div > div > div > span {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.9;
+    padding-left: 4px;
+}
+
+.OptionsWrapper > .line {
+    width: 3px;
+    border-radius: 10px;
+    height: 125px;
+    background-color: var(--secondary);
+}
+
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
 }

@@ -2,22 +2,38 @@
     margin-top: 0;
 }
 
-.searchbar > input {
+.searchbar > div {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar > div > svg {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    background-color: rgb(12, 87, 157);
+    padding: 21px 30px;
+    border-radius: 0 4px 4px 0;
+    /* border: 1px solid var(--primary); */
+    color: var(--white);
+    font-size: 18px;
+}
+
+.searchbar > div > input {
     padding: 20px;
     padding-left: 22.5%;
     border-radius: 4px;
     outline: none;
     border: 1px solid var(--primary);
     border: none;
-    background-color: rgb(12, 87, 157);
-    color: var(--white);
-    margin-left: 10px;
+    color: var(--dark);
     font-size: 16px;
     font-weight: 500;
     width: 630px;
 }
 
-.searchbar > input::placeholder {
-    color: var(--white);
+.searchbar > div > input::placeholder {
+    color: var(--dark);
     opacity: 0.8;
 }

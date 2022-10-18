@@ -1,21 +1,37 @@
 .Hero {
     width: 100%;
     padding: 0;
-    height: 100vh;
-    background-image: -webkit-linear-gradient(
-            0deg,
-            rgba(0, 50, 100, 0.8) 21%,
-            rgba(0, 50, 100, 0.8) 22%,
-            rgba(0, 78, 187, 0.3) 100%,
-            #0073bb 100%
-        ),
-        url(../../assets//health/t2.jpg);
+    height: 92vh;
+    /* background-image: -webkit-linear-gradient(
+        0deg,
+        rgba(0, 50, 100, 0.8) 21%,
+        rgba(0, 50, 100, 0.8) 22%,
+        rgba(0, 78, 187, 0.3) 100%,
+        #0073bb 100%
+    ); */
+    /* background: linear-gradient(90deg, rgb(80, 144, 199) 0%, rgb(143, 205, 226) 100%); */
+    background: linear-gradient(90deg, #4072dd 0%, #8fc2d8 100%);
+    /* background-color: rgb(199, 238, 255); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
-.Hero > div:last-child {
+.Hero > .bg1 {
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    opacity: 0.2;
+}
+.Hero > .bg2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.04;
+}
+
+.Hero > div:nth-child(3) {
     width: 100%;
     /* margin-left: 120px; */
 }

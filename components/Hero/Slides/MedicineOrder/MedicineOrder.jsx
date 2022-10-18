@@ -10,23 +10,21 @@ const MedicineOrder = () => {
         <div className={`${classes.MedicineOrder} ${classes.container}`}>
             <div className={classes.grid}>
                 <div className={classes.Wrapper}>
-                    <h2>ORDER MEDICINE - GET 7% CASHBACK</h2>
+                    <h2>
+                        ORDER MEDICINE <br /> GET 7% CASHBACK
+                    </h2>
                     <p>
                         Medicine Delivered from 500+ Govt. approved Model Pharmacy <br /> Medicine Delivery Charge FREE
                         in DHAKA*
                     </p>
                     <div>
-                        <Image src={Med} width={480} height={380} alt="" />
-                    </div>
-                </div>
-                <div className={classes.search}>
-                    <h4>
-                        <FontAwesomeIcon icon={faCartArrowDown} /> Search Medicines
-                    </h4>
-                    <div>
                         <Searchbar placeholder={'Search medicines by name, generic or price'} />
                     </div>
-                    <div>
+                    <button>Order Now!</button>
+                    {/* <h4>
+                        <FontAwesomeIcon icon={faCartArrowDown} /> Search Medicines
+                    </h4> */}
+                    {/* <div>
                         <h5>
                             <FontAwesomeIcon icon={faKitMedical} /> Family Medicine
                         </h5>
@@ -39,10 +37,15 @@ const MedicineOrder = () => {
                         <h5>
                             <FontAwesomeIcon icon={faHandDots} /> Dermatology
                         </h5>
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                         <p>Popular Searches: </p>
                         <span>napa extra, ace plus, pantonix</span>
+                    </div> */}
+                </div>
+                <div className={classes.search}>
+                    <div>
+                        <Image src={Med} width={480} height={380} alt="" />
                     </div>
                 </div>
             </div>

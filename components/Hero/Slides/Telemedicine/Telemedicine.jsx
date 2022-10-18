@@ -13,20 +13,15 @@ const Telemedicine = () => {
             <div className={`${classes.Telemedicine} ${classes.container}`}>
                 <div className={classes.grid}>
                     <div className={classes.Wrapper}>
-                        <h2>FIND THE BEST DOCTORS</h2>
+                        <h2>
+                            FIND THE BEST DOCTORS <br />& Book Online
+                        </h2>
                         <p>FROM THE LARGEST DOCTOR PORTAL OF THE COUNTRY</p>
-                        <div>
-                            <Image src={Tele} width={480} height={450} alt="" />
-                        </div>
-                    </div>
-                    <div className={classes.search}>
-                        <h4>
-                            <FontAwesomeIcon icon={faStethoscope} /> Search Doctors
-                        </h4>
                         <div>
                             <Searchbar placeholder={'Search doctors by specialty, area or name'} />
                         </div>
-                        <div>
+                        <button>Book Now!</button>
+                        {/* <div>
                             <h5>
                                 <FontAwesomeIcon icon={faKitMedical} /> Family Medicine
                             </h5>
@@ -39,10 +34,18 @@ const Telemedicine = () => {
                             <h5>
                                 <FontAwesomeIcon icon={faHandDots} /> Dermatology
                             </h5>
-                        </div>
+                        </div> */}
                         <div>
                             <p>Popular Searches: </p>
                             <span>medines, vd, skin, kidney</span>
+                        </div>
+                    </div>
+                    <div className={classes.search}>
+                        {/* <h4>
+                            <FontAwesomeIcon icon={faStethoscope} /> Search Doctors
+                        </h4> */}
+                        <div>
+                            <Image src={Tele} width={480} height={450} alt="" />
                         </div>
                     </div>
                 </div>

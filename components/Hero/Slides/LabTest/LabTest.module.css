@@ -5,9 +5,8 @@
 }
 
 .grid {
-    /* display: grid;
-  grid-template-columns: 2fr 1; */
-    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
 }
 
 .Wrapper {
@@ -27,16 +26,36 @@
     }
 }
 
-.Wrapper > h2 {
-    font-weight: 400;
-    font-size: 48px;
-    margin: 0 20px 20px 0;
+.Wrapper > button {
+    display: block;
+    margin: 30px auto;
+    border: none;
+    background-color: var(--deep-primary);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
     color: var(--white);
+}
+
+.Wrapper > h2 {
+    font-weight: 600;
+    font-size: 48px;
+    margin: 0 0 20px 0;
+    color: var(--white);
+    opacity: 0.98;
 }
 
 .Wrapper > p {
     color: var(--white);
-    opacity: 0.8;
+    opacity: 1;
+    font-size: 1.2em;
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+.Wrapper > div {
+    margin-top: 40px;
+    opacity: 0.98;
 }
 
 .container {
