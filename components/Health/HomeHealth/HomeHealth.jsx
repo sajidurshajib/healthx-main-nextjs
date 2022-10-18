@@ -15,40 +15,40 @@ export default function HomeHealth() {
             <div className={classes.flex}>
                 <div className={classes.grid}>
                     <div>
+                        <Image src={H1} width={300} height={200} alt="" className={classes.img} />
                         <div>
-                            <Image src={H1} width={300} height={200} alt="" className={classes.img} />
                             <p>
                                 Medicine & Health Accessories <br /> Delivery
                             </p>
+                            <span>Delivery at Home within 3 hours</span>
                         </div>
-                        <span>Delivery at Home within 3 hours</span>
                     </div>
                     <div>
+                        <Image src={H2} width={300} height={200} alt="" className={classes.img} />
                         <div>
-                            <Image src={H2} width={300} height={200} alt="" className={classes.img} />
                             <p>
                                 Pathology Tests at <br /> Home
                             </p>
+                            <span>Blood & Urine Sample Collection</span>
                         </div>
-                        <span>Blood & Urine Sample Collection</span>
                     </div>
                     <div>
+                        <Image src={H3} width={300} height={200} alt="" className={classes.img} />
                         <div>
-                            <Image src={H3} width={300} height={200} alt="" className={classes.img} />
                             <p>
                                 MBBS Doctor Visit at <br /> Home
                             </p>
+                            <span>Book MBBS Doctor appointment at home</span>
                         </div>
-                        <span>Book MBBS Doctor appointment at home</span>
                     </div>
                     <div>
+                        <Image src={H4} width={300} height={200} alt="" className={classes.img} />
                         <div>
-                            <Image src={H4} width={300} height={200} alt="" className={classes.img} />
                             <p>
                                 Nurse/ Attendant / Physiotherapy <br /> Service
                             </p>
+                            <span>Get trusted & quality caregiving at home</span>
                         </div>
-                        <span>Get trusted & quality caregiving at home</span>
                     </div>
                 </div>
             </div>

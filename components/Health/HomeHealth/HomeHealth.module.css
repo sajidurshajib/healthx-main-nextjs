@@ -32,13 +32,13 @@
     padding: 10px 0em;
 }
 
-.grid > div > div {
+.grid > div {
     display: flex;
     border-radius: 4px;
     margin-bottom: 10px;
 }
 
-.grid > div > div > image {
+.grid > div > image {
     border-radius: 10px;
 }
 
@@ -48,15 +48,17 @@
     color: var(--primary);
     font-weight: 500;
     align-self: flex-end;
-    margin-left: 20px;
+    margin-left: 16px;
+    margin-top: 0px;
 }
 
-.grid > div > span {
+.grid > div > div > span {
     display: block;
     color: var(--dark);
     font-size: 16px;
-    margin-top: -2px;
+    margin-top: 0px;
     font-weight: 500;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 16px;
 }
