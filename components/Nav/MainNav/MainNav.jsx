@@ -20,7 +20,7 @@ const MainNav = () => {
 
     return (
         <div className={classes.MainNav}>
-            <div className={`${classes.Wrapper} ${'container'}`}>
+            <div className={classes.Wrapper}>
                 <div className={classes.toggleBar}>
                     <FontAwesomeIcon className={classes.icon} icon={faBars} />
                     <div className={classes.sidebar}>
@@ -95,15 +95,14 @@ const MainNav = () => {
                 </div>
                 <div className={classes.left}>
                     <a className={classes.SiteLogo} href="/">
-                        <Image src={hx} height={32} width={130} alt="" />
+                        <Image src={hx} height={40} width={164} alt="" />
                     </a>
                 </div>
 
                 <div className={classes.center}>
                     <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>About</div>
-                        <div className={classes.MenuLink}>
-                            <a href="about-us">About Us</a>
+                        <div className={classes.MenuHead}>
+                            <a href="about-us">About</a>
                         </div>
                     </div>
                     <div className={classes.MenuWrap}>

@@ -6,6 +6,7 @@
     position: sticky;
     z-index: 100;
     top: 0;
+    padding: 0 60px;
 }
 
 /* ****** /newly addes /********** */
@@ -19,8 +20,8 @@
 /* ****** /newly addes /********** */
 
 .MainNav > .Wrapper {
-    display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+    display: flex;
+    justify-content: space-between;
 }
 
 .MainNavReverse > .Wrapper {
@@ -29,20 +30,16 @@
 }
 
 .Wrapper > .left .SiteLogo {
-    color: var(--primary);
     display: flex;
     align-items: center;
     padding: 20px;
-}
-
-.Wrapper > .left .SiteLogo img {
-    object-fit: cover;
 }
 
 .Wrapper > .center {
     display: flex;
     justify-content: center;
 }
+
 .Wrapper > .center > .MenuWrap {
     float: left;
     padding: 25px 20px;
