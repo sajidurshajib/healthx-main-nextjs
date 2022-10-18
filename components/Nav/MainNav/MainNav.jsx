@@ -102,6 +102,11 @@ const MainNav = () => {
                 <div className={classes.center}>
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>
+                            <a href="find-doctors">Find Doctor</a>
+                        </div>
+                    </div>
+                    <div className={classes.MenuWrap}>
+                        <div className={classes.MenuHead}>
                             <a href="about-us">About</a>
                         </div>
                     </div>

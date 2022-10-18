@@ -24,3 +24,5 @@ export { default as PlanSubscription } from './PlanSubscription/PlanSubscription
 export { default as TrainedAttendant } from './TrainedAttendant/TrainedAttendant'
 export { default as Offer } from './Offer/Offer'
 export { default as TeleHealth } from './Health/Health'
+
+export { default as FindDoctors } from './FindDoctors/FindDoctors'
