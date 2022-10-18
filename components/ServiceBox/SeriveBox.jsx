@@ -20,7 +20,7 @@ export default function SeriveBox() {
                             </div> */}
                             <Link href="my-plan">
                                 <a>
-                                    <p className={classes.title}>AMAR DOCTOR – PERSONAL</p>
+                                    <p className={classes.name}>AMAR DOCTOR – PERSONAL</p>
                                 </a>
                             </Link>
                         </div>
@@ -58,7 +58,7 @@ export default function SeriveBox() {
                         <p className={classes.number}>02</p>
                         <Link href="family-plan">
                             <a>
-                                <p className={classes.title}>AMAR DOCTOR – FAMILY</p>
+                                <p className={classes.name}>AMAR DOCTOR – FAMILY</p>
                             </a>
                         </Link>
                         <span>

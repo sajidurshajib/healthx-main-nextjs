@@ -11,6 +11,16 @@
     margin-left: 3.5em;
 }
 
+.wrapper .name {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 30px;
+    /* margin-left: 3.5em; */
+    margin-top: -20px;
+    text-align: center;
+}
+
 .wrapper .title > span {
     font-size: 32px;
     color: var(--secondary);
@@ -30,7 +40,7 @@
     border: 1px solid var(--light);
     background-color: var(--white);
     transition: 300ms;
-    border-radius: 10px;
+    border-radius: 10px 10px 4px 4px;
 }
 
 .service .box .wrap {
@@ -41,11 +51,12 @@
 }
 
 .service .box .number {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 500;
     margin-top: -10px;
     color: var(--light);
     opacity: 0.8;
+    margin-bottom: 20px;
 }
 
 .service .box .icon {
