@@ -20,6 +20,23 @@
     font-size: 18px;
 }
 
+.searchbar > div > span {
+    position: absolute;
+    color: var(--red);
+    font-size: 22px;
+    font-weight: 500;
+    right: 100px;
+    top: 10px;
+    transition: 300ms;
+}
+
+.searchbar > div > span:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.4);
+    transition: 300ms;
+}
+
 .searchbar > div > input {
     padding: 20px;
     padding-left: 22.5%;

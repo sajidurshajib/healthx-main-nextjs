@@ -60,7 +60,7 @@ const DoctorSearch = () => {
                     />
                 </div>
             </form>
-
+            {console.log(doctors)}
             {searchHide && (
                 <div className={classes.optAllDoc}>
                     {doctors &&
