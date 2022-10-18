@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
+    --deep-primary: rgb(12, 87, 157);
     --primary: #457dc3;
     --secondary: #419cd9;
     --blue1: #535994;
