@@ -93,7 +93,11 @@ const Telemedicine = () => {
                                     ))}
                             </div>
                         )}
-                        <button>Book Now!</button>
+                        <Link href="find-doctors">
+                            <a>
+                                <button>Book Now!</button>
+                            </a>
+                        </Link>
                         {/* <div>
                             <h5>
                                 <FontAwesomeIcon icon={faKitMedical} /> Family Medicine
