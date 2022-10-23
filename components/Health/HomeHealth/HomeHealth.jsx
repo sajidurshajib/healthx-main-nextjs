@@ -10,7 +10,7 @@ export default function HomeHealth() {
     return (
         <div className={classes.health}>
             <p>
-                <span> HOME HEALTH</span> – Get all Home Health Services in a single platform
+                <span> HOME HEALTH</span> – Get all Home Health Services in a Single Platform
             </p>
             <div className={classes.flex}>
                 <div className={classes.grid}>
@@ -20,7 +20,9 @@ export default function HomeHealth() {
                             <p>
                                 Medicine & Health Accessories <br /> Delivery
                             </p>
-                            <span>Delivery at Home within 3 hours</span>
+                            <span>
+                                Get Medicine Delivery at Home <br /> within 6 hours
+                            </span>
                         </div>
                     </div>
                     <div>
@@ -29,7 +31,11 @@ export default function HomeHealth() {
                             <p>
                                 Pathology Tests at <br /> Home
                             </p>
-                            <span>Blood & Urine Sample Collection</span>
+                            <span>
+                                Blood & Urine Test
+                                <br />
+                                at Home
+                            </span>
                         </div>
                     </div>
                     <div>
@@ -38,7 +44,11 @@ export default function HomeHealth() {
                             <p>
                                 MBBS Doctor Visit at <br /> Home
                             </p>
-                            <span>Book MBBS Doctor appointment at home</span>
+                            <span>
+                                Book MBBS Doctor Visit
+                                <br />
+                                at Home
+                            </span>
                         </div>
                     </div>
                     <div>
@@ -47,7 +57,9 @@ export default function HomeHealth() {
                             <p>
                                 Nurse/ Attendant / Physiotherapy <br /> Service
                             </p>
-                            <span>Get trusted & quality caregiving at home</span>
+                            <span>
+                                Get Trusted & Quality Caregiving <br /> at Home
+                            </span>
                         </div>
                     </div>
                 </div>

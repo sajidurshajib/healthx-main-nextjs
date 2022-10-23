@@ -35,8 +35,10 @@
     margin-bottom: 10px;
 }
 
-.grid > div > div > image {
-    border-radius: 10px;
+.grid > div > div img {
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .grid > div > p {

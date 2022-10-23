@@ -1,11 +1,13 @@
 .health {
     margin: 0;
     margin-bottom: 40px;
+    background: var(--light-blue);
+    margin-top: 6em;
 }
 
 .health > p {
-    margin-top: 2.4em;
     margin-left: 3.5em;
+    padding-top: 30px;
     font-size: 32px;
     color: var(--secondary);
 }
@@ -21,7 +23,7 @@
     justify-content: center;
     /* background: linear-gradient(90deg, rgb(130, 206, 221) 0%, rgb(139, 218, 238) 100%); */
     /* background: linear-gradient(90deg, rgb(108, 157, 209) 0%, rgb(139, 218, 238) 100%); */
-    background: var(--light-blue);
+
     padding: 30px 0px 30px 60px;
 }
 
@@ -38,8 +40,10 @@
     margin-bottom: 10px;
 }
 
-.grid > div > image {
-    border-radius: 10px;
+.grid > div img {
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .grid > div > div > p {

@@ -15,7 +15,7 @@ export default function TeleHealth() {
             <div className={classes.grid}>
                 <div>
                     <div>
-                        <Image src={T1} width={300} height={200} alt="" className={classes.img} />
+                        <Image src={T1} width={300} height={200} alt="" />
                         <p>
                             24x7 Doctor <br /> Consultation
                         </p>
