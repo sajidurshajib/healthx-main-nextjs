@@ -84,6 +84,10 @@ const MainNav = () => {
                                     {' '}
                                     <a href="medicine-delivery">Medicine Delivery</a>
                                 </p>
+                                {/* <p>
+                                    {' '}
+                                    <a href="medicine-delivery">Medicine Delivery</a>
+                                </p> */}
                             </div>
                         </div>
                         <div className={classes.option}>
@@ -153,7 +157,7 @@ const MainNav = () => {
                         <div className={classes.MenuLink}>
                             <a href="nursing-attendant"> Home Nursing</a>
                             <a href="medicine-delivery">Medicine Delivery</a>
-                            <a href="medicine-delivery">Trained Attendant </a>
+                            <a href="trained-attendant">Trained Attendant </a>
                         </div>
                     </div>
                     {/* <div className={classes.MenuWrap}>
