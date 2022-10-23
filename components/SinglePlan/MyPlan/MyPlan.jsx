@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Family from '../../../assets/plan/myplan.png'
+import Footer from '../../Footer/Footer'
 import classes from './MyPlan.module.css'
 
 export default function MyPlan() {
@@ -312,6 +313,8 @@ export default function MyPlan() {
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </div>
     )
 }
