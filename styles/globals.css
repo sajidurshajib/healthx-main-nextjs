@@ -41,6 +41,17 @@ a {
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(171, 171, 171);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(151, 151, 151);
+}
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
