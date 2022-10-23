@@ -38,7 +38,7 @@ export default function ContactUs() {
                         <Image src={E} alt="Picture" width={60} height={60} />
                     </div>
                     <div>
-                        <p>examplebd@email.com</p>
+                        <p>contact@healthx.com.bd</p>
                     </div>
                 </div>
                 <div>

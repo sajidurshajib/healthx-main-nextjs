@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import classes from './AboutUs.module.css'
 import Approach from './Approach/Approach'
 import ContactUs from './ContactUs/ContactUs'
@@ -24,6 +25,7 @@ export default function AboutUs() {
             <Dream />
 
             <ContactUs />
+            <Footer />
         </div>
     )
 }

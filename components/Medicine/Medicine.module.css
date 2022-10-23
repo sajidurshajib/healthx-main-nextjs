@@ -9,7 +9,7 @@
 }
 
 .gridBox > div:nth-child(1) {
-    margin-top: 5em;
+    margin-top: 1.5em;
     text-align: center;
     padding: 0 4em;
     /* order: 1; */
@@ -63,22 +63,36 @@
 }
 
 .whyHealth > div {
-    margin-top: 2em;
+    margin-top: 3em;
     display: flex;
 
     margin-bottom: 20px;
     justify-content: space-between;
-    padding: 0 80px;
+
+    padding: 0 75px;
 }
+
 .whyHealth > div > div {
     margin-top: 2em;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
     margin-top: -10px;
 }
+
+.whyHealth > div > div > div {
+    text-align: center;
+}
+
+.whyHealth > div > div > p {
+    margin-top: 1px;
+    font-size: 13px;
+}
+/* .whyHealth > div > div > Image {
+    text-align: center;
+} */
 .whyHealth > h1 {
     font-size: 24px;
     text-align: center;

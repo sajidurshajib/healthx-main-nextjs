@@ -19,6 +19,10 @@
     box-shadow: 4px 4px 4px var(--light);
 }
 
+.wrapper > div > div > p {
+    font-size: 13px;
+}
+
 @media (max-width: 420px) {
     .wrapper > div {
         padding: 40px;

@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
+import V3 from '../../assets/medicine/24-hours.png'
 import Delivery from '../../assets/medicine/delivery.png'
-import V1 from '../../assets/medicine/v1.png'
-import V2 from '../../assets/medicine/v2.png'
-import V3 from '../../assets/medicine/v3.png'
-import V4 from '../../assets/medicine/v4.png'
-import V5 from '../../assets/medicine/v5.png'
+import V1 from '../../assets/medicine/express-delivery.png'
+import V4 from '../../assets/medicine/masks.png'
+import V2 from '../../assets/medicine/offer.png'
+import V5 from '../../assets/medicine/prescription.png'
+import Footer from '../Footer/Footer'
 import Faq from './Faq/Faq'
 import classes from './Medicine.module.css'
 
@@ -22,10 +23,8 @@ export default function Medicine() {
                     </p>
                     <h1 className={classes.heeader}> Why Do You Need Our Medicine Delivery Service?</h1>
                     <p>
-                        HealthX ensures the safety of your health and wealth by selling the best quality of each
-                        medicine from all top pharmaceutical companies at the best price possible. Our service team will
-                        help you buy medicines as per your prescription, and/or home deliver any over-the-counter
-                        medicine you require to solve a minor ailment.
+                        HealthX ensures the best possible price for all necessary medicines, and convenient delivery of
+                        your required products at the shortest possible time.
                     </p>
                     <h1 className={classes.order}> How to order?</h1>
                     <p> Call us at +8801322658481, +8801571016461</p>
@@ -50,26 +49,41 @@ export default function Medicine() {
                 <h1>Why HEALTHx?</h1>
                 <div>
                     <div>
-                        <Image src={V1} height={50} width={50} className={classes.imgIcon} alt="" />
+                        <div>
+                            <Image src={V1} height={50} width={50} className={classes.imgIcon} alt="" />{' '}
+                        </div>
+
                         <p> Reliable and fast delivery</p>
                     </div>
                     <div>
-                        <Image src={V2} height={50} width={50} className={classes.imgIcon} alt="" />
+                        <div>
+                            <Image src={V2} height={50} width={50} className={classes.imgIcon} alt="" />
+                        </div>
+
                         <p> Best price and exclusive offers</p>
                     </div>
 
                     <div>
-                        <Image src={V3} height={50} width={50} className={classes.imgIcon} alt="" />
+                        <div>
+                            <Image src={V3} height={50} width={50} className={classes.imgIcon} alt="" />
+                        </div>
+
                         <p>All Time Availability</p>
                     </div>
 
                     <div>
-                        <Image src={V4} height={50} width={50} className={classes.imgIcon} alt="" />
+                        <div>
+                            <Image src={V4} height={50} width={50} className={classes.imgIcon} alt="" />{' '}
+                        </div>
+
                         <p> Ensuring COVID-19 safety protocol</p>
                     </div>
 
                     <div>
-                        <Image src={V5} height={50} width={50} className={classes.imgIcon} alt="" />
+                        <div>
+                            <Image src={V5} height={50} width={50} className={classes.imgIcon} alt="" />{' '}
+                        </div>
+
                         <p> E-prescription facility through My Health</p>
                     </div>
                 </div>
@@ -94,6 +108,7 @@ export default function Medicine() {
             <div className={classes.faq}>
                 <Faq />
             </div>
+            <Footer />
         </div>
     )
 }

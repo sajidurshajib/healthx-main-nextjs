@@ -1,6 +1,7 @@
 .wrapper {
     width: 80%;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .wrapper > div:nth-child(1) {
@@ -24,10 +25,16 @@
     color: var(--dark);
 }
 
+.wrapper > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
+    margin-top: -10px;
+}
+
 @media (max-width: 420px) {
     .wrapper {
         width: 100%;
         padding: 30px;
+        margin-top: 25px;
+        margin-bottom: -60px;
     }
 
     .wrapper > div:nth-child(2) {

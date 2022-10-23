@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
+import S5 from '../../assets/nursing/fifthEmo.png'
+import S1 from '../../assets/nursing/firstEmo.png'
+import S4 from '../../assets/nursing/forthEmo.png'
 import Nurse from '../../assets/nursing/nurse.png'
-import S1 from '../../assets/nursing/s1.png'
-import S2 from '../../assets/nursing/s2.png'
-import S3 from '../../assets/nursing/s3.png'
-import S4 from '../../assets/nursing/s4.png'
-import S5 from '../../assets/nursing/s5.png'
+import S2 from '../../assets/nursing/secondEmo.png'
+import S3 from '../../assets/nursing/thirdEmo.png'
+import Footer from '../Footer/Footer'
 import Faq from './Faq/Faq'
 import Features from './Features/Features'
 import classes from './Nursing.module.css'
@@ -48,7 +49,7 @@ export default function Nursing() {
                     />
                 </div>
             </div>
-            <h2>WHY HOME NURSING SERVICE</h2>
+            <h2>Types Of NURSING SERVICE</h2>
             <p>
                 Home Nursing is required for a wide range of healthcare services that can be easily provided at your
                 home
@@ -88,6 +89,7 @@ export default function Nursing() {
             <Features />
             <WhyUs />
             <Faq />
+            <Footer />
         </div>
     )
 }

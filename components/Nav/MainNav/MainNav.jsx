@@ -116,6 +116,23 @@ const MainNav = () => {
                             <a href="#">Team</a>
                         </div>
                     </div>
+                    {/* Doctor Find  */}
+                    <div className={classes.MenuWrap}>
+                        <div className={classes.MenuHead}>Find Doctor</div>
+                        <div className={classes.MenuLink}>
+                            {/* <a href="#">Mission and Vision</a>
+                            <a href="#">Founders</a>
+                            <a href="#">Team</a> */}
+                        </div>
+                    </div>
+                    {/* 
+                    Medicine Find  */}
+
+                    <div className={classes.MenuWrap}>
+                        <div className={classes.MenuHead}>Medicine Order </div>
+                        <div className={classes.MenuLink}></div>
+                    </div>
+
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>Solutions</div>
                         <div className={classes.MenuLink}>
@@ -134,17 +151,19 @@ const MainNav = () => {
                     <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>Services</div>
                         <div className={classes.MenuLink}>
-                            <a href="nursing-attendant">Nursing/Attendant</a>
+                            <a href="nursing-attendant"> Home Nursing</a>
                             <a href="medicine-delivery">Medicine Delivery</a>
+                            <a href="medicine-delivery">Trained Attendant </a>
                         </div>
                     </div>
-                    <div className={classes.MenuWrap}>
+                    {/* <div className={classes.MenuWrap}>
                         <div className={classes.MenuHead}>Media</div>
                         <div className={classes.MenuLink}>
                             <a href="#">News and Media</a>
                             <a href="#">Healthx Blog</a>
                         </div>
-                    </div>
+                    </div> */}
+                    {/* extra  */}
                 </div>
 
                 <div className={classes.right}>
