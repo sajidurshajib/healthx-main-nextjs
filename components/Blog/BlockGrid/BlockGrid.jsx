@@ -7,7 +7,9 @@ import classes from './BlockGrid.module.css'
 export default function BlockGrid() {
     return (
         <div className={classes.wrapper}>
-            <div className={classes.title}>Our Health Blogs</div>
+            <div className={classes.title}>
+                Our Health Blogs <span>- Find the Best Health Content </span>
+            </div>
             <div className={classes.sliderLeft}>
                 <span>&#60;</span>
             </div>

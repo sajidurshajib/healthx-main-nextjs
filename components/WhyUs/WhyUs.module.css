@@ -6,7 +6,7 @@
 
 .wrapper .title {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 38px;
     font-weight: 500;
     color: var(--primary);
 }
@@ -20,7 +20,7 @@
     box-shadow: 0px 1px 2px var(--light);
     /* border: 1px solid var(--light); */
     /* border-radius: 10px; */
-    background: linear-gradient(90deg, rgb(108, 157, 209) 0%, rgb(139, 218, 238) 100%);
+    background: linear-gradient(90deg, rgb(132, 188, 247) 0%, rgb(139, 218, 238) 100%);
 }
 
 .whyContainer:hover {

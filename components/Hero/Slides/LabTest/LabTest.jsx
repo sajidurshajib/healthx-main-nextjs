@@ -9,9 +9,9 @@ const LabTest = () => {
             <div className={classes.grid}>
                 <div className={classes.Wrapper}>
                     <h2>
-                        PATHOLOGY TEST AT HOME <br /> GET UPTO 40% DISCOUNT
+                        LAB TEST AT HOME <br /> GET UPTO 40% DISCOUNT
                     </h2>
-                    <p>20+ Partner Labs</p>
+                    <p>Pathology Test From 20+ Partner Labs & Hospitals</p>
                     <div>{/* <Image src={Med} width={320} height={300} alt="" /> */}</div>
                     {/* <div>
                         <Searchbar placeholder={'Search tests by name or price'} />

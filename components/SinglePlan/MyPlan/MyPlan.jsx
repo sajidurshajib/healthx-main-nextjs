@@ -14,9 +14,8 @@ export default function MyPlan() {
                             <h2 className={classes.title}>MY HEALTH PLAN (MHP)</h2>
                             <p className={classes.subtitle}>
                                 My Health Plan (MHP) is designed to ensure the basic healthcare need of every
-                                individual. Primary Health Care need is now a common need in our daily life. Healthcare
-                                expense is growing like anything day by day. To reduce the healthcare expenditure, we
-                                are offering the primary & essential healthcare services at affordable costs.
+                                individual. To reduce the healthcare expenditure, we are offering the primary &
+                                essential healthcare services at affordable costs.
                             </p>
                         </div>
                         <div className={classes.list}>
@@ -45,7 +44,7 @@ export default function MyPlan() {
                         <h1 className={classes.tableHeader}>1 Month Plan</h1>
                         <p className={classes.tablePricing}>
                             <span>৳</span>
-                            <span>125</span>
+                            <span>99</span>
                             <span>/for 1 person</span>
                         </p>
                         <ul className={classes.tableOptions}>

@@ -43,7 +43,7 @@ const WhyUs = () => {
                         </span>
                         <br />
                         <div className={classes.Counter}>
-                            <CountUp start={0} end={30} duration={5} useEasing={true} className={classes.Counter} />
+                            <CountUp start={0} end={300} duration={5} useEasing={true} className={classes.Counter} />
                             <span>+</span>
                         </div>
                         <p>Pharmacies</p>
@@ -57,7 +57,7 @@ const WhyUs = () => {
                         <div className={classes.Counter}>
                             <CountUp
                                 start={1000}
-                                end={2200}
+                                end={10000}
                                 duration={5}
                                 useEasing={true}
                                 className={classes.Counter}

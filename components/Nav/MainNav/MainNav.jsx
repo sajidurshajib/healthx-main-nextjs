@@ -97,47 +97,75 @@ const MainNav = () => {
                     <a className={classes.SiteLogo} href="/">
                         <Image src={hx} height={40} width={164} alt="" />
                     </a>
-                </div>
+                    <div className={classes.center}>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>
+                                <a href="find-doctors">Find Doctor</a>
+                            </div>
+                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>
+                                <a href="medicine-delivery">Order Medicine</a>
+                            </div>
+                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>Lab Test</div>
+                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>
+                                Nursing & Attendant
+                                <div>
+                                    <span> &lt;</span>
+                                </div>
+                            </div>
+                            <div className={classes.MenuLink}>
+                                <a href="nursing-attendant">Home Nursing</a>
+                                <a href="nursing-attendant">Nursing/Attendant</a>
+                            </div>
+                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>
+                                Health Plan
+                                <div>
+                                    <span> &lt;</span>
+                                </div>
+                            </div>
+                            <div className={classes.MenuLink}>
+                                <a href="my-plan">My Health Plan</a>
+                                <a href="family-plan">Family Health Plan</a>
+                            </div>
+                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>Health Package</div>
+                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>
+                                Solutions
+                                <div>
+                                    <span> &lt;</span>
+                                </div>
+                            </div>
+                            <div className={classes.MenuLink}>
+                                <a href="https://user.healthxbd.com">For Patient</a>
+                                <a href="https://doc.healthxbd.com">For Doctor</a>
+                                <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
+                            </div>
+                        </div>
 
-                <div className={classes.center}>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>
-                            <a href="find-doctors">Find Doctor</a>
+                        {/* <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>Services</div>
+                            <div className={classes.MenuLink}>
+                                <a href="nursing-attendant">Nursing/Attendant</a>
+                                <a href="medicine-delivery">Medicine Delivery</a>
+                            </div>
                         </div>
-                    </div>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>
-                            <a href="about-us">About</a>
-                        </div>
-                    </div>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>Solutions</div>
-                        <div className={classes.MenuLink}>
-                            <a href="https://user.healthxbd.com">For Patient</a>
-                            <a href="https://doc.healthxbd.com">For Doctor</a>
-                            <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
-                        </div>
-                    </div>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>Health Plan</div>
-                        <div className={classes.MenuLink}>
-                            <a href="my-plan">My Health Plan</a>
-                            <a href="family-plan">Family Health Plan</a>
-                        </div>
-                    </div>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>Services</div>
-                        <div className={classes.MenuLink}>
-                            <a href="nursing-attendant">Nursing/Attendant</a>
-                            <a href="medicine-delivery">Medicine Delivery</a>
-                        </div>
-                    </div>
-                    <div className={classes.MenuWrap}>
-                        <div className={classes.MenuHead}>Media</div>
-                        <div className={classes.MenuLink}>
-                            <a href="#">News and Media</a>
-                            <a href="#">Healthx Blog</a>
-                        </div>
+                        <div className={classes.MenuWrap}>
+                            <div className={classes.MenuHead}>Media</div>
+                            <div className={classes.MenuLink}>
+                                <a href="#">Health Blog</a>
+                                <a href="#">News</a>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -157,6 +185,12 @@ const MainNav = () => {
                                 <a href="https://doc.healthxbd.com">Smart Doctor</a>
                                 <a href="https://user.healthxbd.com">My Health Portal</a>
                             </div>
+                        </div>
+                        <div className={classes.topNav}>
+                            <a href="about-us">About</a>
+                            <a href="/">Contact</a>
+                            <a href="https://blog.healthxbd.com">Blog</a>
+                            <a href="https://blog.healthxbd.com">News</a>
                         </div>
                     </div>
                 )}

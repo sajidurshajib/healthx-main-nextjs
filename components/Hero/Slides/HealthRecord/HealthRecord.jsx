@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+import Health from '../../../../assets/hero/health3.png'
 import Searchbar from '../../Searchbar/Searchbar'
 import classes from './HealthRecord.module.css'
 
@@ -8,14 +10,19 @@ export default function HealthRecord() {
             <div className={classes.grid}>
                 <div className={classes.Wrapper}>
                     <h2>
-                        SAVE YOUR PRESCRIPTIONS <br /> TRACK YOUR OWN <br /> HEALTH RECORD
+                        SAVE MEDICAL RECORDS <br /> TRACK HEALTH INDICATORS
                     </h2>
-                    <p>20+ Health Indicators</p>
+                    <p>Store Your Prescriptions & Medical Reports</p>
                     <div>{/* <Image src={Med} width={320} height={300} alt="" /> */}</div>
                     {/* <div>
                         <Searchbar placeholder={'Search health by name or date'} />
                     </div> */}
                     <button>Check Now!</button>
+                </div>
+                <div className={classes.search}>
+                    <div>
+                        <Image src={Health} width={480} height={380} alt="" />
+                    </div>
                 </div>
             </div>
         </div>

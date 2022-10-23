@@ -45,11 +45,13 @@
 }
 
 .Wrapper > h2 {
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 40px;
     margin: 0 0 20px 0;
     color: var(--white);
     opacity: 0.98;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 .Wrapper > p {
@@ -149,7 +151,7 @@
     padding: 2px 4px;
     overflow-y: auto;
     border: 1px solid var(--light);
-    top: 244px;
+    top: 200px;
     z-index: 110;
     max-height: 50vh;
 }

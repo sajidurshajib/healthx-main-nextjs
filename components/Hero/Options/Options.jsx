@@ -28,7 +28,9 @@ const Options = ({ id, setId }) => {
                         <Image src={Doc} width={44} height={40} alt="" />
                         <span>Search Doctor</span>
                     </div>
-                    <p>HEALTHx connects you with GP & specialize doctors 24x7</p>
+                    <p>
+                        Find The Best Doctors <br /> in Your Area
+                    </p>
                 </Select>
                 <div className={classes.line}></div>
                 <Select number={2} id={id} setId={setId}>
@@ -37,16 +39,20 @@ const Options = ({ id, setId }) => {
                         <Image src={Med} width={44} height={40} alt="" />
                         <span>Medicine Delivery</span>
                     </div>
-                    <p>Get your medicine within 4 hours with 7% discount</p>
+                    <p>
+                        Get medicine in 6 hours <br /> with 10% discount
+                    </p>
                 </Select>
                 <div className={classes.line}></div>
                 <Select number={3} id={id} setId={setId}>
                     <div>
                         {/* <FontAwesomeIcon icon={faCheckToSlot} height={18} width={18} /> */}
                         <Image src={Test} width={42} height={42} alt="" />
-                        <span>Lab Test</span>
+                        <span>Lab Test at Home</span>
                     </div>
-                    <p>Book safe and hygienic lab tests from approved labs</p>
+                    <p>
+                        Blood & Urine Test <br /> Upto 40% Discount
+                    </p>
                 </Select>
                 <div className={classes.line}></div>
                 <Select number={4} id={id} setId={setId}>
@@ -56,7 +62,7 @@ const Options = ({ id, setId }) => {
                         <span>Health Records</span>
                     </div>
                     <p>
-                        Choose the best health plan <br /> for your family
+                        Track Your Own <br /> Personal Health Records
                     </p>
                 </Select>
                 {/* <Select number={5} id={id} setId={setId}>

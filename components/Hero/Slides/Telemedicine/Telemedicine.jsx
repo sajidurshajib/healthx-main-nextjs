@@ -57,9 +57,9 @@ const Telemedicine = () => {
                 <div className={classes.grid}>
                     <div className={classes.Wrapper}>
                         <h2>
-                            FIND THE BEST DOCTORS <br />& Book Online
+                            FIND THE BEST DOCTORS <br />& Book Online Appointment
                         </h2>
-                        <p>FROM THE LARGEST DOCTOR PORTAL OF THE COUNTRY</p>
+                        <p>From The Largest Doctor Portal of The Country</p>
                         <div>
                             <Searchbar
                                 placeholder={'Search doctors by specialty, area or name'}

@@ -55,12 +55,9 @@ const MedicineOrder = () => {
             <div className={classes.grid}>
                 <div className={classes.Wrapper}>
                     <h2>
-                        ORDER MEDICINE <br /> GET 7% CASHBACK
+                        ORDER MEDICINE <br /> GET 10% CASHBACK
                     </h2>
-                    <p>
-                        Medicine Delivered from 500+ Govt. approved Model Pharmacy <br /> Medicine Delivery Charge FREE
-                        in DHAKA*
-                    </p>
+                    <p>Medicine Delivered from 500+ Govt. approved Model Pharmacy</p>
                     <div>
                         <Searchbar
                             placeholder={'Search medicines by name, generic or price'}
@@ -96,7 +93,12 @@ const MedicineOrder = () => {
                                 ))}
                         </div>
                     )}
-                    <button>Order Now!</button>
+
+                    <Link href="medicine-delivery">
+                        <a>
+                            <button>Order Now!</button>
+                        </a>
+                    </Link>
                     {/* <h4>
                         <FontAwesomeIcon icon={faCartArrowDown} /> Search Medicines
                     </h4> */}

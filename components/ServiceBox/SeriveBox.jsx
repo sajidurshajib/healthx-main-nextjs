@@ -8,7 +8,7 @@ export default function SeriveBox() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.title}>
-                HEALTH PLANS <span>– Choose the best health package for your family</span>
+                HEALTH PLANS <span>– Choose the Best Health Plan for Your Family</span>
             </div>
             <div className={classes.service}>
                 <div className={classes.box}>

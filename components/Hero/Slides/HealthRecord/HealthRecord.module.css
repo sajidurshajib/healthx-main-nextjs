@@ -5,8 +5,8 @@
 }
 
 .grid {
-    /* display: grid;
-    grid-template-columns: 2fr 1; */
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
     /* margin-top: 130px; */
 }
 
@@ -39,11 +39,13 @@
 }
 
 .Wrapper > h2 {
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 40px;
     margin: 0 0 20px 0;
     color: var(--white);
     opacity: 0.98;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 .Wrapper > p {
@@ -69,6 +71,20 @@
 .imgWrapper {
     margin-left: 10em;
     animation: left-right 1000ms;
+}
+
+.search {
+    /* border: 2px solid var(--primary); */
+    padding: 0px 2em;
+    position: absolute;
+    right: 76px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.search > div {
+    /* transform: scaleX(-1); */
 }
 
 @media (min-width: 768px) {

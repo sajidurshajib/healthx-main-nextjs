@@ -7,10 +7,16 @@
 
 .wrapper .title {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 38px;
     font-weight: 500;
     color: var(--primary);
     margin-bottom: -12px;
+}
+
+.wrapper .title > span {
+    color: var(--secondary);
+    font-size: 32px;
+    font-weight: 400;
 }
 
 .container {

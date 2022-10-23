@@ -24,7 +24,7 @@ export default function Solution() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.title}>
-                Our Solutions <span>– for all your Healthcare need</span>
+                Our Solutions <span>– for all Your Healthcare Need</span>
             </div>
             <div className={classes.innerWrap}>
                 <div className={classes.container}>
@@ -49,11 +49,8 @@ export default function Solution() {
                                         <div className={classes.collabContent}>
                                             <span>MY HEALTH PORTAL</span>
                                             <p>
-                                                My health portal is a secure online website that gives you convenient,
-                                                24-hour access to personal health information from anywhere with an
-                                                internet connection. The online solution helps you to keep track of your
-                                                health care provider visits, test results, billing, prescriptions, and
-                                                so on. You can also e-mail your questions through the portal.
+                                                One Stop Digital Healthcare Solution <br /> for Personal Health Record &
+                                                Healthcare Service Order.
                                             </p>
                                             <Link href="https://user.healthxbd.com/" target="__blank">
                                                 <a>Register</a>
@@ -137,11 +134,10 @@ export default function Solution() {
                                         <div className={classes.collabContent}>
                                             <span>SMART DOCTOR SOLUTION</span>
                                             <p>
-                                                Smart Doctor Solution is a digital doctor solution platform that
-                                                provides you with top-notch medical services in the comfort of your
-                                                preferred area, redefines relationships, and helps direct your attention
-                                                to what really matters to patients. It also provides to develop the
-                                                network with doctors across the world.
+                                                Smart Doctor solution offers Doctor's Digital Profile, Digital
+                                                promotion, Patient appointment, online & offline prescription, Patient
+                                                history, medical record, health data analytics, clinical & medical
+                                                education etc.
                                             </p>
                                             <Link href="https://doc.healthxbd.com/" target="__blank">
                                                 <a>Get Started</a>
@@ -174,9 +170,7 @@ export default function Solution() {
                                             <p>
                                                 The smart pharmacy will provides you accurate medication dispensing,
                                                 reduced waiting times, absence of medication errors, and increased
-                                                number of drugs dispensed daily with dashboards. Smart Pharmacy Manager
-                                                is new functionality that will also help patients and pharmacies to
-                                                engage, connect and communicate more efficiently.
+                                                number of drugs dispensed daily with dashboards.
                                             </p>
                                             <Link href="https://pharmacy.healthxbd.com/" target="__blank">
                                                 <a>Get Started</a>
