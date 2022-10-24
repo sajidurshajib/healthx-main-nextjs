@@ -21,13 +21,16 @@
     transition: 200ms;
 }
 
-.doctorPic {
+.doctorPic img {
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 350ms;
 }
 
-.doctorPic:hover {
-    transform: scale(1.04);
+.doctorPic img:hover {
     cursor: pointer;
-    transition: 250ms;
+    transition: 350ms;
     border-radius: 10px;
 }
 

@@ -4,7 +4,7 @@ import Cover from '../../../assets/doctor/bg.jpg'
 import Img from '../../../assets/doctor/docstock.jpg'
 import classes from './Header.module.css'
 
-export default function Header({ doctor }) {
+export default function Header({ doctor, picture }) {
     return (
         <div className={classes.header}>
             <div>

@@ -15,8 +15,8 @@ import classes from './SingleDoctor.module.css'
 
 export default function SingleDoctor({ id }) {
     const [menu, setMenu] = useState(1)
-
     const [doctor, setDoctor] = useState([])
+    const [picture, setPicture] = useState({})
 
     const api = process.env.NEXT_PUBLIC_API_URL
 
@@ -36,16 +36,34 @@ export default function SingleDoctor({ id }) {
                 console.log('data not fetching')
             }
         }
+
+        const fetchPicture = async () => {
+            let response = await fetch(`${api}/profile-pic/${id}`, {
+                method: 'GET',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+            })
+            let data = await response.json()
+            if (response.ok) {
+                setPicture(data.image_string)
+                console.log('a', data)
+            }
+        }
+
         try {
             fetchData()
+            fetchPicture()
         } catch {
             setDoctor([])
+            fetchPicture({})
         }
     }, [id])
 
     return (
         <div className={classes.wrapper}>
-            <Header doctor={doctor} />
+            <Header doctor={doctor} picture={picture} />
             <div className={classes.infoWrapper}>
                 <div className={classes.info}>
                     <div>
