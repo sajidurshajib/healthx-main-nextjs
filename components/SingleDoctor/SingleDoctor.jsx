@@ -48,7 +48,6 @@ export default function SingleDoctor({ id }) {
             let data = await response.json()
             if (response.ok) {
                 setPicture(data.image_string)
-                console.log('a', data)
             }
         }
 
@@ -63,7 +62,7 @@ export default function SingleDoctor({ id }) {
 
     return (
         <div className={classes.wrapper}>
-            <Header doctor={doctor} picture={picture} />
+            <Header api={api} doctor={doctor} picture={picture} />
             <div className={classes.infoWrapper}>
                 <div className={classes.info}>
                     <div>
@@ -74,7 +73,7 @@ export default function SingleDoctor({ id }) {
                         <p>Total Experience</p>
                         <span>{doctor?.doctor?.exp_year !== null ? doctor?.doctor?.exp_year : 1}+ Years</span>
                     </div>
-                    <div>
+                    {/* <div>
                         <p>Total Consultations</p>
                         <span>{id}</span>
                     </div>
@@ -83,7 +82,7 @@ export default function SingleDoctor({ id }) {
                         <span>
                             5.0 <FontAwesomeIcon icon={faStar} style={{ color: 'orange', fontSize: '14px' }} />
                         </span>
-                    </div>
+                    </div> */}
                     <div>
                         <p>Joined Date</p>
                         <span>

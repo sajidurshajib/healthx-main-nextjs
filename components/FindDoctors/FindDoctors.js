@@ -24,7 +24,7 @@ const FindDoctors = () => {
 
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(`${api}/doctors/search/?search=${search}&skip=0&limit=10`, {
+            let response = await fetch(`${api}/admin/doctors/active?skip=0&limit=10`, {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const FindDoctors = () => {
             let data = await response.json()
             if (response.ok) {
                 setDoctors(data)
-                console.log('d', data)
+                console.log('dd', data)
             } else {
                 console.log('data not fetching')
             }
@@ -116,7 +116,7 @@ const FindDoctors = () => {
             </div>
             <div className={classes.listContainer}>
                 <SearchDoctor />
-                <DoctorList doctors={doctors} />
+                <DoctorList api={api} doctors={doctors} />
                 <button className={classes.loadButton}>Load More...</button>
                 {/* <button className={classes.button}>New</button> */}
             </div>

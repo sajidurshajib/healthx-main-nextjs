@@ -1,16 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
 import Cover from '../../../assets/doctor/bg.jpg'
-import Img from '../../../assets/doctor/docstock.jpg'
+import Img from '../../../assets/doctor/doc.png'
 import classes from './Header.module.css'
 
-export default function Header({ doctor, picture }) {
+export default function Header({ api, doctor, picture }) {
+    const profile = `${api}/images/profile/${picture}`
     return (
         <div className={classes.header}>
             <div>
                 <div className={classes.headLeftWrapper}>
                     <div className={classes.profilePic}>
-                        <Image className={classes.img} src={Img} alt="" height={150} width={150} />
+                        <Image className={classes.img} src={profile} alt="" height={150} width={150} />
                     </div>
                     <h2>{doctor?.user?.name}</h2>
                     {doctor?.qualifications?.map((qf, i) => (
