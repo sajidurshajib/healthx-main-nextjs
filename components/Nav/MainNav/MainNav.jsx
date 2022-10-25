@@ -95,7 +95,7 @@ const MainNav = () => {
                 </div>
                 <div className={classes.left}>
                     <a className={classes.SiteLogo} href="/">
-                        <Image src={hx} height={40} width={164} alt="" />
+                        <Image src={hx} height={36} width={146} alt="" />
                     </a>
                     <div className={classes.center}>
                         <div className={classes.MenuWrap}>
