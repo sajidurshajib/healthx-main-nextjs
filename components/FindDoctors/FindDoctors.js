@@ -34,7 +34,6 @@ const FindDoctors = () => {
             let data = await response.json()
             if (response.ok) {
                 setDoctors(data)
-                console.log('dd', data)
             } else {
                 console.log('data not fetching')
             }
