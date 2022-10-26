@@ -34,7 +34,7 @@ export default function Home() {
             <TeleHealth />
             <ServiceBox />
             <Solution />
-            <Blog />
+            {/* <Blog /> */}
             {/* <Mission /> */}
             <WhyUs />
             <SliderPartner />
