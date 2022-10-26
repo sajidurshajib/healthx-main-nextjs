@@ -11,7 +11,13 @@ export default function Header({ api, doctor, picture }) {
             <div>
                 <div className={classes.headLeftWrapper}>
                     <div className={classes.profilePic}>
-                        <Image className={classes.img} src={profile} alt="" height={150} width={150} />
+                        <Image
+                            className={classes.img}
+                            src={picture.image_string !== null ? profile : Img}
+                            alt=""
+                            height={150}
+                            width={150}
+                        />
                     </div>
                     <h2>{doctor?.user?.name}</h2>
                     {doctor?.qualifications?.map((qf, i) => (

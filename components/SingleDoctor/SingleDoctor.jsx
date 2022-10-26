@@ -48,6 +48,8 @@ export default function SingleDoctor({ id }) {
             let data = await response.json()
             if (response.ok) {
                 setPicture(data.image_string)
+            } else {
+                setPicture({ image_string: null })
             }
         }
 
@@ -56,7 +58,7 @@ export default function SingleDoctor({ id }) {
             fetchPicture()
         } catch {
             setDoctor([])
-            fetchPicture({})
+            fetchPicture({ image_string: null })
         }
     }, [id])
 
