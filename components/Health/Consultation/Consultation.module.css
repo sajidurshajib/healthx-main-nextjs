@@ -46,10 +46,15 @@
     text-align: center;
 }
 
-.grid > div > span {
+.grid > div > a {
     display: block;
     color: var(--primary);
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.grid > div > a:hover {
+    opacity: 0.8;
+    transition: 200ms;
 }

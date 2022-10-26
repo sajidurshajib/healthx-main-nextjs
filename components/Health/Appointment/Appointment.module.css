@@ -49,11 +49,16 @@
     font-weight: 500;
 }
 
-.grid > div > span {
+.grid > div > a {
     display: block;
     color: var(--primary);
     font-size: 16px;
     margin-top: 2px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.grid > div > a:hover {
+    opacity: 0.8;
+    transition: 200ms;
 }

@@ -86,6 +86,11 @@
     font-size: 14px;
 }
 
+.container .collab .collabContent > a:hover {
+    opacity: 0.9;
+    transition: 200ms;
+}
+
 .container .collab .collabGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

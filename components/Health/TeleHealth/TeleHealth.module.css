@@ -49,7 +49,8 @@
     border-radius: 4px;
 }
 
-.grid > div > div > p {
+.grid > div > div > a {
+    display: block;
     font-size: 18px;
     margin: 0;
     margin-bottom: 10px;
@@ -58,6 +59,11 @@
     margin: 0 20px;
     margin-top: 10px;
     font-weight: 500;
+}
+
+.grid > div > div > a:hover {
+    opacity: 0.9;
+    transition: 200ms;
 }
 
 .grid > div > span {

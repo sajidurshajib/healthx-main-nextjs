@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Child from '../../../assets/health/child.png'
 import Fever from '../../../assets/health/fever.png'
@@ -20,21 +21,31 @@ export default function Consultation() {
                     <p>
                         Period or Pregnancy <br /> issue?
                     </p>
-                    <span>Consult Now!</span>
+                    <Link href="/find-doctors">
+                        <a>Consult Now!</a>
+                    </Link>
                 </div>
                 <div>
                     <div>
                         <Image src={Performance} width={64} height={64} alt="" />
                     </div>
-                    <p>Sexual problem or performance issue?</p>
-                    <span>Consult Now!</span>
+                    <p>
+                        Sexual problem or performance <br /> issue?
+                    </p>
+                    <Link href="/find-doctors">
+                        <a>Consult Now!</a>
+                    </Link>
                 </div>
                 <div>
                     <div>
                         <Image src={Fever} width={60} height={60} alt="" />
                     </div>
-                    <p>Seasonal fever, cold or cough problem?</p>
-                    <span>Consult Now!</span>
+                    <p>
+                        Seasonal fever, cold or cough <br /> problem?
+                    </p>
+                    <Link href="/find-doctors">
+                        <a>Consult Now!</a>
+                    </Link>
                 </div>
                 <div>
                     <div>
@@ -43,7 +54,9 @@ export default function Consultation() {
                     <p>
                         Child health <br /> problem?
                     </p>
-                    <span>Consult Now!</span>
+                    <Link href="/find-doctors">
+                        <a>Consult Now!</a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ const LabTest = () => {
                     {/* <div>
                         <Searchbar placeholder={'Search tests by name or price'} />
                     </div> */}
-                    <button>Book Now!</button>
+                    <button>Call +8801322658481 for Booking!</button>
                 </div>
                 <div className={classes.search}>
                     {/* <div>

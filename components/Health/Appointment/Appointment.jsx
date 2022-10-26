@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import A1 from '../../../assets/health/a1.jpg'
 import A2 from '../../../assets/health/a2.jpg'
@@ -20,7 +21,9 @@ export default function Appointment() {
                     <p>
                         Book Specialist Doctor’s <br /> appointment
                     </p>
-                    <span>Book Now!</span>
+                    <Link href="/find-doctors">
+                        <a>Book Now!</a>
+                    </Link>
                 </div>
                 <div>
                     <div>
@@ -29,7 +32,9 @@ export default function Appointment() {
                     <p>
                         Book Dental Doctor’s <br /> appointment
                     </p>
-                    <span>Book Now!</span>
+                    <Link href="/find-doctors">
+                        <a>Book Now!</a>
+                    </Link>
                 </div>
                 <div>
                     <div>
@@ -38,7 +43,9 @@ export default function Appointment() {
                     <p>
                         Book Dietician / Nutritionist <br /> appointment
                     </p>
-                    <span>Book Now!</span>
+                    <Link href="/find-doctors">
+                        <a>Book Now!</a>
+                    </Link>
                 </div>
                 <div>
                     <div>
@@ -47,7 +54,9 @@ export default function Appointment() {
                     <p>
                         Book Physiotherapist <br /> appointment
                     </p>
-                    <span>Book Now!</span>
+                    <Link href="/find-doctors">
+                        <a>Book Now!</a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Health from '../../../../assets/hero/health3.png'
 import Searchbar from '../../Searchbar/Searchbar'
@@ -17,7 +18,11 @@ export default function HealthRecord() {
                     {/* <div>
                         <Searchbar placeholder={'Search health by name or date'} />
                     </div> */}
-                    <button>Check Now!</button>
+                    <Link href="https://user.healthxbd.com/">
+                        <a>
+                            <button>Check Now!</button>
+                        </a>
+                    </Link>
                 </div>
                 <div className={classes.search}>
                     <div>
