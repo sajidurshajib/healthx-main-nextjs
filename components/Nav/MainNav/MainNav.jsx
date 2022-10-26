@@ -108,9 +108,9 @@ const MainNav = () => {
                                 <a href="medicine-delivery">Order Medicine</a>
                             </div>
                         </div>
-                        <div className={classes.MenuWrap}>
+                        {/* <div className={classes.MenuWrap}>
                             <div className={classes.MenuHead}>Lab Test</div>
-                        </div>
+                        </div> */}
                         <div className={classes.MenuWrap}>
                             <div className={classes.MenuHead}>
                                 Nursing & Attendant
@@ -135,9 +135,9 @@ const MainNav = () => {
                                 <a href="family-plan">Family Health Plan</a>
                             </div>
                         </div>
-                        <div className={classes.MenuWrap}>
+                        {/* <div className={classes.MenuWrap}>
                             <div className={classes.MenuHead}>Health Package</div>
-                        </div>
+                        </div> */}
                         <div className={classes.MenuWrap}>
                             <div className={classes.MenuHead}>
                                 Solutions
