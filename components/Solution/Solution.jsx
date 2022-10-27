@@ -24,7 +24,7 @@ export default function Solution() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.title}>
-                Our Solutions <span>– for all Your Healthcare Need</span>
+                OUR SOLUTIONS <span>– for all Your Healthcare Need</span>
             </div>
             <div className={classes.innerWrap}>
                 <div className={classes.container}>

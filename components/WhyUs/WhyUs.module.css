@@ -76,21 +76,22 @@
 
 @media (max-width: 768px) {
     .whyContainer {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        padding: 2em;
+        grid-gap: 0px 30px;
+        padding: 1em;
     }
 
-    .wrapper .title {
+    .wrapper > .title {
+        margin-top: -20px;
         margin-bottom: 1.5rem;
         font-size: 1.4em;
     }
 
     .whyContainer > div > .Counter {
-        font-size: 0.8em;
+        font-size: 20px;
     }
     .whyContainer > div > p {
         font-size: 0.8em;

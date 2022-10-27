@@ -134,7 +134,8 @@
 /* For phone view  */
 @media (max-width: 420px) {
     .Footer {
-        margin-top: 220px;
+        margin-top: 280px;
+        padding: 20px 14px;
     }
     .footerWrapper > .footerContact div {
         font-size: 14px;
@@ -147,10 +148,10 @@
     }
 
     .footerColumn > .Heading {
-        font-size: 16px;
+        font-size: 14px;
     }
     .footerColumn > .Item a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .footerCopyright {

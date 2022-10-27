@@ -62,3 +62,36 @@
     opacity: 0.8;
     transition: 200ms;
 }
+
+@media (max-width: 420px) {
+    .appointment {
+        margin-bottom: 20px;
+    }
+
+    .appointment > p {
+        margin: 0 20px;
+        margin-top: 60px;
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
+    .appointment > p > span {
+        font-size: 18px;
+    }
+
+    .grid {
+        margin-top: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 60px 40px;
+        padding: 10px 1em;
+    }
+
+    .grid > div > p {
+        font-size: 18px;
+    }
+
+    .grid > div > a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

@@ -170,27 +170,58 @@
         margin: 0;
         margin-top: 3rem;
     }
+
+    .wrapper .title {
+        margin: 0 20px;
+        margin-top: 3em;
+        font-size: 22px;
+    }
+
+    .wrapper .title > span {
+        font-size: 16px;
+    }
+
+    .wrapper .name {
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        margin-top: -20px;
+        text-align: center;
+    }
+
     .service {
-        display: grid;
+        margin-top: 30px;
         grid-template-columns: repeat(1, 1fr);
-        padding: 20px 40px;
+        padding: 20px 10px;
         grid-gap: 2em;
     }
-    .wrapper .title {
-        font-size: 1.4em;
+
+    .service .box .wrap {
+        padding: 20px 12px;
     }
-    .service .box .title {
-        font-size: 1.2em;
-    }
+
     .service .box span {
-        font-size: 12px;
+        text-align: center;
+        color: var(--dark);
+        margin-top: -10px;
+        font-size: 14px;
     }
+
     .service .box .show {
+        grid-gap: 0px 10px;
+    }
+
+    .service .box .show {
+        margin-top: 14px;
+    }
+
+    .service .box .show > p {
+        padding: 20px 10px;
         font-size: 12px;
     }
 
     .service .box button {
-        font-size: 0.6em;
-        padding: 6px 12px;
+        font-size: 14px;
+        padding: 10px 14px;
     }
 }

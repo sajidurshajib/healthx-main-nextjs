@@ -117,7 +117,6 @@ const FindDoctors = () => {
                 <SearchDoctor />
                 <DoctorList api={api} doctors={doctors} />
                 <button className={classes.loadButton}>Load More...</button>
-                {/* <button className={classes.button}>New</button> */}
             </div>
         </div>
     )

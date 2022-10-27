@@ -21,78 +21,6 @@ const MainNav = () => {
     return (
         <div className={classes.MainNav}>
             <div className={classes.Wrapper}>
-                <div className={classes.toggleBar}>
-                    <FontAwesomeIcon className={classes.icon} icon={faBars} />
-                    <div className={classes.sidebar}>
-                        <div className={classes.option}>
-                            <p>Sign in</p>
-                            <div className={classes.value}>
-                                <p>
-                                    <a href="https://doc.healthxbd.com">Smart Doctor</a>
-                                </p>
-                                <p>
-                                    <a href="https://user.healthxbd.com">My Health Portal</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div className={classes.option}>
-                            <p>About</p>
-                            <div className={classes.value}>
-                                <p>
-                                    <a href="about-us">About Us</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={classes.option}>
-                            <p>Solutions</p>
-                            <div className={classes.value}>
-                                <p>
-                                    <a href="https://user.healthxbd.com">For Patient</a>
-                                </p>
-                                <p>
-                                    <a href="https://doc.healthxbd.com">For Doctor</a>
-                                </p>
-                                <p>
-                                    <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div className={classes.option}>
-                            <p>HealthPlans</p>
-                            <div className={classes.value}>
-                                <p>
-                                    <a href="my-plan">My Health Plan</a>
-                                </p>
-                                <p>
-                                    <a href="family-plan">Family Health Plan</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div className={classes.option}>
-                            <p>Services</p>
-                            <div className={classes.value}>
-                                <p>
-                                    <a href="nursing-attendant">Nursing/Attendant</a>
-                                </p>
-                                <p>
-                                    <a href="medicine-delivery">Medicine Delivery</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div className={classes.option}>
-                            <p>Media</p>
-                            <div className={classes.value}>
-                                <p>
-                                    <a href="#">News and Media</a>
-                                </p>
-                                <p>
-                                    <a href="#">Healthx Blog</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className={classes.left}>
                     <a className={classes.SiteLogo} href="/">
                         <Image src={hx} height={36} width={146} alt="" />
@@ -194,6 +122,99 @@ const MainNav = () => {
                         </div>
                     </div>
                 )}
+
+                {/* *****************************Toggle for mobile ****************** */}
+                <div className={classes.toggleBar}>
+                    <FontAwesomeIcon className={classes.icon} icon={faBars} />
+                    <div className={classes.sidebar}>
+                        <div className={classes.option}>
+                            <p>Sign in</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="https://doc.healthxbd.com">Smart Doctor</a>
+                                </p>
+                                <p>
+                                    <a href="https://user.healthxbd.com">My Health Portal</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>Find Doctors</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="find-doctors">Find Doctors</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>Medicine Order</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="medicine-delivery">Medicine Delivery</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>Nursing & Attendant</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="nursing-attendant">Nursing/Attendant</a>
+                                </p>
+                                <p>
+                                    <a href="medicine-delivery">Medicine Delivery</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>Health Plans</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="my-plan">My Health Plan</a>
+                                </p>
+                                <p>
+                                    <a href="family-plan">Family Health Plan</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>Solutions</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="https://user.healthxbd.com">For Patient</a>
+                                </p>
+                                <p>
+                                    <a href="https://doc.healthxbd.com">For Doctor</a>
+                                </p>
+                                <p>
+                                    <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>Blogs</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="https://blog.healthxbd.com">Healthx Blogs</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={classes.option}>
+                            <p>About</p>
+                            <div className={classes.value}>
+                                <p>
+                                    <a href="about-us">About Us</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Extra Section */}

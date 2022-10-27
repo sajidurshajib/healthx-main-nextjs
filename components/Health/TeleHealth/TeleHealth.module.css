@@ -73,3 +73,33 @@
     text-align: center;
     margin-top: -6px;
 }
+
+@media (max-width: 420px) {
+    .tele > p {
+        margin: 0 20px;
+        margin-top: 2em;
+        font-size: 16px;
+    }
+
+    .tele > p > span {
+        font-size: 22px;
+    }
+
+    .grid {
+        margin-top: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 60px 40px;
+        padding: 10px 1em;
+    }
+
+    .grid > div > div > a {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    .grid > div > span {
+        font-size: 14px;
+        text-align: center;
+        margin-top: -14px;
+    }
+}

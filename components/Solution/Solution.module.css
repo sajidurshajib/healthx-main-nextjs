@@ -175,6 +175,20 @@
         grid-gap: 20px;
     } */
 
+    .wrapper .title {
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--primary);
+        margin-bottom: 30px;
+        margin: 20px;
+    }
+
+    .wrapper .title > span {
+        font-size: 16px;
+        color: var(--secondary);
+        font-weight: 400;
+    }
+
     .container .collab {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -183,15 +197,29 @@
         width: 100%;
     }
     .container .collab .collabGrid {
-        padding: 0px;
+        padding: 10px;
+        padding-bottom: 30px;
     }
 
-    .wrapper .title {
-        font-size: 1.6em;
+    .container ul li:nth-child(2) {
+        border-bottom: 10px solid var(--light);
+        border-top: 10px solid var(--light);
+    }
+
+    .container ul li:nth-child(2) .innerContainer {
+        padding-top: 24px;
+    }
+
+    .container ul li:nth-child(2) .collabContent {
+        padding-top: 14px;
     }
 
     .container .collab .collabContent > span {
-        font-size: 1.2em;
+        font-size: 20px;
+    }
+    .container .collab .collabContent > p {
+        font-size: 14px;
+        margin-bottom: 30px;
     }
     .container .collab .collabGrid > div > p {
         font-size: 12px;
@@ -201,5 +229,9 @@
     }
     .container .collab .collabContent {
         margin-top: 0em;
+    }
+
+    .container .collab .collabContent > a {
+        font-size: 12px;
     }
 }

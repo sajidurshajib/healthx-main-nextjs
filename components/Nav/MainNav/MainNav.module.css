@@ -189,22 +189,31 @@
         /* position: absolute; */
         margin-top: 10px;
         padding-top: 14px;
-        color: blue;
+        color: var(--primary);
     }
     .MainNav > .Wrapper {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        padding-right: 14px;
     }
 
-    .Wrapper > .center {
+    .Wrapper > .left .center {
         display: none;
     }
+
     .Wrapper > .right {
         display: none;
     }
     .icon {
         height: 25px;
         width: 25px;
-        margin-left: 25px;
+        margin-left: 2px;
+    }
+
+    .Wrapper > .left .SiteLogo {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        padding-left: 6px;
     }
 
     .extra {
@@ -238,7 +247,7 @@
 
     .toggleBar:hover > .sidebar {
         display: block;
-        margin-left: -15px;
+        left: 0;
         position: absolute;
         background-color: var(--primary);
         width: 100%;

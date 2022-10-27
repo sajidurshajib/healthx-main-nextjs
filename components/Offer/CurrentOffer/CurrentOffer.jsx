@@ -21,7 +21,9 @@ export default function CurrentOffer() {
                         <span>Book Now!</span> or call at +8801322658481
                     </p>
                 </div>
-                <Image src={Offer} width={300} height={320} alt="" />
+                <div>
+                    <Image src={Offer} width={300} height={320} alt="" />
+                </div>
             </div>
             <div>
                 <span>&#62;</span>
