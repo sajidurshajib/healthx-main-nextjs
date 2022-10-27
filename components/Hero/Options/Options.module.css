@@ -31,9 +31,7 @@
     color: var(--dark);
     display: flex;
     justify-content: space-around;
-    /* position: absolute; */
     right: 0;
-    /* background-color: rgb(165, 217, 255); */
     background: linear-gradient(90deg, #3299de 0%, #8ed2ff 100%);
     padding: 30px 30px 40px 30px;
     border-radius: 10px;
@@ -42,7 +40,6 @@
 .OptionsWrapper > div {
     height: 100px;
     width: 240px;
-    /* border: 1px solid var(--light); */
     box-shadow: 0 2px 5px 0 rgba(3, 3, 3, 0.05);
     border-radius: 10px;
     text-align: center;
@@ -94,14 +91,32 @@
 /* For media view */
 @media (max-width: 420px) {
     .Options {
+        padding: 80px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        z-index: 10;
+        margin-top: -20px;
+    }
+    .Options {
         padding: 40px 0;
     }
 
     .OptionsWrapper {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
+        background: var(--white);
+        padding: 20px;
     }
+
     .OptionsWrapper > div {
         width: 100%;
+        margin-bottom: 14px;
+    }
+
+    .line {
+        display: none;
     }
 }

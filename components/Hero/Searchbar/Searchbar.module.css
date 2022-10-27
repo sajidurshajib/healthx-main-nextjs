@@ -54,3 +54,37 @@
     color: var(--dark);
     opacity: 0.8;
 }
+
+@media (max-width: 420px) {
+    .searchbar > div {
+        position: relative;
+    }
+
+    .searchbar > div > span {
+        position: absolute;
+        color: var(--red);
+        font-size: 18px;
+        font-weight: 500;
+        right: 20px;
+        top: 5px;
+        z-index: 10;
+        transition: 300ms;
+    }
+
+    .searchbar > div > input {
+        position: relative;
+        display: block;
+        padding: 12px 30px;
+        padding-left: 8%;
+        border-radius: 50px;
+        color: var(--dark);
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .searchbar > div > svg {
+        display: none;
+    }
+}
