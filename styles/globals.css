@@ -41,7 +41,7 @@ a {
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 2px;
 }
 ::-webkit-scrollbar-thumb {
@@ -50,7 +50,7 @@ a {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(151, 151, 151);
-}
+} */
 
 .container {
     padding-right: 15px;
