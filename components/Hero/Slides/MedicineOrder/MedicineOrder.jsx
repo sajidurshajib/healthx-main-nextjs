@@ -84,7 +84,8 @@ const MedicineOrder = () => {
                                                 <h3>
                                                     {info?.name} - ৳{info?.unit_price}
                                                 </h3>
-                                                {info?.generic} | {info?.form} | {info?.strength}
+                                                {info?.generic} | {info?.form} | {info?.strength} <br />
+                                                <span>{info?.pharmaceuticals}</span>
                                             </div>
                                             {/* </a> */}
                                             {/* </Link> */}
