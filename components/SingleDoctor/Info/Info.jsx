@@ -32,11 +32,15 @@ export default function Info({ doctor, schedules }) {
 
                         <div>
                             <p>Consultation Time</p>
-                            {/* <p>11:30 am - 7:30 pm</p> */}
-                            <p>
-                                {start.time.split(':')[1].length === 2 ? start.time : `${start.time}0`} {start.am_pm} -{' '}
-                                {end.time.split(':')[1].length === 2 ? end.time : `${end.time}0`} {end.am_pm}
-                            </p>
+                            {schedules.length > 0 ? (
+                                <p>
+                                    {start.time.split(':')[1].length === 2 ? start.time : `${start.time}0`}{' '}
+                                    {start.am_pm} - {end.time.split(':')[1].length === 2 ? end.time : `${end.time}0`}{' '}
+                                    {end.am_pm}
+                                </p>
+                            ) : (
+                                ''
+                            )}
                         </div>
                     </div>
                 </div>

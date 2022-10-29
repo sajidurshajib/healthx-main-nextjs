@@ -218,7 +218,7 @@ export default function SingleDoctor({ id }) {
                         {menu === 2 ? <Info doctor={doctor} schedules={schedules} /> : null}
                         {menu === 3 ? <ProfileDetail qualifications={qualifications} /> : null}
                         {menu === 4 ? <ProfessionalInfo workingHistory={workingHistory} /> : null}
-                        {menu === 6 ? <Chambers api={api} /> : null}
+                        {menu === 6 ? <Chambers api={api} id={id} /> : null}
                     </div>
                 </div>
             </div>

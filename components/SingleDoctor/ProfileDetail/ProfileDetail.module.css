@@ -29,6 +29,10 @@
     list-style-type: square;
 }
 
+.ProfileDetail > .Basic > div > ul > p:nth-child(2) {
+    font-weight: 500;
+}
+
 @media (max-width: 420px) {
     .ProfileDetail {
         grid-template-columns: minmax(0, 100%);

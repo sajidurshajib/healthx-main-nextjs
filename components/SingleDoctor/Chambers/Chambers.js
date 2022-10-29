@@ -1,14 +1,12 @@
 import { useEffect, useState, useContext } from 'react'
-// import { Auth } from '../../../allContext'
-import ChamberState from './ChamberState/ChamberState'
 import classes from './Chambers.module.css'
 
-const Chambers = ({ api }) => {
+const Chambers = ({ api, id }) => {
     const [chambers, setChambers] = useState([])
 
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(`http://127.0.0.1:8000/api/v1/doctors/chamberdoctor-chambers/2`, {
+            let response = await fetch(`${api}/doctors/chamberdoctor-chambers/${id}`, {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
