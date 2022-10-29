@@ -183,6 +183,17 @@
 }
 
 @media (max-width: 420px) {
+    .MainNav {
+        margin: 0;
+        background: var(--white);
+        box-shadow: 0 1px 1px var(--light);
+        transition: 300ms;
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        padding: 0px 10px;
+    }
+
     .toggleBar {
         display: initial;
 
@@ -204,8 +215,8 @@
         display: none;
     }
     .icon {
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin-left: 2px;
     }
 
@@ -214,6 +225,7 @@
         align-items: center;
         padding: 20px;
         padding-left: 6px;
+        width: 150px;
     }
 
     .extra {
