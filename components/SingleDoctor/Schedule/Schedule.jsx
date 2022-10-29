@@ -1,20 +1,10 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import classes from './Schedule.module.css'
 
-export default function Schedule() {
+export default function Schedule({ api, schedules }) {
     const date = new Date()
     const today = date.toString()
 
-    let slot = [
-        { time: '11:30 AM' },
-        { time: '12:30 PM' },
-        { time: '01:30 PM' },
-        { time: '03:30 PM' },
-        { time: '04:30 PM' },
-        { time: '05:30 PM' },
-        { time: '06:30 PM' },
-        { time: '07:30 PM' },
-    ]
     return (
         <div className={classes.wrapper}>
             <div className={classes.slot}>
@@ -23,13 +13,18 @@ export default function Schedule() {
                 </div>
                 <div className={classes.slotBody}>
                     <div className={classes.slotButtons}>
-                        {slot.map((slot, i) => {
-                            return (
+                        {schedules.map((slot, i) =>
+                            slot.online === true ? (
                                 <div className={classes.slotButton} key={i}>
-                                    <button>{slot.time}</button>
+                                    <button>
+                                        {slot.time.split(':')[1].length === 2 ? slot.time : `${slot.time}0`}{' '}
+                                        {slot.am_pm}
+                                    </button>
                                 </div>
+                            ) : (
+                                ''
                             )
-                        })}
+                        )}
                     </div>
                 </div>
             </div>
@@ -40,13 +35,18 @@ export default function Schedule() {
                 </div>
                 <div className={classes.slotBody}>
                     <div className={classes.slotButtons}>
-                        {slot.map((slot, i) => {
-                            return (
+                        {schedules.map((slot, i) =>
+                            slot.online === false ? (
                                 <div className={classes.slotButton} key={i}>
-                                    <button>{slot.time}</button>
+                                    <button>
+                                        {slot.time.split(':')[1].length === 2 ? slot.time : `${slot.time}0`}{' '}
+                                        {slot.am_pm}
+                                    </button>
                                 </div>
+                            ) : (
+                                ''
                             )
-                        })}
+                        )}
                     </div>
                 </div>
             </div>

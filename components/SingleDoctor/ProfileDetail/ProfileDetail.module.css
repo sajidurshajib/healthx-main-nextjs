@@ -2,13 +2,13 @@
     background: var(--white);
     display: grid;
     grid-template-columns: minmax(0, 50%) minmax(0, 50%);
-    gap: 10px;
+    gap: 0px 2px;
     font-size: 14px;
 }
 
 .ProfileDetail > .Basic {
     background: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 .ProfileDetail > .Basic > div {
@@ -27,4 +27,18 @@
 .ProfileDetail > .Basic > div > ul {
     color: var(--dark);
     list-style-type: square;
+}
+
+@media (max-width: 420px) {
+    .ProfileDetail {
+        grid-template-columns: minmax(0, 100%);
+    }
+
+    .ProfileDetail > .Basic > div > h2 {
+        font-size: 16px;
+    }
+
+    .ProfileDetail > .Basic > div > ul {
+        font-size: 14px;
+    }
 }

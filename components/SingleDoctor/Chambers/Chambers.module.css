@@ -11,19 +11,21 @@
 }
 .head {
     display: grid;
-    grid-template-columns: minmax(0, 10%) minmax(0, 25%) minmax(0, 25%) minmax(0, 30%) minmax(0, 10%);
+    grid-template-columns: minmax(0, 5%) minmax(0, 25%) minmax(0, 15%) minmax(0, 30%) minmax(0, 15%) minmax(0, 10%);
     color: var(--white);
     background-image: linear-gradient(to right, var(--dark-blue), var(--primary), var(--secondary));
     border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
     padding: 0 15px;
+    text-align: center;
 }
 .body {
     font-size: 12px;
     display: grid;
-    grid-template-columns: minmax(0, 10%) minmax(0, 25%) minmax(0, 25%) minmax(0, 30%) minmax(0, 10%);
+    grid-template-columns: minmax(0, 5%) minmax(0, 25%) minmax(0, 15%) minmax(0, 30%) minmax(0, 15%) minmax(0, 10%);
     padding: 0 15px;
+    text-align: center;
 }
 
 .Chambers > .body:nth-child(odd) {
@@ -35,4 +37,56 @@
     background: none;
     margin: 0px 5px;
     border-radius: 2px;
+}
+
+.spanActive {
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.spanOff {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+@media (max-width: 420px) {
+    .ChamberPage {
+        margin: -20px;
+    }
+
+    .head {
+        display: grid;
+        grid-template-columns: minmax(0, 100%);
+        color: var(--white);
+        background-image: linear-gradient(to right, var(--dark-blue), var(--primary), var(--secondary));
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .body {
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: minmax(0, 100%);
+        padding: 0 15px;
+        text-align: center;
+        box-shadow: 2px 4px 8px var(--light);
+        border: 1px solid var(--light);
+        border-bottom: 2px solid var(--primary);
+        margin-bottom: 20px;
+    }
+    .Chambers > .body:nth-child(odd) {
+        background: var(--white);
+    }
 }

@@ -1,7 +1,10 @@
 import React from 'react'
 import classes from './Info.module.css'
 
-export default function Info({ doctor }) {
+export default function Info({ doctor, schedules }) {
+    const start = schedules[0]
+    const end = schedules.slice(-1)[0]
+
     return (
         <div className={classes.infoWrapper}>
             <div className={classes.box}>
@@ -14,30 +17,32 @@ export default function Info({ doctor }) {
                                 <span>(inc. VAT)</span>
                             </p>
                         </div>
-                        <div>
+                        {/* <div>
                             <p>Total Consultation</p>
                             <p>10</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={classes.info}>
-                        <div>
+                        {/* <div>
                             <p>Follow-Up Fee</p>
                             <p>
                                 ৳<span>(inc. VAT)</span> <span>(within 10 days)</span>
                             </p>
-                        </div>
+                        </div> */}
 
                         <div>
                             <p>Consultation Time</p>
-                            <p>11:30 am - 7:30 pm</p>
+                            {/* <p>11:30 am - 7:30 pm</p> */}
+                            <p>
+                                {start.time.split(':')[1].length === 2 ? start.time : `${start.time}0`} {start.am_pm} -{' '}
+                                {end.time.split(':')[1].length === 2 ? end.time : `${end.time}0`} {end.am_pm}
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className={classes.box}>
-                <p>
-                    Availability: <span>Sat, Sun, Mon, Tue, Wed, Thu, Fri</span>
-                </p>
+                <p>{/* Availability: <span>Sat, Sun, Mon, Tue, Wed, Thu, Fri</span> */}</p>
             </div>
         </div>
     )

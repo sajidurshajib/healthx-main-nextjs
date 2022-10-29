@@ -1,10 +1,6 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useRouter } from 'next/router'
-import { useState, useEffect, useContext } from 'react'
-// import { useParams } from 'react-router-dom'
-// import { Auth } from '../../allContext'
+import { useState, useEffect } from 'react'
 import { toMonthNameLong } from '../../utils/date'
+import { dateTime } from '../../utils/date'
 import Chambers from './Chambers/Chambers'
 import Header from './Header/Header'
 import Info from './Info/Info'
@@ -17,6 +13,12 @@ export default function SingleDoctor({ id }) {
     const [menu, setMenu] = useState(1)
     const [doctor, setDoctor] = useState([])
     const [picture, setPicture] = useState({})
+
+    const [schedules, setSchedules] = useState([])
+    const currentDate = dateTime.slice(0, 10)
+
+    const [workingHistory, setWorkingHistory] = useState([])
+    const [qualifications, setQualifications] = useState([])
 
     const api = process.env.NEXT_PUBLIC_API_URL
 
@@ -60,7 +62,80 @@ export default function SingleDoctor({ id }) {
             setDoctor([])
             fetchPicture({ image_string: null })
         }
-    }, [id])
+    }, [api, id])
+
+    useEffect(() => {
+        let fetchData = async () => {
+            let response = await fetch(`${api}/doctor/schedules/public/${id}?date=${currentDate}`, {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'GET',
+            })
+            let data = await response.json()
+            if (response.ok) {
+                setSchedules(data)
+            } else {
+                console.log('data not fetching')
+            }
+        }
+
+        try {
+            fetchData()
+        } catch {
+            setSchedules([])
+        }
+    }, [api, id])
+
+    useEffect(() => {
+        let fetchData = async () => {
+            let response = await fetch(`${api}/doctors/workplace/${id}?skip=0&limit=30`, {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'GET',
+            })
+            let data = await response.json()
+            if (response.ok) {
+                setWorkingHistory(data)
+            } else {
+                console.log('data not fetching')
+            }
+        }
+
+        try {
+            fetchData()
+        } catch {
+            setWorkingHistory([])
+        }
+    }, [api, id])
+
+    useEffect(() => {
+        let fetchData = async () => {
+            let response = await fetch(`${api}/doctors/academic/${id}?skip=0&limit=30`, {
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                method: 'GET',
+            })
+            let data = await response.json()
+            if (response.ok) {
+                setQualifications(data)
+                console.log('q', data)
+            } else {
+                console.log('data not fetching')
+            }
+        }
+
+        try {
+            fetchData()
+        } catch {
+            setQualifications([])
+        }
+    }, [api, id])
 
     return (
         <div className={classes.wrapper}>
@@ -73,7 +148,7 @@ export default function SingleDoctor({ id }) {
                     </div>
                     <div>
                         <p>Total Experience</p>
-                        <span>{doctor?.doctor?.exp_year !== null ? doctor?.doctor?.exp_year : 1}+ Years</span>
+                        <span>{doctor?.doctor?.exp_year !== null ? doctor?.doctor?.exp_year : ''}+ Years</span>
                     </div>
                     {/* <div>
                         <p>Total Consultations</p>
@@ -139,11 +214,11 @@ export default function SingleDoctor({ id }) {
                         </span>
                     </div>
                     <div>
-                        {menu === 1 ? <Schedule /> : null}
-                        {menu === 2 ? <Info doctor={doctor} /> : null}
-                        {menu === 3 ? <ProfileDetail /> : null}
-                        {menu === 4 ? <ProfessionalInfo /> : null}
-                        {menu === 6 ? <Chambers /> : null}
+                        {menu === 1 ? <Schedule schedules={schedules} /> : null}
+                        {menu === 2 ? <Info doctor={doctor} schedules={schedules} /> : null}
+                        {menu === 3 ? <ProfileDetail qualifications={qualifications} /> : null}
+                        {menu === 4 ? <ProfessionalInfo workingHistory={workingHistory} /> : null}
+                        {menu === 6 ? <Chambers api={api} /> : null}
                     </div>
                 </div>
             </div>

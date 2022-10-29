@@ -2,14 +2,15 @@
     background: var(--white);
     display: grid;
     grid-template-columns: minmax(0, 50%) minmax(0, 50%);
-    gap: 10px;
+    gap: 0px 2px;
     border: 1px solid var(--white);
     font-size: 14px;
+    padding: 10px 30px;
 }
 
 .professionalInfo > .Category {
     background: none;
-    padding: 20px;
+    padding: 10px;
 }
 
 .professionalInfo > .Category > div {
@@ -33,4 +34,20 @@
 .professionalInfo > .Category > div > ul li div {
     color: var(--dark-blue);
     line-height: 0.5;
+    margin-top: -10px;
+}
+
+@media (max-width: 420px) {
+    .professionalInfo {
+        grid-template-columns: minmax(0, 100%);
+        padding: 10px 0px;
+    }
+
+    .professionalInfo > .Category > div > h2 {
+        font-size: 16px;
+    }
+
+    .professionalInfo > .Category > div > ul {
+        font-size: 14px;
+    }
 }
