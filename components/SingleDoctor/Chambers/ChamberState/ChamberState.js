@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react'
 // import { Auth } from '../../../../allContext'
 import classes from './ChamberState.module.css'
 
-const ChamberState = ({ id }) => {
+const ChamberState = ({ chamberId }) => {
     // const { stateAuth } = useContext(Auth)
 
     const [msg, setMsg] = useState([])

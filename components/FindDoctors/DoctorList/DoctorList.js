@@ -56,7 +56,7 @@ const DoctorList = ({ api, doctors }) => {
                             <p>BDT {doctor?.Doctor?.online_fees}</p>
                             <button>
                                 <Link href={`/${doctor?.User?.id}`}>
-                                    <a>Book Appointment</a>
+                                    <a>View Profile</a>
                                 </Link>
                             </button>
                         </div>
