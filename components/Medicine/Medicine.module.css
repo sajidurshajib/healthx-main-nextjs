@@ -191,6 +191,26 @@
     color: var(--white);
 }
 
+.optSelect > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.optSelect button {
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.optSelect button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 200ms;
+}
+
 /* for mobilb responsive */
 @media (max-width: 420px) {
     .wrapper {
@@ -283,5 +303,36 @@
 
     .heeader {
         margin-top: 10px;
+    }
+
+    .medicineShow {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        position: absolute;
+        background-color: var(--white);
+        width: 80%;
+        border-radius: 4px;
+        padding: 2px 4px;
+        overflow-y: auto;
+        border: 1px solid var(--light);
+        top: -50px;
+        left: 10%;
+        z-index: 110;
+        max-height: 58vh;
+    }
+
+    .medicineShow > div {
+        padding: 10px;
+    }
+
+    .optSelect > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .optSelect button {
+        margin-top: 24px;
     }
 }

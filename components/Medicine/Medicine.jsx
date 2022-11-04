@@ -106,6 +106,9 @@ export default function Medicine() {
                                                     {info?.generic} | {info?.form} | {info?.strength} <br />
                                                     <span>{info?.pharmaceuticals}</span>
                                                 </div>
+                                                <div>
+                                                    <button>Add</button>
+                                                </div>
                                                 {/* </a> */}
                                                 {/* </Link> */}
                                             </div>
