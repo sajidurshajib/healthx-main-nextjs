@@ -46,6 +46,7 @@
     font-weight: 500;
     cursor: pointer;
     margin-top: 8px;
+    text-transform: capitalize;
 }
 
 .name:hover {

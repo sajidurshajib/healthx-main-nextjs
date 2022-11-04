@@ -7,6 +7,8 @@ const FindDoctors = () => {
     const [doctors, setDoctors] = useState([])
     const [search, setSearch] = useState('')
 
+    const [limit, setLimit] = useState(10)
+
     const api = process.env.NEXT_PUBLIC_API_URL
 
     const searchHandler = (search) => {
@@ -22,9 +24,13 @@ const FindDoctors = () => {
         setSearch(search)
     }
 
+    const limitUp = () => {
+        setLimit((prev) => prev + 10)
+    }
+
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(`${api}/admin/doctors/active?skip=0&limit=10`, {
+            let response = await fetch(`${api}/admin/doctors/active?skip=0&limit=${limit}`, {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
@@ -43,7 +49,7 @@ const FindDoctors = () => {
         } catch {
             setDoctors([])
         }
-    }, [search])
+    }, [search, limit])
 
     return (
         <div className={classes.findDoctors}>
@@ -116,7 +122,9 @@ const FindDoctors = () => {
             <div className={classes.listContainer}>
                 <SearchDoctor />
                 <DoctorList api={api} doctors={doctors} />
-                <button className={classes.loadButton}>Load More...</button>
+                <button className={classes.loadButton} onClick={(e) => limitUp(e)}>
+                    Load More...
+                </button>
             </div>
         </div>
     )
