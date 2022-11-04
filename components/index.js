@@ -1,5 +1,4 @@
 export { default as Login } from './Login/Login'
-
 export { default as MainNav } from './Nav/MainNav/MainNav'
 
 export { default as Hero } from './Hero/Hero'
@@ -26,3 +25,4 @@ export { default as Offer } from './Offer/Offer'
 export { default as TeleHealth } from './Health/Health'
 
 export { default as FindDoctors } from './FindDoctors/FindDoctors'
+export { default as Searchbar } from './Hero/Searchbar/Searchbar'

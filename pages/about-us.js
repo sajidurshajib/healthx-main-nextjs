@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutUs, MainNav } from '../components'
+import { AboutUs, Footer, MainNav } from '../components'
 
 export default function about_us() {
     return (
