@@ -78,17 +78,17 @@ const MedicineOrder = () => {
                                 medicines.map((info, i) => (
                                     <div className={classes.optSelect} key={i}>
                                         <div>
-                                            {/* <Link href={`/${info?.id}`}> */}
-                                            {/* <a> */}
-                                            <div>
-                                                <h3>
-                                                    {info?.name} - ৳{info?.unit_price}
-                                                </h3>
-                                                {info?.generic} | {info?.form} | {info?.strength} <br />
-                                                <span>{info?.pharmaceuticals}</span>
-                                            </div>
-                                            {/* </a> */}
-                                            {/* </Link> */}
+                                            <Link href={`/medicine-delivery`}>
+                                                <a>
+                                                    <div>
+                                                        <h3>
+                                                            {info?.name} - ৳{info?.unit_price}
+                                                        </h3>
+                                                        {info?.generic} | {info?.form} | {info?.strength} <br />
+                                                        <span>{info?.pharmaceuticals}</span>
+                                                    </div>
+                                                </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 ))}
