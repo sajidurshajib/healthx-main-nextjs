@@ -53,13 +53,13 @@ const FindDoctors = () => {
 
     return (
         <div className={classes.findDoctors}>
-            <div className={classes.filter}>
+            {/* <div className={classes.filter}>
                 <p>Filter Doctor</p>
                 <div className={classes.filterContainer}>
                     <div className={classes.price}>
                         <p>Filter by price</p>
                         <div>
-                            <label class={classes.containerPrice}>
+                            <label className={classes.containerPrice}>
                                 ৳50
                                 <input type="range" min={50} max={2000} />
                                 ৳2000
@@ -75,14 +75,14 @@ const FindDoctors = () => {
                                 <option value="">Family Medicine</option>
                                 <option value="">Medicine</option>
                             </select>
-                            <label class={classes.container}>
+                            <label className={classes.container}>
                                 <input type="checkbox" />
-                                <span class={classes.checkmark}></span>
+                                <span className={classes.checkmark}></span>
                                 Family Medicine
                             </label>
-                            <label class={classes.container}>
+                            <label className={classes.container}>
                                 <input type="checkbox" />
-                                <span class={classes.checkmark}></span>
+                                <span className={classes.checkmark}></span>
                                 Medicine
                             </label>
                         </div>
@@ -91,14 +91,14 @@ const FindDoctors = () => {
                     <div className={classes.box}>
                         <p>Filter by gender</p>
                         <div>
-                            <label class={classes.container}>
+                            <label className={classes.container}>
                                 <input type="checkbox" />
-                                <span class={classes.checkmark}></span>
+                                <span className={classes.checkmark}></span>
                                 Female Doctors
                             </label>
-                            <label class={classes.container}>
+                            <label className={classes.container}>
                                 <input type="checkbox" />
-                                <span class={classes.checkmark}></span>
+                                <span className={classes.checkmark}></span>
                                 Male Doctors
                             </label>
                         </div>
@@ -107,20 +107,21 @@ const FindDoctors = () => {
                     <div className={classes.box}>
                         <p>Sort by</p>
                         <div>
-                            <label class={classes.containerSort}>
+                            <label className={classes.containerSort}>
                                 <input type="radio" id="gender" name="gender" value="male" />
                                 <span>Popularity</span>
                             </label>
-                            <label class={classes.containerSort}>
+                            <label className={classes.containerSort}>
                                 <input type="radio" id="gender" name="gender" value="male" />
                                 <span>Rating</span>
                             </label>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className={classes.listContainer}>
-                <SearchDoctor />
+                {/* <SearchDoctor /> */}
+                <h2>Doctor List</h2>
                 <DoctorList api={api} doctors={doctors} />
                 <button className={classes.loadButton} onClick={(e) => limitUp(e)}>
                     Load More...
