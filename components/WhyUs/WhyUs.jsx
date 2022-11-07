@@ -19,7 +19,7 @@ const WhyUs = () => {
                         </span>
                         <br />
                         <div className={classes.Counter}>
-                            <CountUp start={10} end={100} duration={5} useEasing={true} className={classes.Counter} />
+                            <CountUp start={10} end={1000} duration={5} useEasing={true} className={classes.Counter} />
                             <span>+</span>
                         </div>
                         <p>Specialist Doctors</p>

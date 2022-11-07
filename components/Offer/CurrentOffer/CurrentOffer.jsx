@@ -12,7 +12,7 @@ export default function CurrentOffer() {
             <div className={classes.offer}>
                 <div>
                     <p>
-                        ফ্যামিলি ডাক্তার প্যাকেজ সারামাস জুড়ে মাত্র <span>৳২৯৯</span>
+                        ফ্যামিলি ডাক্তার প্যাকেজ সারামাস জুড়ে মাত্র <span>৳১৯৯</span>
                     </p>
                     <p>
                         ফ্যামিলি ডাক্তার প্যাকেজ নিয়ে ডাক্তারের সাথে কথা বলুন যতবার দরকার <span>{'>'}</span>

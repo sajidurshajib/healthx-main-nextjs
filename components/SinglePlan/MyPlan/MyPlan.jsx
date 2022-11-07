@@ -136,7 +136,7 @@ export default function MyPlan() {
                         <h1 className={classes.tableHeader}>1 Month Plan</h1>
                         <p className={classes.tablePricing}>
                             <span>৳</span>
-                            <span>149</span>
+                            <span>199</span>
                             <span>/for 1 person</span>
                         </p>
                         <ul className={classes.tableOptions}>
@@ -172,7 +172,7 @@ export default function MyPlan() {
                         <h1 className={classes.tableHeader}>6 Months Plan</h1>
                         <p className={classes.tablePricing}>
                             <span>৳</span>
-                            <span>399</span>
+                            <span>499</span>
                             <span>/for 1 person</span>
                         </p>
                         <ul className={classes.tableOptions}>
@@ -190,7 +190,7 @@ export default function MyPlan() {
                         <h1 className={classes.tableHeader}>12 Months Package</h1>
                         <p className={classes.tablePricing}>
                             <span>৳</span>
-                            <span>599</span>
+                            <span>699</span>
                             <span>/for 1 person</span>
                         </p>
                         <ul className={classes.tableOptions}>

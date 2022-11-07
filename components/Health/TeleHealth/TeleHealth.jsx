@@ -23,7 +23,7 @@ export default function TeleHealth() {
                             </a>
                         </Link>
                     </div>
-                    <span>Connect within 10 minutes</span>
+                    <span>Connect with Doctors within 15 minutes 24x7</span>
                 </div>
                 <div>
                     <div>
@@ -34,7 +34,9 @@ export default function TeleHealth() {
                             </a>
                         </Link>
                     </div>
-                    <span>Pool of 1,000+ Specialists</span>
+                    <span>
+                        Pool of 1,000+ from 30+ <br /> Specialists
+                    </span>
                 </div>
                 <div>
                     <div>

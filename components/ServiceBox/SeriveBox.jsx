@@ -79,7 +79,7 @@ export default function SeriveBox() {
                             </p>
                         </div>
                         <p className={classes.price}>
-                            Start from <span>299TK</span> only!
+                            Start from <span>199TK</span> only!
                         </p>
                         <Link href="family-plan">
                             <a>
