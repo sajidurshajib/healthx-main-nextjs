@@ -47,6 +47,7 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .gridBox > div > button:hover {
@@ -66,7 +67,7 @@
     background-color: var(--primary);
     padding: 30px;
     border-radius: 4px;
-    margin-bottom: 1em;
+    margin-bottom: -2em;
 }
 
 .whyHealth {
@@ -76,7 +77,6 @@
 .whyHealth > div {
     margin-top: 2em;
     display: flex;
-
     margin-bottom: 20px;
     justify-content: space-between;
     padding: 0 80px;
@@ -163,7 +163,7 @@
     padding: 2px 4px;
     overflow-y: auto;
     border: 1px solid var(--light);
-    top: -58px;
+    top: -26px;
     left: 15%;
     z-index: 110;
     max-height: 44vh;
@@ -209,6 +209,112 @@
     cursor: pointer;
     opacity: 0.9;
     transition: 200ms;
+}
+
+.medOrder {
+    width: 100%;
+    border: 1px solid var(--grey);
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: -20px;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.medOrder > h2 {
+    margin-top: -10px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.medOrder > h2 > svg {
+    padding-right: 6px;
+}
+
+.medOrder > div {
+    display: grid;
+    grid-template-columns: 2% 20% 10% 15% 25% 10% 15% 1%;
+}
+
+.medOrder > .header {
+    width: 100%;
+    margin-top: -10px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 14px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 6px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.medOrder > .header > span,
+.medOrder > .body > span {
+    display: flex;
+    justify-content: center;
+}
+
+.medOrder > .body {
+    width: 100%;
+    margin-top: 6px;
+    color: var(--dark);
+    font-size: 12px;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: var(--light);
+    border-radius: 4px;
+}
+
+.medOrder > .body > svg {
+    color: var(--red);
+    padding-top: 4px;
+}
+
+.medOrder > .body > svg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+.medOrder > .body > div {
+    display: flex;
+    justify-content: center;
+}
+
+.medOrder > .body > div > input {
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+}
+
+.messege {
+    padding-top: 10px;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* margin-top: -12px; */
+}
+
+.total > div > span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.total > div > span:last-child {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green);
+    padding-left: 4px;
 }
 
 /* for mobilb responsive */

@@ -1,3 +1,6 @@
+import '@fortawesome/free-solid-svg-icons'
+import { faCartArrowDown, faList, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 import { useState, useEffect } from 'react'
@@ -11,6 +14,7 @@ import Footer from '../Footer/Footer'
 import Searchbar from '../Hero/Searchbar/Searchbar'
 import Faq from './Faq/Faq'
 import classes from './Medicine.module.css'
+import MedicineLine from './MedicineLine/MedicineLine'
 
 export default function Medicine() {
     const [medicines, setMedicines] = useState([])
@@ -45,7 +49,6 @@ export default function Medicine() {
             let data = await response.json()
             if (response.ok) {
                 setMedicines(data)
-                console.log('med', data)
             } else {
                 console.log('data not fetching')
             }
@@ -56,6 +59,17 @@ export default function Medicine() {
             setMedicines([])
         }
     }, [search])
+
+    const [medicineLines, setMedicineLines] = useState([])
+
+    const removeItem = (index) => {
+        setMedicineLines([...medicineLines.slice(0, index), ...medicineLines.slice(index + 1, medicineLines.length)])
+    }
+
+    console.log('m', medicineLines)
+
+    let totalDisplay = 0
+    medicineLines.forEach((item) => (totalDisplay = totalDisplay + item.total))
 
     return (
         <div className={classes.wrapper}>
@@ -92,13 +106,10 @@ export default function Medicine() {
                     <div className={classes.show}>
                         {searchHide && (
                             <div className={classes.medicineShow}>
-                                {/* <div> */}
                                 {medicines &&
                                     medicines.map((info, i) => (
                                         <div className={classes.optSelect} key={i}>
                                             <div>
-                                                {/* <Link href={`/${info?.id}`}> */}
-                                                {/* <a> */}
                                                 <div>
                                                     <h3>
                                                         {info?.name} - ৳{info?.unit_price}
@@ -107,22 +118,70 @@ export default function Medicine() {
                                                     <span>{info?.pharmaceuticals}</span>
                                                 </div>
                                                 <div>
-                                                    <button>Add</button>
+                                                    <button
+                                                        onClick={() => {
+                                                            setSearchHide(false)
+                                                            setCross(false)
+                                                            setSearch('')
+                                                            setMedicineLines((prev) => [...prev.concat(info)])
+                                                        }}>
+                                                        Add
+                                                    </button>
                                                 </div>
-                                                {/* </a> */}
-                                                {/* </Link> */}
                                             </div>
                                         </div>
                                     ))}
                             </div>
-                            // </div>
                         )}
                     </div>
 
+                    <div className={classes.medOrder}>
+                        <h2>
+                            <FontAwesomeIcon icon={faCartArrowDown} /> Medicine Cart
+                        </h2>
+                        <div className={classes.header}>
+                            <span>Sl.</span>
+                            <span>Medicine Name</span>
+                            <span>Quantity</span>
+                            <span>Strength</span>
+                            <span>Form</span>
+                            <span>Unit Price</span>
+                            <span>Total</span>
+                            <span>Action</span>
+                        </div>
+
+                        {medicineLines.length !== 0 ? (
+                            medicineLines.map((med, i) => (
+                                <div className={classes.body} key={i}>
+                                    <MedicineLine
+                                        medicineLines={medicineLines}
+                                        setMedicineLines={setMedicineLines}
+                                        removeItem={removeItem}
+                                        index={i}
+                                        med={med}
+                                        key={i}
+                                    />
+                                </div>
+                            ))
+                        ) : (
+                            <span className={classes.messege}>Cart is Empty!</span>
+                        )}
+                    </div>
+                    <div className={classes.total}>
+                        {/* <div>
+                            <p>Minimum Order 500 TK!</p>
+                            <p>Free Delivery Over 1000 TK Order</p>
+                        </div> */}
+                        <div>
+                            <span>Total: </span>
+
+                            <span>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</span>
+                        </div>
+                    </div>
                     <button>Order Now!</button>
 
-                    <h1 className={classes.order}>How to order?</h1>
-                    <p> Call us at +8801322658481, +8801571016461</p>
+                    {/* <h1 className={classes.order}>How to order?</h1>
+                    <p>Call us at +8801322658481, +8801571016461</p> */}
                 </div>
                 <div>
                     <Image
