@@ -69,6 +69,7 @@
     justify-content: center;
     margin: 80px 0px;
     padding: 0 40px;
+    position: relative;
 }
 .right > div {
     width: 100%;
@@ -97,16 +98,16 @@
     margin: 0;
     box-sizing: border-box;
     color: var(--dark-blue);
-    border-bottom: 3px solid var(--grey2);
+    border-bottom: 2px solid var(--light-grey);
     position: relative;
 }
 .right > div > form > div > input + label::before {
     content: '';
     position: absolute;
-    bottom: 23px;
+    bottom: 24px;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     background: var(--primary);
     transition: 200ms;
 }
@@ -117,7 +118,7 @@
     font-size: 14px;
     color: var(--grey);
     position: relative;
-    top: -30px;
+    top: -34px;
     pointer-events: none;
     transition: 200ms;
 }
@@ -149,6 +150,32 @@
 .linkText a {
     text-decoration: none;
     color: var(--primary);
+}
+
+.cross {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: -64px;
+    right: 22px;
+}
+
+.cross > span {
+    border: 1px solid var(--light);
+    padding: 1px 10px 3px 11px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--red);
+    transition: 200ms;
+    font-weight: 600;
+}
+
+.cross > span:hover {
+    border: 1px solid var(--red);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--red);
+    transition: 200ms;
 }
 
 @media (max-width: 420px) {

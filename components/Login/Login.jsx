@@ -95,6 +95,9 @@ export default function Login({ setPopup }) {
 
             <div className={classes.Wrapper}>
                 <div className={classes.right}>
+                    <div className={classes.cross}>
+                        <span onClick={() => setPopup(false)}>x</span>
+                    </div>
                     <div>
                         <h2>
                             <FontAwesomeIcon icon={faSignInAlt} />
@@ -120,7 +123,7 @@ export default function Login({ setPopup }) {
 
                         <p className={classes.linkText}>
                             Don't have an account?{' '}
-                            <Link href="/register">
+                            <Link href="https://user.healthxbd.com/register">
                                 <a>
                                     Register <FontAwesomeIcon icon={faArrowRight} />
                                 </a>
