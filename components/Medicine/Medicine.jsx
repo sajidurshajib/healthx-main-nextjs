@@ -1,17 +1,20 @@
 import '@fortawesome/free-solid-svg-icons'
-import { faCartArrowDown, faList, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import Delivery from '../../assets/medicine/delivery.png'
 import V1 from '../../assets/medicine/v1.png'
 import V2 from '../../assets/medicine/v2.png'
 import V3 from '../../assets/medicine/v3.png'
 import V4 from '../../assets/medicine/v4.png'
 import V5 from '../../assets/medicine/v5.png'
+import { Auth, UserInfo } from '../../context/allContext'
+import { dateTime } from '../../utils/date'
 import Footer from '../Footer/Footer'
 import Searchbar from '../Hero/Searchbar/Searchbar'
+import Login from '../Login/Login'
 import Faq from './Faq/Faq'
 import classes from './Medicine.module.css'
 import MedicineLine from './MedicineLine/MedicineLine'
@@ -22,7 +25,14 @@ export default function Medicine() {
     const [searchHide, setSearchHide] = useState(false)
     const [cross, setCross] = useState(false)
 
+    const [medicineLines, setMedicineLines] = useState([])
+    const [popup, setPopup] = useState(false)
+
     const api = process.env.NEXT_PUBLIC_API_URL
+    const { stateAuth } = useContext(Auth)
+    const token = stateAuth?.token
+    const { stateUser } = useContext(UserInfo)
+    const userDetail = stateUser?.info
 
     const searchHandler = (search) => {
         if (search.length > 0) {
@@ -60,16 +70,77 @@ export default function Medicine() {
         }
     }, [search])
 
-    const [medicineLines, setMedicineLines] = useState([])
-
+    // delete cart item
     const removeItem = (index) => {
         setMedicineLines([...medicineLines.slice(0, index), ...medicineLines.slice(index + 1, medicineLines.length)])
     }
 
-    console.log('m', medicineLines)
-
     let totalDisplay = 0
-    medicineLines.forEach((item) => (totalDisplay = totalDisplay + item.total))
+    medicineLines.forEach((item) => (item.total !== null ? (totalDisplay = totalDisplay + item.total) : totalDisplay))
+
+    const refreshPage = () => {
+        window.location.reload()
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        const details = [
+            {
+                service_name: 'medicine_order',
+                patient_id: userDetail?.id,
+                order_placement: dateTime,
+                order_completion: null,
+                remarks: '',
+                current_address: '',
+
+                order_value: totalDisplay + 60,
+                order_status: 'pending',
+                discount_percent: 0,
+                payable_amount: totalDisplay + 60,
+                payment_by_customer: 0,
+                payment_pending: totalDisplay + 60,
+                last_payment_date: null,
+                payment_method: 'cash on delivery',
+                payment_status: 'pending',
+
+                service_provider_type: 'pharmacy',
+                service_provider_id: 1,
+                service_provider_fee: 0,
+                service_provider_fee_paid: 0,
+                service_provider_fee_pending: 0,
+                service_provider_fee_last_update: null,
+                service_provider_fee_status: '',
+
+                referral_type: null,
+                referral_id: 1,
+                referral_provider_fee: 0,
+                referral_provider_fee_paid: 0,
+                referral_provider_fee_pending: 0,
+                referral_provider_fee_last_update: 0,
+                referral_provider_fee_status: null,
+            },
+            medicineLines,
+        ]
+
+        let postFetch = await fetch(`${api}/patients/service/medicines`, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`,
+            },
+            body: JSON.stringify(details),
+        })
+
+        if (postFetch.ok) {
+            refreshPage()
+        } else {
+            alert('Something went wrong!, Fill the quantity properly!')
+        }
+    }
+
+    console.log('m', medicineLines)
 
     return (
         <div className={classes.wrapper}>
@@ -81,13 +152,13 @@ export default function Medicine() {
                         accordance with standard safety protocol. Now you don’t have to move outside to purchase
                         medicine when you can have it at the comfort of your home.
                     </p>
-                    <h2 className={classes.header}> Why Do You Need Our Medicine Delivery Service?</h2>
+                    {/* <h2 className={classes.header}>Why Do You Need Our Medicine Delivery Service?</h2>
                     <p>
                         HealthX ensures the safety of your health and wealth by selling the best quality of each
                         medicine from all top pharmaceutical companies at the best price possible. Our service team will
                         help you buy medicines as per your prescription, and/or home deliver any over-the-counter
                         medicine you require to solve a minor ailment.
-                    </p>
+                    </p> */}
 
                     <div className={classes.search}>
                         <Searchbar
@@ -142,7 +213,9 @@ export default function Medicine() {
                         <div className={classes.header}>
                             <span>Sl.</span>
                             <span>Medicine Name</span>
-                            <span>Quantity</span>
+                            <span>
+                                Add Quantity <span className={classes.star}>*</span>
+                            </span>
                             <span>Strength</span>
                             <span>Form</span>
                             <span>Unit Price</span>
@@ -168,17 +241,38 @@ export default function Medicine() {
                         )}
                     </div>
                     <div className={classes.total}>
-                        {/* <div>
-                            <p>Minimum Order 500 TK!</p>
-                            <p>Free Delivery Over 1000 TK Order</p>
-                        </div> */}
+                        <div className={classes.extra}>
+                            <p>*** Note: Medicine Prices, Discount and Delivery Charges May Vary!</p>
+                        </div>
                         <div>
-                            <span>Total: </span>
-
-                            <span>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</span>
+                            <div>
+                                <span>Subtotal: </span>
+                                <span>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</span>
+                            </div>
+                            <div>
+                                <span>Delivery Charge: </span>
+                                <span>60.00৳</span>
+                                <br />
+                                <p>(inside dhaka)</p>
+                            </div>
+                            <div>
+                                <br />
+                                <span>Total: </span>
+                                {medicineLines.length !== 0 ? (
+                                    <span>
+                                        {isNaN(totalDisplay + 0) !== true ? `${(totalDisplay + 60).toFixed(2)}৳` : ''}
+                                    </span>
+                                ) : (
+                                    <span>0.00৳</span>
+                                )}
+                            </div>
                         </div>
                     </div>
-                    <button>Order Now!</button>
+                    {stateAuth?.auth !== true ? (
+                        <button onClick={() => setPopup(true)}>Order Now!</button>
+                    ) : (
+                        <button onClick={(e) => handleSubmit(e)}>Place Order</button>
+                    )}
 
                     {/* <h1 className={classes.order}>How to order?</h1>
                     <p>Call us at +8801322658481, +8801571016461</p> */}
@@ -244,6 +338,7 @@ export default function Medicine() {
             <div className={classes.faq}>
                 <Faq />
             </div>
+            {popup && <Login setPopup={setPopup} />}
         </div>
     )
 }

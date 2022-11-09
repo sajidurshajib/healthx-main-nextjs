@@ -14,7 +14,10 @@ export default function MedicineLine({ med, medicineLines, setMedicineLines, ind
     const handleQuantity = (value) => {
         let lines = medicineLines
         lines[index].quantity = value
-        lines[index].price = med.unit_price
+        lines[index].unit_price_mrp = med.unit_price
+        lines[index].unit_price_tp = 0
+        lines[index].total_mrp = lines[index].quantity * med.unit_price
+        lines[index].unit_discount_percent = 0
         lines[index].total = lines[index].quantity * med.unit_price
         setMedicineLines([...lines])
     }

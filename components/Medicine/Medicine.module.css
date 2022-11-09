@@ -213,7 +213,7 @@
 
 .medOrder {
     width: 100%;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--light-low);
     margin-bottom: 20px;
     padding: 20px;
     margin-top: -20px;
@@ -233,7 +233,7 @@
 
 .medOrder > div {
     display: grid;
-    grid-template-columns: 2% 20% 10% 15% 25% 10% 15% 1%;
+    grid-template-columns: 1% 18% 18% 12% 23% 10% 15% 1%;
 }
 
 .medOrder > .header {
@@ -253,6 +253,7 @@
 .medOrder > .body > span {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .medOrder > .body {
@@ -261,7 +262,6 @@
     color: var(--dark);
     font-size: 12px;
     padding: 14px 20px;
-    text-transform: uppercase;
     font-weight: 500;
     background-color: var(--light);
     border-radius: 4px;
@@ -284,8 +284,9 @@
 }
 
 .medOrder > .body > div > input {
-    width: 50px;
+    width: 80px;
     padding: 2px;
+    padding-left: 14px;
     text-align: center;
 }
 
@@ -301,20 +302,44 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* margin-top: -12px; */
+    position: relative;
 }
 
-.total > div > span {
+.total > div > div > span {
     font-size: 16px;
     font-weight: 500;
     color: var(--primary);
 }
 
-.total > div > span:last-child {
+.total > div > div > span:nth-child(2) {
     font-size: 18px;
     font-weight: 500;
     color: var(--green);
     padding-left: 4px;
+}
+
+.total p {
+    margin: 0;
+    margin-top: 2px;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+.extra {
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.extra > p {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.star {
+    color: var(--orange);
+    padding-left: 2px;
+    font-size: 14px;
 }
 
 /* for mobilb responsive */
@@ -418,13 +443,13 @@
 
         position: absolute;
         background-color: var(--white);
-        width: 80%;
+        width: 92%;
         border-radius: 4px;
         padding: 2px 4px;
         overflow-y: auto;
         border: 1px solid var(--light);
-        top: -50px;
-        left: 10%;
+        top: -16px;
+        left: 4%;
         z-index: 110;
         max-height: 58vh;
     }
@@ -436,9 +461,37 @@
     .optSelect > div {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .optSelect button {
         margin-top: 24px;
+    }
+
+    .medOrder {
+        padding: 4px;
+    }
+
+    .medOrder > h2 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .medOrder > div {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 20px 0px;
+    }
+
+    .medOrder > .body > svg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .medOrder > .body > div > input {
+        width: 80px;
+        padding: 2px;
+        padding-left: 0px;
+        text-align: center;
     }
 }
