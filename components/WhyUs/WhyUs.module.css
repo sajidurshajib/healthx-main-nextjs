@@ -7,7 +7,7 @@
 .wrapper .title {
     text-align: center;
     font-size: 38px;
-    font-weight: 500;
+    /* font-weight: 500; */
     color: var(--primary);
 }
 

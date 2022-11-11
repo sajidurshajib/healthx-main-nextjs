@@ -447,7 +447,7 @@
 }
 
 .table:nth-of-type(2):before {
-    content: '৩৯৯/-';
+    content: '৪৯৯/-';
     position: absolute;
     color: var(--white);
     display: block;
@@ -473,7 +473,7 @@
 }
 
 .table:nth-of-type(3):before {
-    content: '৪৯৯/-';
+    content: '৬৯৯/-';
     position: absolute;
     color: var(--white);
     display: block;
@@ -499,7 +499,7 @@
 }
 
 .table:nth-of-type(4):before {
-    content: '৬৯৯/- ';
+    content: '৯৯৯/- ';
     position: absolute;
     color: var(--white);
     display: block;

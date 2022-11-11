@@ -7,39 +7,39 @@ import classes from './Footer.module.css'
 
 const Footer = () => {
     let hx = [
-        { menu: 'About', link: '#' },
-        { menu: 'Blog', link: '#' },
+        { menu: 'About Us', link: '#' },
+        { menu: 'Health Blog', link: '#' },
         { menu: 'News & Media', link: '#' },
         { menu: 'Our Partners', link: '#' },
     ]
 
     let ourFeatures = [
-        { menu: 'My Health Portal', link: '#' },
-        { menu: 'Smart Doctor', link: '#' },
-        { menu: 'E-Prescription', link: '#' },
-        { menu: 'E-Pharmacy', link: '#' },
+        { menu: 'Health Plans', link: '#' },
+        { menu: 'Telemedicine', link: '#' },
+        { menu: 'Medicine Delivery', link: '#' },
+        { menu: 'Nursing & Attendant', link: '#' },
     ]
 
-    let forPatients = [
+    let products = [
         { menu: 'My Health Portal', link: '#' },
         { menu: 'Medicine Delivary', link: '#' },
         { menu: 'Nursing Service', link: '#' },
         { menu: 'Find Doctors', link: '#' },
     ]
 
-    let forDoctors = [
-        { menu: 'Smart Doctor', link: '#' },
+    let solutions = [
+        { menu: 'My Health Portal', link: '#' },
+        { menu: 'Smart Doctor Solution', link: '#' },
         { menu: 'E-Prescription', link: '#' },
-        { menu: 'Patients Records', link: '#' },
-        { menu: 'Data Analytics', link: '#' },
+        { menu: 'Smart Pharmacy Solution', link: '#' },
     ]
 
-    let forPharmacies = [
-        { menu: 'Dashboard', link: '#' },
-        { menu: 'Stock Management', link: '#' },
-        { menu: 'Easily customizable', link: '#' },
-        { menu: 'Buying and Selling reports', link: '#' },
-    ]
+    // let forPharmacies = [
+    //     { menu: 'Dashboard', link: '#' },
+    //     { menu: 'Stock Management', link: '#' },
+    //     { menu: 'Easily customizable', link: '#' },
+    //     { menu: 'Buying and Selling reports', link: '#' },
+    // ]
 
     return (
         <div>
@@ -84,7 +84,7 @@ const Footer = () => {
 
                     <div className={classes.footerContent}>
                         <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>Healthx</div>
+                            <div className={classes.Heading}>HEALTHx</div>
                             <div className={classes.Item}>
                                 {hx.map((menu, index) => {
                                     return (
@@ -97,7 +97,7 @@ const Footer = () => {
                         </div>
 
                         <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>Our Service</div>
+                            <div className={classes.Heading}>Our Services</div>
                             <div className={classes.Item}>
                                 {ourFeatures.map((service, index) => {
                                     return (
@@ -110,9 +110,9 @@ const Footer = () => {
                         </div>
 
                         <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>For patients</div>
+                            <div className={classes.Heading}>Our Solutions</div>
                             <div className={classes.Item}>
-                                {forPatients.map((service, index) => {
+                                {solutions.map((service, index) => {
                                     return (
                                         <a href={service.link} key={index}>
                                             &#10137; {service.menu}
@@ -123,9 +123,9 @@ const Footer = () => {
                         </div>
 
                         <div className={classes.footerColumn}>
-                            <div className={classes.Heading}>For Doctors</div>
+                            <div className={classes.Heading}>Our Products</div>
                             <div className={classes.Item}>
-                                {forDoctors.map((service, index) => {
+                                {products.map((service, index) => {
                                     return (
                                         <a href={service.link} key={index}>
                                             &#10137; {service.menu}
@@ -135,7 +135,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className={classes.footerColumn}>
+                        {/* <div className={classes.footerColumn}>
                             <div className={classes.Heading}>For Pharmacies</div>
                             <div className={classes.Item}>
                                 {forPharmacies.map((service, index) => {
@@ -146,7 +146,7 @@ const Footer = () => {
                                     )
                                 })}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={classes.footerCopyright}>
                         <div className={classes.hlogo}>

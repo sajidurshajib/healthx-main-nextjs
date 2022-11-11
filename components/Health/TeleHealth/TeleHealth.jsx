@@ -11,7 +11,7 @@ export default function TeleHealth() {
     return (
         <div className={classes.tele}>
             <p>
-                <span>TELE HEALTH</span> – Consult with Top Doctors Instantly
+                <span>Tele Health</span> – Consult with Top Doctors Instantly
             </p>
             <div className={classes.grid}>
                 <div>

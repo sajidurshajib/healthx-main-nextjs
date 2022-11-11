@@ -10,7 +10,7 @@ export default function HomeHealth() {
     return (
         <div className={classes.health}>
             <p>
-                <span> HOME HEALTH</span> – Get all Home Health Services in a Single Platform
+                <span>Home Health</span> – Get all Home Health Services in a Single Platform
             </p>
             <div className={classes.flex}>
                 <div className={classes.grid}>

@@ -129,7 +129,6 @@ export default function FamilyPlanBangla({ setPopup }) {
                         <button
                             className={classes.tableStart}
                             onClick={stateAuth?.auth !== true ? () => setPopup(true) : setPopup(false)}>
-                            {' '}
                             প্ল্যানটি কিনুন
                         </button>
                         {/* </Link> */}
