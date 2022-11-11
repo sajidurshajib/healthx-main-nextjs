@@ -29,9 +29,9 @@ const Footer = () => {
 
     let solutions = [
         { menu: 'My Health Portal', link: '#' },
-        { menu: 'Smart Doctor Solution', link: '#' },
+        { menu: 'Smart Doctor', link: '#' },
         { menu: 'E-Prescription', link: '#' },
-        { menu: 'Smart Pharmacy Solution', link: '#' },
+        { menu: 'Smart Pharmacy', link: '#' },
     ]
 
     // let forPharmacies = [
