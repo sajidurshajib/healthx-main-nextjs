@@ -10,7 +10,7 @@ const Footer = () => {
         { menu: 'About Us', link: '#' },
         { menu: 'Health Blog', link: '#' },
         { menu: 'News & Media', link: '#' },
-        { menu: 'Our Partners', link: '#' },
+        { menu: 'Contact Us', link: '#' },
     ]
 
     let ourFeatures = [
