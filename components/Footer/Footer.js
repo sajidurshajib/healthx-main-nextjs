@@ -14,17 +14,11 @@ const Footer = () => {
     ]
 
     let ourFeatures = [
-        { menu: 'Health Plans', link: '#' },
+        // { menu: 'Health Plans', link: '#' },
         { menu: 'Telemedicine', link: '#' },
         { menu: 'Medicine Delivery', link: '#' },
+        { menu: 'Sample Collection', link: '#' },
         { menu: 'Nursing & Attendant', link: '#' },
-    ]
-
-    let products = [
-        { menu: 'My Health Portal', link: '#' },
-        { menu: 'Medicine Delivary', link: '#' },
-        { menu: 'Nursing Service', link: '#' },
-        { menu: 'Find Doctors', link: '#' },
     ]
 
     let solutions = [
@@ -32,6 +26,13 @@ const Footer = () => {
         { menu: 'Smart Doctor', link: '#' },
         { menu: 'E-Prescription', link: '#' },
         { menu: 'Smart Pharmacy', link: '#' },
+    ]
+
+    let products = [
+        { menu: 'My Health Plan', link: '#' },
+        { menu: 'Family Health Plan', link: '#' },
+        { menu: 'My Health Package', link: '#' },
+        { menu: 'Family Health Package', link: '#' },
     ]
 
     // let forPharmacies = [

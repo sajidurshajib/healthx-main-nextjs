@@ -4,7 +4,7 @@
     background: var(--dark-blue);
     color: var(--white);
     margin-top: 12em;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 .footerWrapper {
     position: relative;
