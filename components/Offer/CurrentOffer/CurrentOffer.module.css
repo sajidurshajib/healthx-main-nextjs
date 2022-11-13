@@ -98,7 +98,7 @@
 
 @media (max-width: 420px) {
     .container {
-        margin-top: 16em;
+        margin-top: 9em;
         display: flex;
         justify-content: space-between;
         align-items: center;

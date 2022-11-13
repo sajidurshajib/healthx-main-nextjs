@@ -91,8 +91,8 @@ export default function Medicine() {
                 patient_id: userDetail?.id,
                 order_placement: dateTime,
                 order_completion: null,
-                remarks: '',
-                current_address: '',
+                remarks: 'Order from main website please call for details',
+                current_address: 'Dhaka',
 
                 order_value: totalDisplay + 60,
                 order_status: 'pending',
