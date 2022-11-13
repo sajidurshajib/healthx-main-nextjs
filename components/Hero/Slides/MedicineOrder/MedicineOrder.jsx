@@ -94,7 +94,6 @@ const MedicineOrder = () => {
                                 ))}
                         </div>
                     )}
-
                     <Link href="medicine-delivery">
                         <a>
                             <button>Order Now!</button>

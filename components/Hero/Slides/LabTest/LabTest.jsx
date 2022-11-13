@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Lab from '../../../../assets/hero/lab3.png'
 import Searchbar from '../../Searchbar/Searchbar'
 import classes from './LabTest.module.css'
@@ -12,16 +13,19 @@ const LabTest = () => {
                         LAB TEST AT HOME <br /> GET UPTO 40% DISCOUNT
                     </h2>
                     <p>Pathology Test From 20+ Partner Labs & Hospitals</p>
-                    <div>{/* <Image src={Med} width={320} height={300} alt="" /> */}</div>
                     {/* <div>
                         <Searchbar placeholder={'Search tests by name or price'} />
                     </div> */}
-                    <button>Call +8801322658481 for Booking!</button>
+                    <Link href="medicine-delivery">
+                        <a>
+                            <button>Call +8801322658481 for Booking!</button>
+                        </a>
+                    </Link>
                 </div>
                 <div className={classes.search}>
-                    {/* <div>
-                        <Image src={Lab} width={480} height={450} alt="" />
-                    </div> */}
+                    <div>
+                        <Image src={Lab} width={380} height={400} alt="" />
+                    </div>
                 </div>
             </div>
         </div>

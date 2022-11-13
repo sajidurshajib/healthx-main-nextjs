@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Health from '../../../../assets/hero/health3.png'
+import Health from '../../../../assets/hero/bp-1.png'
 import Searchbar from '../../Searchbar/Searchbar'
 import classes from './HealthRecord.module.css'
 
@@ -26,7 +26,7 @@ export default function HealthRecord() {
                 </div>
                 <div className={classes.search}>
                     <div>
-                        <Image src={Health} width={480} height={380} alt="" />
+                        <Image src={Health} width={500} height={380} alt="" />
                     </div>
                 </div>
             </div>

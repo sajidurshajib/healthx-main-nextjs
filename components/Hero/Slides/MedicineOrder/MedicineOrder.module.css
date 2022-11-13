@@ -29,10 +29,10 @@
 
 .Wrapper > a button {
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
     border: none;
     background-color: var(--deep-primary);
-    font-size: 18px;
+    font-size: 14px;
     padding: 10px 20px;
     border-radius: 4px;
     color: var(--white);
@@ -43,7 +43,6 @@
     opacity: 0.8;
     transition: 200ms;
 }
-
 .Wrapper > h2 {
     font-weight: 500;
     font-size: 40px;

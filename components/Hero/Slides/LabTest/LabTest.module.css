@@ -7,6 +7,7 @@
 .grid {
     display: grid;
     grid-template-columns: 3fr 1.2fr;
+    /* margin-top: 130px; */
 }
 
 .Wrapper {
@@ -26,7 +27,7 @@
     }
 }
 
-.Wrapper > button {
+.Wrapper > a button {
     display: block;
     margin: 30px auto;
     border: none;
@@ -35,6 +36,12 @@
     padding: 10px 20px;
     border-radius: 4px;
     color: var(--white);
+}
+
+.Wrapper > a button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 200ms;
 }
 
 .Wrapper > h2 {
@@ -70,6 +77,16 @@
 .imgWrapper {
     margin-left: 10em;
     animation: left-right 1000ms;
+}
+
+.search {
+    /* border: 2px solid var(--primary); */
+    padding: 0px 2em;
+    position: absolute;
+    right: 76px;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -119,7 +136,11 @@
         padding: 0;
     }
 
-    .Wrapper > button {
+    .Wrapper > a button {
         font-size: 16px;
+    }
+
+    .search {
+        display: none;
     }
 }
