@@ -2,10 +2,14 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import Doc from '../../../assets/doctor/doc.png'
 import classes from './DoctorList.module.css'
+import Popup from './Popup/Popup'
 
 const DoctorList = ({ api, doctors }) => {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className={classes.DoctorList}>
             {doctors[1] &&
@@ -25,6 +29,7 @@ const DoctorList = ({ api, doctors }) => {
                                             height={120}
                                             alt=""
                                         />
+                                        <span>BMDC: {doctor?.Doctor?.bmdc}</span>
                                     </div>
                                 </a>
                             </Link>
@@ -41,6 +46,18 @@ const DoctorList = ({ api, doctors }) => {
                             <p className={classes.currentWorkPlace}>Dhaka Medical College & Hospital Shahbag, Dhaka</p> */}
                         </div>
                         <div>
+                            <div className={classes.fees}>
+                                <p>
+                                    ৳
+                                    {doctor?.Doctor?.online_fees !== null
+                                        ? doctor?.Doctor?.online_fees > 499
+                                            ? doctor?.Doctor?.online_fees + 100
+                                            : doctor?.Doctor?.online_fees + doctor?.Doctor?.online_fees * (20 / 100)
+                                        : ''}
+                                    <span> (Inc. VAT)</span>
+                                </p>
+                                <span>Consultation Fee</span>
+                            </div>
                             <p>
                                 {doctor?.Doctor?.exp_year !== null
                                     ? `${doctor?.Doctor?.exp_year}+ Years of Experience`
@@ -53,13 +70,14 @@ const DoctorList = ({ api, doctors }) => {
                             </span> */}
                         </div>
                         <div>
-                            <p>BDT {doctor?.Doctor?.online_fees}</p>
+                            <p onClick={() => setIsOpen(i)}>Book Appoinment</p>
                             <button>
                                 <Link href={`/${doctor?.User?.id}`}>
                                     <a>View Profile</a>
                                 </Link>
                             </button>
                         </div>
+                        {isOpen === i && <Popup setIsOpen={setIsOpen} doctor={doctor} index={i} />}
                     </div>
                 ))}
         </div>

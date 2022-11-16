@@ -94,7 +94,7 @@
 }
 
 .doctor > div:nth-child(4) {
-    margin-top: 0em;
+    margin-top: 12px;
 }
 
 .doctor > div:nth-child(4) > p {
@@ -109,6 +109,12 @@
     height: 40px;
     text-align: center;
     box-sizing: border-box;
+}
+
+.doctor > div:nth-child(4) > p:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 200ms;
 }
 
 .doctor > div:nth-child(4) > button {
@@ -132,6 +138,35 @@
 
 .doctor > div:nth-child(4) > button > a {
     color: var(--white);
+}
+
+.doctorPic > span {
+    display: block;
+    font-size: 14px;
+    color: var(--dark);
+    margin-left: 24px;
+}
+
+.fees {
+}
+
+.fees > p {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: -2px;
+}
+
+.fees > p > span {
+    color: var(--secondary);
+    font-size: 10px;
+}
+
+.fees > span {
+    color: var(--dark);
+    font-size: 14px;
+    display: block;
 }
 
 @media (max-width: 420px) {
