@@ -49,7 +49,7 @@ const Footer = () => {
                     <div className={classes.footerContact}>
                         <div className={classes.Phone}>
                             <>
-                                <p>Give us A call</p>
+                                <p>Give Us A Call</p>
                                 <div className={classes.Shadow}>
                                     <p className={classes.Info}>
                                         <FontAwesomeIcon icon={faPhone} />
