@@ -1,9 +1,14 @@
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { useRouter } from 'next/router'
 import { useReducer, useEffect } from 'react'
 import { Auth, UserInfo } from '../context/allContext'
 import { authState, authReducer } from '../context/reducer/authReducer'
 import { userState, userReducer } from '../context/reducer/userReducer'
 import '../styles/globals.css'
+
+//
+config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
     const [stateAuth, dispatchAuth] = useReducer(authReducer, authState)
