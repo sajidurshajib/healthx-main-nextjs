@@ -37,7 +37,7 @@ const DoctorList = ({ api, doctors }) => {
                         <div className={classes.nameContainer}>
                             <p className={classes.name}>
                                 <Link href={`/${doctor?.User?.id}`}>
-                                    <a>{doctor?.User?.name}</a>
+                                    <a>{`${doctor?.Doctor?.dr_title || ''} ${doctor?.User?.name}`}</a>
                                 </Link>
                             </p>
                             <p className={classes.qualification}>{doctor?.DoctorQualification?.qualification}</p>

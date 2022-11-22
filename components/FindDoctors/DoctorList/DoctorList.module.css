@@ -24,6 +24,7 @@
 .doctorPic img {
     display: block;
     object-fit: cover;
+    object-position: 48% 16%;
     border-radius: 4px;
     transition: 350ms;
 }

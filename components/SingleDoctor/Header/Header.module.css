@@ -64,6 +64,7 @@
 .img {
     position: absolute;
     object-fit: cover;
+    object-position: 48% 16%;
     height: 150px;
     width: 150px;
     border-radius: 10px;
