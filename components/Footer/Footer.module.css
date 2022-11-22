@@ -134,7 +134,7 @@
 /* For phone view  */
 @media (max-width: 420px) {
     .Footer {
-        margin-top: 280px;
+        margin-top: 500px;
         padding: 20px 14px;
     }
     .footerWrapper > .footerContact div {
