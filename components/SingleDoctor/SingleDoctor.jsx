@@ -124,7 +124,6 @@ export default function SingleDoctor({ id }) {
             let data = await response.json()
             if (response.ok) {
                 setQualifications(data)
-                console.log('q', data)
             } else {
                 console.log('data not fetching')
             }
