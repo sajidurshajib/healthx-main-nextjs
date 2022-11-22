@@ -50,7 +50,7 @@
     margin: 0;
     top: 45px;
     left: 170px;
-
+    max-width: 72em;
     font-size: 14px;
     color: var(--dark);
     padding-right: 300px;
