@@ -216,6 +216,7 @@ export default function Medicine() {
                             <span>
                                 Add Quantity <span className={classes.star}>*</span>
                             </span>
+                            <span>Pharmaceuticals</span>
                             <span>Strength</span>
                             <span>Form</span>
                             <span>Unit Price</span>
@@ -240,33 +241,37 @@ export default function Medicine() {
                             <span className={classes.messege}>Cart is Empty!</span>
                         )}
                     </div>
-                    <div className={classes.total}>
+                    <div className={classes.buttonAdd}>
                         <div className={classes.extra}>
                             <p>*** Note: Medicine Prices, Discount and Delivery Charges May Vary!</p>
                         </div>
-                        <div>
-                            <div>
-                                <span>Subtotal: </span>
-                                <span>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</span>
-                            </div>
-                            <div>
-                                <span>Delivery Charge: </span>
-                                <span>60.00৳</span>
-                                <br />
-                                <p>(inside dhaka)</p>
-                            </div>
-                            <div>
-                                <br />
-                                <span>Total: </span>
+                        {medicineLines.length !== 0 ? <span>To add more, search from top</span> : ''}
+                    </div>
+                    <div className={classes.total}>
+                        <table>
+                            <tr>
+                                <td>Subtotal: </td>
+                                <td>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Delivery Fee <span>(Inside Dhaka):</span>
+                                </td>
+                                <td>60.00৳</td>
+                                {/* <br />
+                                <p>(inside dhaka)</p> */}
+                            </tr>
+                            <tr>
+                                <td>Total: </td>
                                 {medicineLines.length !== 0 ? (
-                                    <span>
+                                    <td>
                                         {isNaN(totalDisplay + 0) !== true ? `${(totalDisplay + 60).toFixed(2)}৳` : ''}
-                                    </span>
+                                    </td>
                                 ) : (
-                                    <span>0.00৳</span>
+                                    <td>0.00৳</td>
                                 )}
-                            </div>
-                        </div>
+                            </tr>
+                        </table>
                     </div>
                     {stateAuth?.auth !== true ? (
                         <button onClick={() => setPopup(true)}>Order Now!</button>

@@ -5,13 +5,13 @@
 
 .gridBox {
     display: grid;
-    grid-template-columns: 2fr 1.2fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .gridBox > div:nth-child(1) {
     margin-top: 5em;
     text-align: center;
-    padding: 0 4em;
+    padding: 0 2em;
 }
 
 .bannerImg {
@@ -233,7 +233,7 @@
 
 .medOrder > div {
     display: grid;
-    grid-template-columns: 1% 18% 18% 12% 23% 10% 15% 1%;
+    grid-template-columns: 1% 17% 12% 21% 10% 17% 7% 12% 1%;
 }
 
 .medOrder > .header {
@@ -297,43 +297,39 @@
     font-size: 16px;
 }
 
-.total {
+.gridBox > div > .total {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
+    justify-content: flex-end;
+    margin-top: -2px;
 }
 
-.total > div > div > span {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--primary);
+.total > table {
+    width: 300px;
+    border: 1px solid var(--dark);
+    border-collapse: collapse;
 }
 
-.total > div > div > span:nth-child(2) {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--green);
-    padding-left: 4px;
+.total > table > tr {
+    width: 100%;
+    border: 1px solid var(--light-grey);
 }
 
-.total p {
-    margin: 0;
-    margin-top: 2px;
-    font-size: 14px;
-    color: var(--dark);
-}
-
-.extra {
-    position: absolute;
-    top: -30px;
-    left: 0;
-}
-
-.extra > p {
+.total > table > tr > td {
+    text-align: right;
+    border: 1px solid var(--light-grey);
     font-size: 12px;
-    color: var(--secondary);
+    padding: 4px;
+}
+
+.total > table > tr > td:nth-child(2) {
+    font-size: 14px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.total > table > tr > td > span {
+    font-size: 10px;
 }
 
 .star {
@@ -342,7 +338,33 @@
     font-size: 14px;
 }
 
-/* for mobilb responsive */
+.gridBox > div > .buttonAdd {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -26px;
+    margin-right: -10px;
+}
+
+.extra > p {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.buttonAdd > span {
+    color: var(--green2);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.buttonAdd > button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 200ms;
+}
+
+/* for mobile responsive */
 @media (max-width: 420px) {
     .wrapper {
         padding: 2px 0em;
@@ -355,13 +377,13 @@
     }
     .gridBox > div:nth-child(1) {
         order: 1;
-        margin-top: -2em;
+        margin-top: -3em;
         padding: 0 20px;
     }
 
     .gridBox > div:nth-child(2) {
         order: -1;
-        margin-top: 1em;
+        margin-top: -30px;
     }
     .gridBox > div > h1 {
         margin-top: 20px;
@@ -396,12 +418,20 @@
         font-size: 12px;
     }
 
+    .gridBox > div > .buttonAdd {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -26px;
+        margin-right: 0px;
+    }
+
     .gridBox .search {
+        margin-top: 0px;
         padding: 20px;
     }
 
     .service {
-        padding: 10px 70px;
+        padding: 10px 30px;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 15px;
         margin-bottom: 15px;
@@ -419,7 +449,7 @@
 
         margin-bottom: 20px;
         justify-content: center;
-        padding: 0 90px;
+        padding: 0 80px;
     }
 
     .whyHealth > div > div {
