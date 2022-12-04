@@ -39,6 +39,7 @@ export default function MedicineLine({ med, medicineLines, setMedicineLines, ind
                 />
                 {/* <button onClick={() => btnIncrease()}>+</button> */}
             </div>
+            <span>{med.pharmaceuticals}</span>
             <span>{med.strength}</span>
             <span>{med.form}</span>
             <span>৳{med.unit_price}</span>
