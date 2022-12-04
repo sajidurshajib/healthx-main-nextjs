@@ -26,7 +26,7 @@ export default function Faq() {
                     <label htmlFor="q5" className={classes.question}>
                         Are injectable medicines available at HEALTHx?
                     </label>
-                    <div className={classes.answers}> Yes</div>
+                    <div className={classes.answers}>Yes</div>
                 </div>
 
                 <div>
@@ -46,7 +46,7 @@ export default function Faq() {
                     <input type="checkbox" id="q8" className={classes.questions} />
                     <div className={classes.plus}>+</div>
                     <label htmlFor="q8" className={classes.question}>
-                        Can I pay through *mobile banking app*/credit card?
+                        Can I pay through mobile banking app/credit card?
                     </label>
                     <div className={classes.answers}>
                         Yes, you can. Please talk to our Health Managers for more details and guidance about digital
@@ -58,8 +58,8 @@ export default function Faq() {
                     <input type="checkbox" id="q10" className={classes.questions} />
                     <div className={classes.plus}>+</div>
                     <label htmlFor="q10" className={classes.question}>
-                        Do I need to show prescriptions to buy antibiotics/antihypertensive/*other drugs that require
-                        prescriptions*?
+                        Do I need to show prescriptions to buy antibiotics, antihypertensive and other drugs that
+                        require prescriptions?
                     </label>
                     <div className={classes.answers}>
                         Yes, we will collect your prescription before confirming your order.
