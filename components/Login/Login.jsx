@@ -122,7 +122,7 @@ export default function Login({ setPopup }) {
                         </form>
 
                         <p className={classes.linkText}>
-                            Don't have an account?{' '}
+                            Don't have an account?
                             <Link href="https://user.healthxbd.com/register">
                                 <a>
                                     Register <FontAwesomeIcon icon={faArrowRight} />
