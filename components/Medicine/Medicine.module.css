@@ -351,11 +351,12 @@
 }
 
 .buttonAdd > span {
-    color: var(--green2);
+    color: var(--secondary);
+    font-weight: 500;
     border: none;
     padding: 6px 10px;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .buttonAdd > button:hover {

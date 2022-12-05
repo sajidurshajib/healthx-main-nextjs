@@ -245,7 +245,7 @@ export default function Medicine() {
                         <div className={classes.extra}>
                             <p>*** Note: Medicine Prices, Discount and Delivery Charges May Vary!</p>
                         </div>
-                        {medicineLines.length !== 0 ? <span>To add more, search from top</span> : ''}
+                        {medicineLines.length !== 0 ? <span>To add more, search from top again!</span> : ''}
                     </div>
                     <div className={classes.total}>
                         <table>
