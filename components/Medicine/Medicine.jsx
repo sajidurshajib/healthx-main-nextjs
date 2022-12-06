@@ -4,7 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 import { useState, useEffect, useContext } from 'react'
+import Del from '../../assets/medicine/delivery2.png'
 import Delivery from '../../assets/medicine/delivery.png'
+import Med from '../../assets/medicine/medicine.png'
+import Pill from '../../assets/medicine/pills.png'
 import V1 from '../../assets/medicine/v1.png'
 import V2 from '../../assets/medicine/v2.png'
 import V3 from '../../assets/medicine/v3.png'
@@ -147,10 +150,29 @@ export default function Medicine() {
             <div className={classes.gridBox}>
                 <div>
                     <h1>Medicine Delivery</h1>
+                    <div className={classes.display}>
+                        <div>
+                            <div className={classes.img}>
+                                <Image src={Pill} height={40} width={40} alt="" />
+                            </div>
+                            <span>8% Discount On Every Medicine Order</span>
+                        </div>
+                        <div>
+                            <div className={classes.img}>
+                                <Image src={Del} height={40} width={40} alt="" />
+                            </div>
+                            <span>Free Delivery Over 1500 Taka Order</span>
+                        </div>
+                        <div>
+                            <div className={classes.img}>
+                                <Image src={Med} height={40} width={40} alt="" />
+                            </div>
+                            <span>Delivery Within 6 Hours In Dhaka City</span>
+                        </div>
+                    </div>
                     <p>
                         We deliver authentic and quality medicine and health & hygiene products at your doorstep keeping
-                        accordance with standard safety protocol. Now you don’t have to move outside to purchase
-                        medicine when you can have it at the comfort of your home.
+                        accordance with standard safety protocol.
                     </p>
                     {/* <h2 className={classes.header}>Why Do You Need Our Medicine Delivery Service?</h2>
                     <p>

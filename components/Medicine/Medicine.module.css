@@ -22,8 +22,8 @@
 .gridBox > div > h1 {
     color: var(--primary);
     font-weight: 500;
-    margin-top: -50px;
-    margin-bottom: -10px;
+    margin-top: -66px;
+    margin-bottom: -4px;
 }
 
 .header {
@@ -35,7 +35,9 @@
 
 .gridBox > div > p {
     color: var(--dark);
-    font-size: 16px;
+    margin-top: 20px;
+    font-size: 10px;
+    margin-bottom: -20px;
 }
 
 .gridBox > div > button {
@@ -63,11 +65,32 @@
     align-items: center;
 }
 
+.gridBox > div > .display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px 10px;
+    margin-top: 20px;
+}
+
+.gridBox > div > .display > div {
+    border: 1px solid var(--light);
+    padding: 14px 32px 18px;
+    border-radius: 6px;
+    box-shadow: 4px 8px 12px var(--light);
+}
+
+.gridBox > div > .display > div > span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark);
+    padding-left: 10px;
+}
+
 .gridBox .search {
     background-color: var(--primary);
     padding: 30px;
     border-radius: 4px;
-    margin-bottom: -2em;
+    margin-bottom: -3em;
 }
 
 .whyHealth {
@@ -394,6 +417,7 @@
 
     .gridBox > div > p {
         font-size: 12px;
+        display: none;
     }
     .wrapper h2 {
         font-size: 1.3rem;
@@ -419,6 +443,30 @@
         font-size: 12px;
     }
 
+    .gridBox > div > .display {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4px;
+        margin-top: 10px;
+    }
+
+    .gridBox > div > .display > div {
+        border: 1px solid var(--light);
+        padding: 8px;
+        border-radius: 6px;
+        box-shadow: 4px 6px 10px var(--light);
+    }
+
+    .gridBox > div > .display > div > span {
+        font-size: 10px;
+        font-weight: 500;
+        color: var(--dark);
+        padding-left: 10px;
+    }
+
+    .gridBox > div > .display > div > .img {
+        display: none;
+    }
+
     .gridBox > div > .buttonAdd {
         display: flex;
         justify-content: space-between;
@@ -427,7 +475,7 @@
     }
 
     .gridBox .search {
-        margin-top: 0px;
+        margin-top: 20px;
         padding: 20px;
     }
 
