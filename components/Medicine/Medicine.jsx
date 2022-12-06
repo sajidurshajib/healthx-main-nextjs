@@ -270,7 +270,7 @@ export default function Medicine() {
                                 <td>
                                     Delivery Fee <span>(Inside Dhaka):</span>
                                 </td>
-                                <td>60.00৳</td>
+                                <td>{medicineLines.length !== 0 ? '60.00৳' : '0.00৳'}</td>
                                 {/* <br />
                                 <p>(inside dhaka)</p> */}
                             </tr>
