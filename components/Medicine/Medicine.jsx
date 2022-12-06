@@ -4,10 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 import { useState, useEffect, useContext } from 'react'
-import Del from '../../assets/medicine/delivery2.png'
 import Delivery from '../../assets/medicine/delivery.png'
-import Med from '../../assets/medicine/medicine.png'
-import Pill from '../../assets/medicine/pills.png'
 import V1 from '../../assets/medicine/v1.png'
 import V2 from '../../assets/medicine/v2.png'
 import V3 from '../../assets/medicine/v3.png'
@@ -15,7 +12,6 @@ import V4 from '../../assets/medicine/v4.png'
 import V5 from '../../assets/medicine/v5.png'
 import { Auth, UserInfo } from '../../context/allContext'
 import { dateTime } from '../../utils/date'
-import Footer from '../Footer/Footer'
 import Searchbar from '../Hero/Searchbar/Searchbar'
 import Login from '../Login/Login'
 import Faq from './Faq/Faq'
@@ -152,22 +148,16 @@ export default function Medicine() {
                     <h1>Medicine Delivery</h1>
                     <div className={classes.display}>
                         <div>
-                            <div className={classes.img}>
-                                <Image src={Pill} height={40} width={40} alt="" />
-                            </div>
-                            <span>8% Discount On Every Medicine Order</span>
+                            <p>8% Discount</p>
+                            <span> On Every Medicine Order</span>
                         </div>
                         <div>
-                            <div className={classes.img}>
-                                <Image src={Del} height={40} width={40} alt="" />
-                            </div>
-                            <span>Free Delivery Over 1500 Taka Order</span>
+                            <p>Free Delivery</p>
+                            <span> Over 1500 Taka Order</span>
                         </div>
                         <div>
-                            <div className={classes.img}>
-                                <Image src={Med} height={40} width={40} alt="" />
-                            </div>
-                            <span>Delivery Within 6 Hours In Dhaka City</span>
+                            <p>Quick Delivery</p>
+                            <span>Within 6 Hours In Dhaka City</span>
                         </div>
                     </div>
                     <p>
@@ -265,7 +255,8 @@ export default function Medicine() {
                     </div>
                     <div className={classes.buttonAdd}>
                         <div className={classes.extra}>
-                            <p>*** Note: Medicine Prices, Discount and Delivery Charges May Vary!</p>
+                            <p>* Note: Medicine Prices, Discount and Delivery Charges May Vary!</p>
+                            <p>* For Insulin, Discount will be 3%</p>
                         </div>
                         {medicineLines.length !== 0 ? <span>To add more, search from top again!</span> : ''}
                     </div>

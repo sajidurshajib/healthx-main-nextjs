@@ -79,8 +79,19 @@
     box-shadow: 4px 8px 12px var(--light);
 }
 
+.gridBox > div > .display > div > p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+    text-align: center;
+    color: var(--primary);
+}
+
 .gridBox > div > .display > div > span {
-    font-size: 14px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
     font-weight: 500;
     color: var(--dark);
     padding-left: 10px;
@@ -368,9 +379,15 @@
     margin-right: -10px;
 }
 
+.extra {
+    margin-top: 12px;
+}
+
 .extra > p {
     font-size: 12px;
     color: var(--secondary);
+    text-align: left;
+    margin: 0;
 }
 
 .buttonAdd > span {
@@ -463,8 +480,8 @@
         padding-left: 10px;
     }
 
-    .gridBox > div > .display > div > .img {
-        display: none;
+    .gridBox > div > .display > div > p {
+        font-size: 12px;
     }
 
     .gridBox > div > .buttonAdd {
@@ -572,5 +589,13 @@
         padding: 2px;
         padding-left: 0px;
         text-align: center;
+    }
+
+    .extra > p {
+        font-size: 10px;
+        color: var(--secondary);
+        text-align: center;
+        margin: 0;
+        margin-bottom: 4px;
     }
 }
