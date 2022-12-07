@@ -42,8 +42,9 @@ a {
     box-sizing: border-box;
 }
 
-/* ::-webkit-scrollbar {
-    width: 2px;
+::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
 }
 ::-webkit-scrollbar-thumb {
     background: rgb(171, 171, 171);
@@ -51,7 +52,7 @@ a {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(151, 151, 151);
-} */
+}
 
 .container {
     padding-right: 15px;
