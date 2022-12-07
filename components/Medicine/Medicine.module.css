@@ -344,25 +344,25 @@
     border-collapse: collapse;
 }
 
-.total > table > tr {
+.total > table > tbody > tr {
     width: 100%;
     border: 1px solid var(--light-grey);
 }
 
-.total > table > tr > td {
+.total > table > tbody > tr > td {
     text-align: right;
     border: 1px solid var(--light-grey);
     font-size: 12px;
     padding: 4px;
 }
 
-.total > table > tr > td:nth-child(2) {
+.total > table > tbody > tr > td:nth-child(2) {
     font-size: 14px;
     text-align: center;
     min-width: 100px;
 }
 
-.total > table > tr > td > span {
+.total > table > tbody > tr > td > span {
     font-size: 10px;
 }
 

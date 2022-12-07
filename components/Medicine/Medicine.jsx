@@ -17,6 +17,7 @@ import Login from '../Login/Login'
 import Faq from './Faq/Faq'
 import classes from './Medicine.module.css'
 import MedicineLine from './MedicineLine/MedicineLine'
+import Popup from './Popup/Popup'
 
 export default function Medicine() {
     const [medicines, setMedicines] = useState([])
@@ -26,6 +27,7 @@ export default function Medicine() {
 
     const [medicineLines, setMedicineLines] = useState([])
     const [popup, setPopup] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     const api = process.env.NEXT_PUBLIC_API_URL
     const { stateAuth } = useContext(Auth)
@@ -133,13 +135,12 @@ export default function Medicine() {
         })
 
         if (postFetch.ok) {
-            refreshPage()
+            setMedicineLines([])
+            setIsOpen(true)
         } else {
             alert('Something went wrong!, Fill the quantity properly!')
         }
     }
-
-    console.log('m', medicineLines)
 
     return (
         <div className={classes.wrapper}>
@@ -262,28 +263,32 @@ export default function Medicine() {
                     </div>
                     <div className={classes.total}>
                         <table>
-                            <tr>
-                                <td>Subtotal: </td>
-                                <td>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Delivery Fee <span>(Inside Dhaka):</span>
-                                </td>
-                                <td>{medicineLines.length !== 0 ? '60.00৳' : '0.00৳'}</td>
-                                {/* <br />
-                                <p>(inside dhaka)</p> */}
-                            </tr>
-                            <tr>
-                                <td>Total: </td>
-                                {medicineLines.length !== 0 ? (
+                            <tbody>
+                                <tr>
+                                    <td>Subtotal: </td>
+                                    <td>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</td>
+                                </tr>
+                                <tr>
                                     <td>
-                                        {isNaN(totalDisplay + 0) !== true ? `${(totalDisplay + 60).toFixed(2)}৳` : ''}
+                                        Delivery Fee <span>(Inside Dhaka):</span>
                                     </td>
-                                ) : (
-                                    <td>0.00৳</td>
-                                )}
-                            </tr>
+                                    <td>{medicineLines.length !== 0 ? '60.00৳' : '0.00৳'}</td>
+                                    {/* <br />
+                                <p>(inside dhaka)</p> */}
+                                </tr>
+                                <tr>
+                                    <td>Total: </td>
+                                    {medicineLines.length !== 0 ? (
+                                        <td>
+                                            {isNaN(totalDisplay + 0) !== true
+                                                ? `${(totalDisplay + 60).toFixed(2)}৳`
+                                                : ''}
+                                        </td>
+                                    ) : (
+                                        <td>0.00৳</td>
+                                    )}
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     {stateAuth?.auth !== true ? (
@@ -357,6 +362,7 @@ export default function Medicine() {
                 <Faq />
             </div>
             {popup && <Login setPopup={setPopup} />}
+            {isOpen && <Popup setIsOpen={setIsOpen} />}
         </div>
     )
 }
