@@ -124,7 +124,7 @@ export default function Medicine() {
             medicineLines,
         ]
 
-        let postFetch = await fetch(`${api}/patients/service/medicine`, {
+        let postFetch = await fetch(`${api}/patients/service/medicines`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
