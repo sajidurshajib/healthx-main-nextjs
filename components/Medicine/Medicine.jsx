@@ -97,10 +97,10 @@ export default function Medicine() {
 
                 order_value: totalDisplay + 60,
                 order_status: 'pending',
-                discount_percent: 0,
-                payable_amount: totalDisplay + 60,
+                discount_percent: 8,
+                payable_amount: totalDisplay - totalDisplay * 0.08 + 60,
                 payment_by_customer: 0,
-                payment_pending: totalDisplay + 60,
+                payment_pending: totalDisplay - totalDisplay * 0.08 + 60,
                 last_payment_date: null,
                 payment_method: 'cash on delivery',
                 payment_status: 'pending',
@@ -124,7 +124,7 @@ export default function Medicine() {
             medicineLines,
         ]
 
-        let postFetch = await fetch(`${api}/patients/service/medicines`, {
+        let postFetch = await fetch(`${api}/patients/service/medicine`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -269,8 +269,16 @@ export default function Medicine() {
                                     <td>{isNaN(totalDisplay + 0) !== true ? `${totalDisplay.toFixed(2)}৳` : ''}</td>
                                 </tr>
                                 <tr>
+                                    <td>After 8% Discount: </td>
                                     <td>
-                                        Delivery Fee <span>(Inside Dhaka):</span>
+                                        {isNaN(totalDisplay + 0) !== true
+                                            ? `${(totalDisplay - totalDisplay * 0.08).toFixed(2)}৳`
+                                            : ''}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Delivery Fee <span>(Inside Dhaka): </span>
                                     </td>
                                     <td>{medicineLines.length !== 0 ? '60.00৳' : '0.00৳'}</td>
                                     {/* <br />
@@ -281,7 +289,7 @@ export default function Medicine() {
                                     {medicineLines.length !== 0 ? (
                                         <td>
                                             {isNaN(totalDisplay + 0) !== true
-                                                ? `${(totalDisplay + 60).toFixed(2)}৳`
+                                                ? `${(totalDisplay - totalDisplay * 0.08 + 60).toFixed(2)}৳`
                                                 : ''}
                                         </td>
                                     ) : (
