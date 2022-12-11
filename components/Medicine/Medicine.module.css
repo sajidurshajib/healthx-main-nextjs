@@ -267,7 +267,7 @@
 
 .medOrder > div {
     display: grid;
-    grid-template-columns: 1% 17% 12% 21% 10% 17% 7% 12% 1%;
+    grid-template-columns: 0.5% 20% 12% 20% 10% 16% 6% 13.2% 1%;
 }
 
 .medOrder > .header {
@@ -275,7 +275,7 @@
     margin-top: -10px;
     background-color: var(--primary);
     color: var(--white);
-    font-size: 14px;
+    font-size: 12px;
     padding: 12px 20px;
     text-transform: uppercase;
     font-weight: 500;
@@ -303,7 +303,8 @@
 
 .medOrder > .body > svg {
     color: var(--red);
-    padding-top: 4px;
+    font-size: 12px;
+    align-self: center;
 }
 
 .medOrder > .body > svg:hover {
