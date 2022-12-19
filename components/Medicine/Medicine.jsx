@@ -305,8 +305,22 @@ export default function Medicine() {
                         <button onClick={(e) => handleSubmit(e)}>Place Order</button>
                     )}
 
-                    {/* <h1 className={classes.order}>How to order?</h1>
-                    <p>Call us at +8801322658481, +8801571016461</p> */}
+                    <div className={classes.offer}>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>8% Discount</span>
+                                        On Every Medicine Order
+                                    </td>
+                                    <td>
+                                        <span>Free Delivery</span>
+                                        Over 1500 Taka Order
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div>
                     <Image
@@ -318,6 +332,11 @@ export default function Medicine() {
                         100vw"
                         alt=""
                     />
+
+                    <div className={classes.contact}>
+                        <p>For Any Query Please Call at</p>
+                        <a href="tel:+8801322658481">+88 01322658481</a>
+                    </div>
                 </div>
             </div>
 

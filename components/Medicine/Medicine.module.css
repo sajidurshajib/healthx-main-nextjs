@@ -43,7 +43,7 @@
 .gridBox > div > button {
     border: none;
     border-radius: 4px;
-    padding: 10px 40px;
+    padding: 14px 100px;
     background-color: var(--primary);
     color: var(--white);
     text-transform: uppercase;
@@ -367,6 +367,39 @@
     font-size: 10px;
 }
 
+.gridBox > div > .offer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.offer > table {
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-collapse: collapse;
+}
+
+.offer > table > tbody > tr {
+    width: 100%;
+    border: 1px solid var(--light-grey);
+}
+
+.offer > table > tbody > tr > td {
+    text-align: center;
+    border: 1px solid var(--light-grey);
+    font-size: 14px;
+    padding: 12px;
+}
+
+.offer > table > tbody > tr > td > span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 1px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
 .star {
     color: var(--orange);
     padding-left: 2px;
@@ -404,6 +437,28 @@
     cursor: pointer;
     opacity: 0.9;
     transition: 200ms;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact p {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 26px;
+    color: var(--dark-grey);
+}
+
+.contact a {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 /* for mobile responsive */
@@ -457,7 +512,7 @@
         padding: 30px;
     }
     .gridBox > div > button {
-        padding: 8px 20px;
+        padding: 10px 40px;
         font-size: 12px;
     }
 
@@ -594,9 +649,37 @@
 
     .extra > p {
         font-size: 10px;
-        color: var(--secondary);
         text-align: center;
         margin: 0;
         margin-bottom: 4px;
+    }
+
+    .offer > table > tbody > tr > td {
+        font-size: 10px;
+        padding: 8px 0px;
+    }
+
+    .offer > table > tbody > tr > td > span {
+        font-size: 12px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        margin-top: -40px;
+        margin-bottom: 4px;
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .contact a {
+        padding: 8px 20px;
+        border-radius: 4px;
+        font-size: 14px;
     }
 }
