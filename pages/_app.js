@@ -2,6 +2,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { useRouter } from 'next/router'
 import { useReducer, useEffect } from 'react'
+import TagManager from 'react-gtm-module'
 import { Auth, UserInfo } from '../context/allContext'
 import { authState, authReducer } from '../context/reducer/authReducer'
 import { userState, userReducer } from '../context/reducer/userReducer'
@@ -9,6 +10,10 @@ import '../styles/globals.css'
 
 //
 config.autoAddCss = false
+
+const tagManagerArgs = {
+    id: 'GTM-W5K5PF8',
+}
 
 function MyApp({ Component, pageProps }) {
     const [stateAuth, dispatchAuth] = useReducer(authReducer, authState)
@@ -29,8 +34,17 @@ function MyApp({ Component, pageProps }) {
             })
     }, [router.events])
 
+    useEffect(() => {
+        TagManager.initialize(tagManagerArgs)
+    }, [])
+
     return (
         <>
+            <Head>
+                <meta name="google-site-verification" content="googleb19e7ad08cb1e49c.html" />
+                <meta name="msvalidate.01" content="googleb19e7ad08cb1e49c.html" />
+            </Head>
+
             <Auth.Provider value={{ stateAuth, dispatchAuth }}>
                 <UserInfo.Provider value={{ stateUser, dispatchUser }}>
                     <Component {...pageProps} />

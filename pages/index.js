@@ -13,7 +13,6 @@ import {
     Offer,
     TeleHealth,
 } from '../components'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
     const WhyUs = dynamic(
@@ -27,7 +26,10 @@ export default function Home() {
         <div>
             <Head>
                 <title>HEALTHx</title>
+                <meta name="google-site-verification" content="googleb19e7ad08cb1e49c.html" />
+                <meta name="msvalidate.01" content="googleb19e7ad08cb1e49c.html" />
             </Head>
+
             <MainNav />
             <Hero />
             <Offer />
