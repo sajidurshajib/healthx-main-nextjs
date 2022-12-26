@@ -10,6 +10,7 @@ export default function SearchDoctor() {
     const [doctors, setDoctors] = useState([])
     const [search, setSearch] = useState('')
 
+    const [limit, setLimit] = useState(10)
     const [hide, setHide] = useState(false)
     const [cross, setCross] = useState(false)
     const api = process.env.NEXT_PUBLIC_API_URL
@@ -27,9 +28,13 @@ export default function SearchDoctor() {
         setSearch(search)
     }
 
+    const limitUp = () => {
+        setLimit((prev) => prev + 10)
+    }
+
     useEffect(() => {
         let fetchData = async () => {
-            let response = await fetch(`${api}/doctors/search/?search=${search}&skip=0&limit=5`, {
+            let response = await fetch(`${api}/doctors/search/?search=${search}&skip=0&limit=${limit}`, {
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
@@ -49,7 +54,7 @@ export default function SearchDoctor() {
         } catch {
             setDoctors([])
         }
-    }, [search])
+    }, [search, limit])
 
     return (
         <div className={classes.searchDoctor}>
@@ -112,6 +117,8 @@ export default function SearchDoctor() {
                                 </div>
                             </div>
                         ))}
+
+                    <button onClick={(e) => limitUp(e)}>Load More</button>
                 </div>
             )}
         </div>
