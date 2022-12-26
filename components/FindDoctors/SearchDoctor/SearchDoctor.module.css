@@ -107,3 +107,28 @@
     background-color: var(--primary);
     color: var(--white);
 }
+
+@media (max-width: 420px) {
+    .searchDoctor {
+        width: 100%;
+        margin-bottom: 1em;
+        height: 80;
+    }
+
+    .searchBar input {
+        border: none;
+        width: 240px;
+        font-size: 14px;
+        padding-right: 6px;
+    }
+
+    .optSelect {
+        z-index: 100;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .optSelect > div > div {
+        display: none;
+    }
+}

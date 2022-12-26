@@ -98,7 +98,9 @@ export default function SearchDoctor() {
                         doctors.map((info, i) => (
                             <div className={classes.optSelect} key={i}>
                                 <div>
-                                    <Image src={Doc} width={80} height={80} />
+                                    <div>
+                                        <Image src={Doc} width={80} height={80} />
+                                    </div>
                                     <Link href={`/${info?.id}`}>
                                         <a>
                                             <div>
