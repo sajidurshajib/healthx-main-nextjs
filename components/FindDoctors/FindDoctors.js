@@ -120,7 +120,7 @@ const FindDoctors = () => {
                 </div>
             </div> */}
             <div className={classes.listContainer}>
-                {/* <SearchDoctor /> */}
+                <SearchDoctor />
                 <h2>Doctor List</h2>
                 <DoctorList api={api} doctors={doctors} />
                 <button className={classes.loadButton} onClick={(e) => limitUp(e)}>
