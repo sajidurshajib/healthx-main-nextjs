@@ -77,6 +77,7 @@ const MainNav = () => {
                                 <a href="https://user.healthxbd.com">For Patient</a>
                                 <a href="https://doc.healthxbd.com">For Doctor</a>
                                 <a href="https://pharmacy.healthxbd.com">For Pharmacy</a>
+                                <a href="https://clinic.healthxbd.com">For Clinic</a>
                             </div>
                         </div>
 
