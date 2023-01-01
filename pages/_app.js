@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }) {
     const [stateAuth, dispatchAuth] = useReducer(authReducer, authState)
     const [stateUser, dispatchUser] = useReducer(userReducer, userState)
 
-    const analytics = process.env.NEXT_PUBLIC_ANALYTICS
     const router = useRouter()
 
     useEffect(() => {
@@ -44,7 +43,7 @@ function MyApp({ Component, pageProps }) {
         <>
             <Script
                 strategy="afterInteractive"
-                src={`https://www.googletagmanager.com/gtag/js?id=${analytics}`}></Script>
+                src={`https://www.googletagmanager.com/gtag/js?id=UA-252658937-1`}></Script>
             <Script
                 id="google-analytics"
                 strategy="afterInteractive"
@@ -53,7 +52,7 @@ function MyApp({ Component, pageProps }) {
                      window.dataLayer = window.dataLayer || [];
                      function gtag(){dataLayer.push(arguments);}
                      gtag('js', new Date());
-                     gtag('config', ${analytics}, {
+                     gtag('config', 'UA-252658937-1', {
                      page_path: window.location.pathname,
                     });
                     `,
